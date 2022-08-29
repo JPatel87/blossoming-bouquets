@@ -17,7 +17,7 @@
     <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
     {% endblock %}
 
@@ -41,13 +41,13 @@
       <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
           <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
               <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                  <h1 class="logo-font text-black my-0 display-">Blossoming Bouquets</h1>
+                  <h1 class="logo-font my-0 display-5"><span class="highlight">Blossoming</span>Bouquets</h1>
               </a>
           </div>
           <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
               <form method="GET" action="">
                   <div class="input-group w-100">
-                      <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
+                      <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search products">
                       <div class="input-group-append">
                           <button class="form-control btn btn-black border border-black rounded-0" type="submit">
                               <span class="icon">
