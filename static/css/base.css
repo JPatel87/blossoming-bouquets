@@ -96,7 +96,8 @@ h1 {
 }
 
 .bg-black {
-    background: #000 !important;
+    background: palevioletred;
+    color: #000;
 }
 
 .overlay {
