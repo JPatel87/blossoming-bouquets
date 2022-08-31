@@ -38,6 +38,11 @@
   </head>
   <body>
     <header class="container-fluid fixed-top">
+        <div class="logo d-flex d-sm-flex d-lg-none">
+            <a href="{% url 'home' %}" class="nav-link main-logo-link">
+                <h1 class="logo-font my-0 display-5"><span class="highlight">Blossoming</span>Bouquets</h1>
+            </a>
+        </div>
       <div id="topnav" class="row bg-white d-none d-lg-flex">
           <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
               <a href="{% url 'home' %}" class="nav-link main-logo-link">

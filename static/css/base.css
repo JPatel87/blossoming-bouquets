@@ -7,6 +7,10 @@ body {
     color: black;
 }
 
+.logo {
+    justify-content: center;
+}
+
 .logo-font {
     text-transform: capitalize;
     font-family: 'Sacramento', cursive;
