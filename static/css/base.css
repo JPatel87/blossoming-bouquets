@@ -43,6 +43,14 @@ h1 {
     text-align: center;
 }
 
+.nav-link {
+    padding: 0.5rem 0.3rem;
+}
+
+.navbar {
+    justify-content: space-evenly;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
