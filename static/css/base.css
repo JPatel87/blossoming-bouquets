@@ -25,10 +25,11 @@ body {
     position: relative; 
     height: calc(100vh - 164px);
     display: flex;
-    background: url('/media/hero-image.jpg') no-repeat center center fixed;
+    background: url('/media/hero-image.jpg') no-repeat fixed center center;
     background-size: cover;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .hero-text {
@@ -41,6 +42,10 @@ h1 {
     position: relative;
     color: black;  
     text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
 }
 
 .nav-link {
@@ -107,9 +112,9 @@ h1 {
     border: 1px solid black !important;
 }
 
-.bg-black {
+.delivery-banner-text {
     background: palevioletred;
-    color: #000;
+    color: white;
 }
 
 .overlay {
@@ -343,5 +348,23 @@ input[name='q']::placeholder {
 
     body {
         height: calc(100vh - 116px);
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-text h1 {
+        font-size: 1.7rem;
+    }
+}
+
+@media (min-width: 577px) {
+    .hero-text h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .hero-text h1 {
+        font-size: 3.5rem;
     }
 }
