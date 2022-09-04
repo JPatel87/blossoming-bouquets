@@ -1,108 +1,143 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Blossoming Bouquets
 
-Welcome JPatel87,
+## Table of contents
+* [UX](#ux)
+    * [Strategy](#strategy)
+        * [Project overview](#project-overview)
+        * [Project goals](#project-goals)
+    * [Scope](#scope)
+        * [Consistent features implemented](#consistent-features-implemented)
+        * [Unique features implemented](#unique-features-implemented)
+        * [Features left to implement](#features-left-to-implement)
+    * [Structure](#structure)
+        * [Database model](#database-model)
+        * [Applications](#applications)
+    * [Skeleton](#skeleton)
+        * [Wireframes](#wireframes)
+    * [Surface](#surface)
+        * [Colour scheme](#colour-scheme)
+        * [Typography](#typography)
+        * [Imagery](#imagery)
+* [Testing](#testing)
+    * [User story testing](#user-story-testing)
+    * [Manual testing](#manual-testing)
+    * [Automated testing](#automated-testing)
+    * [Bugs and issues](#bugs-and-issues)
+    * [Validator testing](#validator-testing)
+* [Deployment](#deployment)
+* [Credits](#credits)
+    * [Technologies](#technologies)
+    * [Resources](#resources)
+    * [Content](#content)
+    * [Media](#media)
+    * [Acknowledgements](#acknowledgements)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+# UX
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## Strategy
 
-## Gitpod Reminders
+### Project overview
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+[This project is...]
 
-`python3 -m http.server`
+### Project goals
 
-A blue button should appear to click: _Make Public_,
+Below is a list of epics for this project which have been broken down into user stories. The implementation of these user stories have been planned and managed through the Github Kanban board tool. See the following link to the []().
 
-Another blue button should appear to click: _Open Browser_.
+## Scope
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### Consistent features implemented
 
-A blue button should appear to click: _Make Public_,
+There are a few features that have been purposely designed to look the same, to allow users to gain familiarity with the site layout and enable them to find information quickly. 
 
-Another blue button should appear to click: _Open Browser_.
+### Unique features implemented
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Features left to implement
 
-To log into the Heroku toolbelt CLI:
+Refer to the future improvements of [user story testing](#user-story-testing)
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+## Structure 
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+### Database model
 
-------
+Below is a link to the ERD created for this project.
 
-## Release History
+### Applications
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+In this project, xxxx applications (apps) have been created; 
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+## Skeleton
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+### Wireframes
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+Below are links to the initial wireframes created for this project. During development, plans were slightly modified in order to improve the user experience. 
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+## Surface
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+### Colour scheme 
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+The colour scheme used in this site consist of colours; xxxxxxxxxx. These colours give the site a feminine yet stylish look. 
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+### Typography 
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+There are two fonts used in this site which were sourced from [Google fonts](https://fonts.google.com/). Playfair Display (serif) has been used for the site logo, slogan and page headings and Montserrat (sans-serif) for the site body text. The combination of these two fonts give the site a minimalistic and modern appearance.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### Imagery
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+## Testing 
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### User story testing 
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+Tests were performed to determine whether the user story acceptance criteria were met by the site development. 
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+### Manual testing 
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+Manual testing of interactive features was carried out, see tests and results of testing below:
 
-------
+### Automated testing 
 
-## FAQ about the uptime script
+Automated testing of the service model was also carried out using Django TestCase to test the service views, forms and model. 
 
-**Why have you added this script?**
+### Responsive testing
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+The site works well on small, medium and larger screens. See below links to the responsive views on different screens. 
 
-**How will this affect me?**
+The features that respond to different screen sizes include:
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+### Bugs and issues
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+### Validator testing
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+W3 HTML Validator checks were carried out on the below pages, no errors found:
 
-**So….?**
+CSS W3 Validator checks were carried out on the style.css file - no errors found.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+PEP8 checks were carried out on the below files, no errors were found:
 
-**Can I opt out?**
+Lighthouse testing also carried out to review site performance and useability, the results of these tests can be found below.
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+## Deployment 
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+A thorough walkthrough of the deployment steps taken for this project can be viewed in the below document. 
 
-**Anything more?**
+## Credits
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+### Technologies 
 
----
+The languages used for this project are: 
 
-Happy coding!
+The frameworks, libraries, databases and programs used for this project are:
+
+### Resources
+
+The following sites were used to assist in this project:
+
+### Content
+
+The following sites where used to obtain information about salon services and site styles.
+
+### Media 
+
+All images for this project were taken from the below sites:
+
+### Acknowledgements
