@@ -27,7 +27,7 @@ class Bouquet(models.Model):
         'Category', null=True,
         blank=True, on_delete=models.SET_NULL
     )
-    sku = models.CharField(max_length=10)
+    sku = models.CharField(max_length=20)
     name = models.CharField(max_length=200)
     description = models.TextField()
     price = models.DecimalField(max_digits=6, decimal_places=2)
