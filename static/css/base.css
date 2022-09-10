@@ -36,7 +36,7 @@ body {
 .hero-text {
     text-align: center;
     background-color: white;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 h1 {
@@ -51,6 +51,11 @@ h1 {
 
 .nav-link {
     padding: 0.5rem 0.3rem;
+    color: #666666 !important;
+}
+
+.nav-icon:hover {
+    color: palevioletred;
 }
 
 .navbar {
@@ -71,13 +76,13 @@ h1 {
 }
 
 .shop-now-button {
-    background: palevioletred;
+    background: #78866b;
     color: white;
     min-width: 260px;
     border-radius: 70px;
 }
 
-.btn-black {
+.btn-grey {
     background: #666666;
     color: white;
 }
@@ -105,16 +110,18 @@ h1 {
     color: white;
 }
 
-.text-black {
-    color: #666666 !important;
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus {
+    background: palevioletred;
 }
 
-.border-black {
+.border-grey {
     border: 1px solid #666666 !important;
 }
 
 .delivery-banner-text {
-    background: palevioletred;
+    background: #666666;
     color: white;
 }
 
