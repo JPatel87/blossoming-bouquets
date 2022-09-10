@@ -4,7 +4,7 @@ html {
 
 body {
     font-family: 'Montserrat', sans-serif;
-    color: black;
+    color: #666666;
 }
 
 .logo {
@@ -14,7 +14,7 @@ body {
 .logo-font {
     text-transform: capitalize;
     font-family: 'Sacramento', cursive;
-    color: black;
+    color: #666666;
 }
 
 .highlight {
@@ -22,14 +22,12 @@ body {
 }
 
 .hero {
-    position: relative; 
     height: calc(100vh - 164px);
     display: flex;
-    background: url('/media/hero-image.jpg') no-repeat fixed center center;
+    background: url('/media/hero-image.jpg') no-repeat center center fixed;
     background-size: cover;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
 }
 
 .hero-text {
@@ -40,7 +38,7 @@ body {
 
 h1 {
     position: relative;
-    color: black;  
+    color: #666666;  
     text-align: center;
 }
 
@@ -71,13 +69,13 @@ h1 {
 
 .shop-now-button {
     background: palevioletred;
-    color: black;
+    color: white;
     min-width: 260px;
     border-radius: 70px;
 }
 
 .btn-black {
-    background: black;
+    background: #666666;
     color: white;
 }
 
@@ -308,6 +306,25 @@ input[name='q']::placeholder {
     border-color: #dc3545;
     border-radius: 0;
 }
+
+.footer {
+    background-color: #666666;
+    color: white;
+}
+
+.newsletter {
+    justify-content: space-around;
+}
+
+.social {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.social:hover {
+    color: palevioletred;
+}
+
 
 
 /* fixed top navbar only on medium and up */
