@@ -14,7 +14,10 @@ body {
 .logo-font {
     text-transform: capitalize;
     font-family: 'Sacramento', cursive;
-    color: #666666;
+}
+
+.text-grey {
+    color: #666666
 }
 
 .highlight {
@@ -79,15 +82,15 @@ h1 {
     color: white;
 }
 
-.btn-outline-black {
+.btn-outline-grey {
     background: white;
     color: #666666 !important; /* use important to override link colors for <a> elements */
     border: 1px solid #666666;
 }
 
-.btn-outline-black:hover,
-.btn-outline-black:active,
-.btn-outline-black:focus {
+.btn-outline-grey:hover,
+.btn-outline-grey:active,
+.btn-outline-grey:focus {
     background: #666666;
     color: white !important;
 }
