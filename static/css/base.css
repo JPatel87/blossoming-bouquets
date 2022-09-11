@@ -20,7 +20,11 @@ body {
     color: #666666
 }
 
-.highlight {
+.text-green {
+    color: #78866b;
+}
+
+.text-pink {
     color: palevioletred;
 }
 
@@ -165,6 +169,21 @@ a.category-badge > span.badge:hover {
 
 input[name='q']::placeholder {
     color: #aab7c4;
+}
+
+.bouquets {
+    width: 200px;
+    height: 300px;
+}
+
+.individual-bouquets {
+    width: 300px;
+    height: 400px;
+}
+
+.bouquet-names,
+.bouquet-prices {
+    width: 200px;
 }
 
 /* ------------------------------- bootstrap toasts */

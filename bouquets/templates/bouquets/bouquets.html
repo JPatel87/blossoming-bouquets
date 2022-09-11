@@ -14,7 +14,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col text-center mt-3">
-                <h2 class="logo-font">Bouquets</h2>
+                <h3 class="text-green"><strong>Bouquets</strong></h3>
                 <hr class="w-50 mb-1">
             </div>
         </div>
@@ -27,20 +27,20 @@
                             <div class="card h-100 border-0">
                                 {% if bouquet.image %}
                                 <a href="{% url 'bouquet_detail' bouquet.id %}">
-                                    <img class="card-img-top img-fluid" src="{{ bouquet.image.url }}" alt="{{ bouquet.name }}">
+                                    <img class="card-img-top img-fluid bouquets rounded-lg" src="{{ bouquet.image.url }}" alt="{{ bouquet.name }}">
                                 </a>
                                 {% else %}
                                 <a href="{% url 'bouquet_detail' bouquet.id %}">
                                     <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}image-coming-soon.jpg" alt="{{ bouquet.name }}">
                                 </a>
                                 {% endif %}
-                                <div class="card-body pb-0">
-                                    <p class="mb-0">{{ bouquet.name }}</p>
+                                <div class="card-body pb-0 bouquet-names">
+                                    <p class="mb-0 text-center"><strong>{{ bouquet.name }}</strong></p>
                                 </div>
-                                <div class="card-footer bg-white pt-0 border-0 text-left">
+                                <div class="card-footer bg-white pt-0 border-0 bouquet-prices">
                                     <div class="row">
                                         <div class="col">
-                                            <p class="lead mb-0 text-left font-weight-bold">${{ bouquet.price }}</p>
+                                            <p class="lead mb-0 text-center font-weight-bold text-pink">£{{ bouquet.price }}</p>
                                         </div>
                                     </div>
                                 </div>

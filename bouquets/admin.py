@@ -15,7 +15,7 @@ class BouquetAdmin(admin.ModelAdmin):
         'price',
     )
 
-    ordering = ('name',)
+    ordering = ('category',)
 
 
 class CategoryAdmin(admin.ModelAdmin):
