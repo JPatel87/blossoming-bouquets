@@ -9,7 +9,7 @@ class Category(models.Model):
 
     class Meta:
         """
-        Method to display category model as categories in admin view.
+        Method to display category model name as categories in admin view.
         """
         verbose_name_plural = 'Categories'
 
