@@ -186,6 +186,14 @@ input[name='q']::placeholder {
     justify-content: center;
 }
 
+.logo-img-lg {
+    width: 21%;
+}
+
+.logo-img-md {
+    width: 10%;
+}
+
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
