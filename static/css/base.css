@@ -177,13 +177,13 @@ input[name='q']::placeholder {
 }
 
 .individual-bouquets {
-    width: 300px;
-    height: 400px;
+    width: 250px;
+    height: 350px;
 }
 
-.bouquet-names,
-.bouquet-prices {
-    width: 200px;
+.bouquet-img-center {
+    display: flex;
+    justify-content: center;
 }
 
 /* ------------------------------- bootstrap toasts */
