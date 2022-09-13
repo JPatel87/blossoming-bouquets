@@ -14,6 +14,29 @@ def all_bouquets(request):
 
     bouquets = Bouquet.objects.all()
     query = None
+    categories = None
+    sort = None
+    direction = None
+
+    if request.GET:
+        if 'sort' in request.GET:
+            sortkey = request.GET['sort']
+            sort = sortkey
+            if sortkey == 'name':
+                sortkey = 'lower_name'
+                products = products.annotate(lower_name=Lower('name'))
+            if sortkey == 'category':
+                sortkey = 'category__name'
+            if 'direction' in request.GET:
+                direction = request.GET['direction']
+                if direction == 'desc':
+                    sortkey = f'-{sortkey}'
+            bouquets = bouquets.order_by(sortkey)
+            
+        if 'category' in request.GET:
+            categories = request.GET['category'].split(',')
+            bouquets = bouquets.filter(category__name__in=categories)
+            categories = Category.objects.filter(name__in=categories)
 
     if 'q' in request.GET:
         query = request.GET['q']
@@ -24,9 +47,12 @@ def all_bouquets(request):
         queries = Q(name__icontains=query) | Q(description__icontains=query)
         bouquets = bouquets.filter(queries)
     
+    current_sorting = f'{sort}_{direction}'
+
     context = {
         'bouquets': bouquets,
         'search_term': query,
+        'current_sorting': current_sorting,
     }
 
     return render(request, 'bouquets/bouquets.html', context)
