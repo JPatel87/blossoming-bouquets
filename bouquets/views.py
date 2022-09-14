@@ -39,20 +39,23 @@ def all_bouquets(request):
             bouquets = bouquets.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
 
-    if 'q' in request.GET:
-        query = request.GET['q']
-        if not query:
-            messages.error(request, "You didn't enter any search criteria!")
-            return redirect(reverse('bouquets'))
-            
-        queries = Q(name__icontains=query) | Q(description__icontains=query)
-        bouquets = bouquets.filter(queries)
+        if 'q' in request.GET:
+            query = request.GET['q']
+            if not query:
+                messages.error(request, "You didn't enter any search criteria!")
+                return redirect(reverse('bouquets'))
+                
+            queries = Q(name__icontains=query) | Q(description__icontains=query)
+            bouquets = bouquets.filter(queries)
     
     current_sorting = f'{sort}_{direction}'
+
+    print('categories', categories)
 
     context = {
         'bouquets': bouquets,
         'search_term': query,
+        'current_categories': categories,
         'current_sorting': current_sorting,
     }
 

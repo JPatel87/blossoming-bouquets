@@ -18,7 +18,7 @@
                     {% if bouquet.image %}
                         <p class="mb-2 text-center d-md-none text-capitalize"><strong>{{ bouquet.name }}</strong></p>
                         <a href="{{ bouquet.image.url }}" target="_blank" class="bouquet-img-center">
-                            <img class="card-img-top img-fluid individual-bouquets rounded-lg" src="{{ bouquet.image.url }}" alt="{{ bouquet.name }}">
+                            <img class="card-img-top img-fluid individual-bouquets rounded-lg mt-3" src="{{ bouquet.image.url }}" alt="{{ bouquet.name }}">
                         </a>
                         {% else %}
                         <a href="">
@@ -32,7 +32,7 @@
                     <p class="mb-0 text-md-left text-center d-none d-md-block text-capitalize"><strong>{{ bouquet.name }}</strong></p>
                     <p class="lead mb-0 font-weight-bold text-pink text-md-left text-center">£{{ bouquet.price }}</p>
                     {% if bouquet.category %}
-                    <p class="small mt-1 mb-0">
+                    <p class="small mt-1 mb-0 text-md-left text-center">
                         <a class="text-muted" href="{% url 'bouquets' %}?category={{ bouquet.category.name }}">
                             <i class="fas fa-tag mr-1"></i>{{ bouquet.category.name }}
                         </a>
