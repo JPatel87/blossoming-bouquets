@@ -1,8 +1,10 @@
+"""Imports from django."""
 from decimal import Decimal
 from django.conf import settings
 
 
 def bag_contents(request):
+    """ Function to renders the bag contents. """
 
     bag_items = []
     total = 0

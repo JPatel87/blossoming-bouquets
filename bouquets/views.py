@@ -2,8 +2,8 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
-from .models import Category, Bouquet
 from django.db.models.functions import Lower
+from .models import Category, Bouquet
 
 
 def all_bouquets(request):
@@ -33,7 +33,7 @@ def all_bouquets(request):
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
             bouquets = bouquets.order_by(sortkey)
-            
+
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
             bouquets = bouquets.filter(category__name__in=categories)
@@ -44,10 +44,10 @@ def all_bouquets(request):
             if not query:
                 messages.error(request, "You didn't enter any search criteria!")
                 return redirect(reverse('bouquets'))
-                
+
             queries = Q(name__icontains=query) | Q(description__icontains=query)
             bouquets = bouquets.filter(queries)
-    
+
     current_sorting = f'{sort}_{direction}'
 
     print('categories', categories)
