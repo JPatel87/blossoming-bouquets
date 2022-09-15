@@ -1,4 +1,4 @@
-"""Imports from django and the bouquet model."""
+"""Imports from django and the bouquet and category model."""
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
