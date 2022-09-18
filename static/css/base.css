@@ -100,18 +100,18 @@ h1 {
     color: white;
 }
 
-.btn-outline-grey {
-    background: white;
-    color: #666666 !important; /* use important to override link colors for <a> elements */
-    border: 1px solid #666666;
-}
+/* .btn-outline-grey {
+    background: #78866b;
+    color: white !important; /* use important to override link colors for <a> elements */
+    /* border: 1px solid #666666; */
+/* } */
 
-.btn-outline-grey:hover,
+/* .btn-outline-grey:hover,
 .btn-outline-grey:active,
 .btn-outline-grey:focus {
-    background: #666666;
+    background: palevioletred;
     color: white !important;
-}
+} */ */
 
 .shop-now-button:hover,
 .shop-now-button:active,
@@ -148,12 +148,14 @@ h1 {
 	z-index: -1;
 }
 
-a.category-badge > span.badge  {
+a.category-badge > span.badge,
+.btn-shopping {
     background-color: #78866b !important;
     color: white;
 }
 
-a.category-badge > span.badge:hover {
+a.category-badge > span.badge:hover,
+.btn-shopping:hover {
     background: palevioletred !important;
     color: white !important;
 }
@@ -328,11 +330,16 @@ input[name='q']::placeholder {
 }
 
 .allauth-form-inner-content button:hover,
-.allauth-form-inner-content input[type='submit']:hover {	
+.allauth-form-inner-content {	
 	color: #fff;
     background-color: #222;
     border-color: #222;
 }
+
+input[type='submit']:hover {
+    box-shadow: 0 10px 20px #666666;
+}
+
 
 .allauth-form-inner-content a {
 	color: #17a2b8; /* text-info */
