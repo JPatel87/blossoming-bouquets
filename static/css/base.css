@@ -396,6 +396,16 @@ input[type='submit']:hover {
     color: palevioletred;
 }
 
+.form-row {
+    justify-content: center;
+}
+
+
+@media (max-width: 576px) {
+    .hero-text h1 {
+        font-size: 1.7rem;
+    }
+}
 
 @media (min-width: 577px) {
     .hero-text h1 {
@@ -403,18 +413,7 @@ input[type='submit']:hover {
     }
 }
 
-@media (max-width: 576px) {
-    .hero-text h1 {
-        font-size: 1.7rem;
-    }
-
-    /* .form-group {
-        width: 25%;
-    } */
-}
-
-/* pad the top a bit when navbar is collapsed on mobile */
-@media (max-width: 991px) {
+@media (min-width: 768px) {
     .header-container {
         padding-top: 170px;
     }
@@ -423,6 +422,17 @@ input[type='submit']:hover {
         height: calc(100vh - 170px);
     }
 }
+
+/* pad the top a bit when navbar is collapsed on mobile */
+/* @media (max-width: 991px) {
+    .header-container {
+        padding-top: 170px;
+    }
+
+    body {
+        height: calc(100vh - 170px);
+    }
+} */
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
