@@ -95,6 +95,11 @@ h1 {
     border-radius: 70px;
 }
 
+.shop-now-button:hover {
+    background: palevioletred;
+    color: white;
+}
+
 .btn-grey {
     background: #666666;
     color: white;
@@ -113,21 +118,21 @@ h1 {
     color: white !important;
 } */ */
 
-.shop-now-button:hover,
+/* .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #666666;
+    background: palevioletred;
     color: white;
-}
+} */
 
-.shop-now-button:hover,
+/* .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus {
     background: palevioletred;
-}
+} */
 
 .border-grey {
     border: 1px solid #666666 !important;
@@ -202,11 +207,11 @@ input[name='q']::placeholder {
 }
 
 .logo-img-lg {
-    width: 21%;
+    width: 18%;
 }
 
 .logo-img-md {
-    width: 10%;
+    width: 8%;
 }
 
 /* ------------------------------- bootstrap toasts */
@@ -392,35 +397,20 @@ input[type='submit']:hover {
 }
 
 
-
-/* fixed top navbar only on medium and up */
-@media (min-width: 992px) {
-    .fixed-top-desktop-only {
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 1030;
-    }
-
-    .header-container {
-        padding-top: 164px;
+@media (min-width: 577px) {
+    .hero-text h1 {
+        font-size: 3rem;
     }
 }
 
-/* fixed top navbar only on medium and up */
-@media (min-width: 992px) {
-    .fixed-top-desktop-only {
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 1030;
+@media (max-width: 576px) {
+    .hero-text h1 {
+        font-size: 1.7rem;
     }
 
-    .header-container {
-        padding-top: 164px;
-    }
+    /* .form-group {
+        width: 25%;
+    } */
 }
 
 /* pad the top a bit when navbar is collapsed on mobile */
@@ -434,19 +424,20 @@ input[type='submit']:hover {
     }
 }
 
-@media (max-width: 576px) {
-    .hero-text h1 {
-        font-size: 1.7rem;
-    }
-}
-
-@media (min-width: 577px) {
-    .hero-text h1 {
-        font-size: 3rem;
-    }
-}
-
+/* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .header-container {
+        padding-top: 164px;
+    }
+
     .hero-text h1 {
         font-size: 3.5rem;
     }
