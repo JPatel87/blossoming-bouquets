@@ -14,10 +14,10 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col text-center mt-3 mt-md-5">
-                <h3 class="text-green"><strong>Bouquets</strong></h3>
+                <h3 class="text-grey"><strong>Bouquets</strong></h3>
                 {% for c in current_categories %}
                     <a class="category-badge text-decoration-none text-uppercase" href="{% url 'bouquets' %}?category={{ c.name }}">
-                        <span class="p-2 mt-2 badge badge-light rounded-0 border">{{ c.name }}</span>
+                        <span class="p-2 mt-2 mr-2 badge badge-light rounded-lg border">{{ c.name }}</span>
                     </a>
                 {% endfor %}
                 <hr class="w-50 mb-1">
