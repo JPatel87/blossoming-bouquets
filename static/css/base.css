@@ -213,17 +213,14 @@ input[name='q']::placeholder {
     width: 8%;
 }
 
-.bag-img-container {
-    height: 250px;
-    overflow: hidden;
-    position: relative;
+.input-group {
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: center;
 }
 
-.bag-img {
-    display: block;
-    position: absolute;
-    top: -50px;
-    width: 100%;
+.bag-quantity {
+    min-width: 65% !important;
 }
 
 /* ------------------------------- bootstrap toasts */
@@ -292,15 +289,6 @@ input[name='q']::placeholder {
     height: 100px;
     overflow-x: hidden;
     overflow-y: auto;
-}
-
-/* -------------------------------- Media Queries */
-
-/* Slightly larger container on xl screens */
-@media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
-  }
 }
 
 /* Allauth form formatting */
@@ -423,15 +411,98 @@ input[type='submit']:hover {
 }
 
 
-@media (max-width: 576px) {
+/* -------------------------------- Media Queries */
+
+@media (max-width: 360px) {
+    .bag-img-container {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        height: 90px;
+    }
+    
+    .bag-img {
+        display: block;
+        position: absolute;
+        top: -10px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 361px) {
     .hero-text h1 {
         font-size: 1.7rem;
+    }
+
+    .bag-img-container {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        height: 100px;
+    }
+    
+    .bag-img {
+        display: block;
+        position: absolute;
+        top: -10px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 400px) {
+    .bag-img-container {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        height: 180px;
+    }
+    
+    .bag-img {
+        display: block;
+        position: absolute;
+        top: -10px;
+        width: 100%;
     }
 }
 
 @media (min-width: 577px) {
     .hero-text h1 {
         font-size: 3rem;
+    }
+
+    .bag-img-container {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        height: 200px;
+    }
+    
+    .bag-img {
+        display: block;
+        position: absolute;
+        top: -10px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 767px) {
+    .bag-img-container {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        height: 220px;
+    }
+    
+    .bag-img {
+        display: block;
+        position: absolute;
+        top: -10px;
+        width: 100%;
+    }
+
+    .bag-quantity {
+        min-width: 40% !important;
+        max-width: 40% !important;
     }
 }
 
@@ -463,4 +534,30 @@ input[type='submit']:hover {
     .hero-text h1 {
         font-size: 3.5rem;
     }
+
+    .bag-img-container {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        height: 300px;
+    }
+    
+    .bag-img {
+        display: block;
+        position: absolute;
+        top: -10px;
+        width: 100%;
+    }
+
+    .bag-quantity {
+        min-width: 30% !important;
+        max-width: 30% !important;
+    }
 }
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+    .container {
+      max-width: 80%;
+    }
+  }
