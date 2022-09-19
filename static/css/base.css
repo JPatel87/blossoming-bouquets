@@ -155,12 +155,16 @@ h1 {
 
 a.category-badge > span.badge,
 .btn-shopping {
-    background-color: #78866b !important;
+    background-color: #78866b;
     color: white;
 }
 
-a.category-badge > span.badge:hover,
 .btn-shopping:hover {
+    background-color: #666666;
+    color: white;
+}
+
+a.category-badge > span.badge:hover {
     background: palevioletred !important;
     color: white !important;
 }
@@ -341,10 +345,15 @@ input[name='q']::placeholder {
     border-color: #222;
 }
 
-input[type='submit']:hover {
-    box-shadow: 0 10px 20px #666666;
+input[type='submit'] {
+    background-color: palevioletred;
+    color: white;
 }
 
+input[type='submit']:hover {
+    box-shadow: 0 10px 20px #666666;
+    color: white;
+}
 
 .allauth-form-inner-content a {
 	color: #17a2b8; /* text-info */
@@ -413,26 +422,16 @@ input[type='submit']:hover {
     }
 }
 
-@media (min-width: 768px) {
+/* pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 991px) {
     .header-container {
-        padding-top: 170px;
+        padding-top: 150px;
     }
 
     body {
-        height: calc(100vh - 170px);
+        height: calc(100vh - 150px);
     }
 }
-
-/* pad the top a bit when navbar is collapsed on mobile */
-/* @media (max-width: 991px) {
-    .header-container {
-        padding-top: 170px;
-    }
-
-    body {
-        height: calc(100vh - 170px);
-    }
-} */
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {

@@ -16,7 +16,7 @@
             <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
                 <div class="image-container my-4">
                     {% if bouquet.image %}
-                        <p class="mb-2 text-center d-md-none text-capitalize"><strong>{{ bouquet.name }}</strong></p>
+                        <p class="mb-2 text-center d-md-none text-capitalize mt-0"><strong>{{ bouquet.name }}</strong></p>
                         <a href="{{ bouquet.image.url }}" target="_blank" class="bouquet-img-center">
                             <img class="card-img-top img-fluid individual-bouquets rounded-lg mt-3" src="{{ bouquet.image.url }}" alt="{{ bouquet.name }}">
                         </a>
@@ -29,7 +29,7 @@
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="bouquet-details-container mb-5 mt-md-5">
-                    <p class="mb-0 text-md-left text-center d-none d-md-block text-capitalize"><strong>{{ bouquet.name }}</strong></p>
+                    <p class="mb-1 text-md-left text-center d-none d-md-block text-capitalize"><strong>{{ bouquet.name }}</strong></p>
                     <p class="lead mb-0 font-weight-bold text-pink text-md-left text-center">£{{ bouquet.price }}</p>
                     {% if bouquet.category %}
                     <p class="small mt-1 mb-0 text-md-left text-center">
@@ -42,9 +42,9 @@
                     <form class="form" action="{% url 'add_to_bag' bouquet.id %}" method="POST">
                         {% csrf_token %}
                         <div class="form-row d-sm-flex d-md-block">
-                            <div class="col-6 col-sm-4 col-md-6">
+                            <div class="col-12 col-sm-6 col-md-12">
                                 <p class="mt-3 text-md-left text-center"><strong>Quantity:</strong></p>
-                                <div class="form-group">
+                                <div class="form-group d-flex">
                                     <div class="input-group">
                                         <div class="input-group-prepend">
                                             <button class="decrement-qty btn btn-black rounded-0" 
@@ -66,17 +66,20 @@
                                                 </span>
                                             </button>
                                         </div>
+                                        <div>
+                                            <input type="submit" class="btn btn-add rounded-lg text-uppercase" value="Add to Bag">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12">
-                                <a href="{% url 'bouquets' %}" class="btn btn-shopping rounded-lg mt-5 mr-2">
+                            <div class="col-12 text-center text-md-left">
+                                <a href="{% url 'bouquets' %}" class="btn btn-shopping rounded-lg mt-2 mr-2">
                                     <span class="icon">
                                         <i class="fas fa-chevron-left"></i>
                                     </span>
                                     <span class="text-uppercase">Keep Shopping</span>
                                 </a>
-                                <input type="submit" class="btn btn-shopping rounded-lg text-uppercase mt-5" value="Add to Bag">
+                                <!-- <input type="submit" class="btn btn-shopping rounded-lg text-uppercase mt-5" value="Add to Bag"> -->
                             </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                         </div>
