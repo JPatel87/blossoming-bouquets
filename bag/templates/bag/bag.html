@@ -36,10 +36,9 @@
                             <tbody>
                             {% for item in bag_items %}
                                 <tr>
-                                    <!-- <th scope="row"></th> -->
                                     <th scope="row" class="w-25 text-center">
-                                        <div class="test">
-                                            <img class="img-fluid test-2" src="{{ item.bouquet.image.url }}">
+                                        <div class="bag-img-container rounded-lg">
+                                            <img class="img-fluid bag-img" src="{{ item.bouquet.image.url }}">
                                         </div>
                                     </th>
                                     <td class="py-3">
@@ -99,13 +98,13 @@
                                 </tr>
                                 <tr>
                                     <td colspan="12" class="text-right">
-                                        <a href="{% url 'bouquets' %}" class="btn btn-grey test-3 rounded-lg btn-lg mr-3">
+                                        <a href="{% url 'bouquets' %}?category=Wedding,Any%20occasion,Basket" class="btn btn-grey grey-shadow rounded-lg btn-lg mr-3">
                                             <span class="icon">
                                                 <i class="fas fa-chevron-left"></i>
                                             </span>
                                             <span class="text-uppercase">Keep Shopping</span>
                                         </a>
-                                        <a href="" class="btn btn-green test-3 rounded-lg btn-lg">
+                                        <a href="" class="btn btn-green grey-shadow rounded-lg btn-lg">
                                             <span class="text-uppercase">Secure Checkout</span>
                                             <span class="icon">
                                                 <i class="fas fa-lock"></i>

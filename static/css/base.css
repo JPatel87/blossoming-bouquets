@@ -154,14 +154,8 @@ h1 {
 	z-index: -1;
 }
 
-a.category-badge > span.badge,
-.btn-shopping {
+a.category-badge > span.badge {
     background-color: #78866b;
-    color: white;
-}
-
-.btn-shopping:hover {
-    background-color: #666666;
     color: white;
 }
 
@@ -219,13 +213,13 @@ input[name='q']::placeholder {
     width: 8%;
 }
 
-.test {
+.bag-img-container {
     height: 250px;
     overflow: hidden;
     position: relative;
 }
 
-.test-2 {
+.bag-img {
     display: block;
     position: absolute;
     top: -50px;
@@ -360,7 +354,7 @@ input[name='q']::placeholder {
 }
 
 input[type='submit'] {
-    background-color: palevioletred;
+    background-color: #78866b;
     color: white;
 }
 
@@ -369,7 +363,7 @@ input[type='submit']:hover {
     color: white;
 }
 
-.test-3:hover {
+.grey-shadow:hover {
     box-shadow: 0 10px 20px #666666;
     color: white;
 }
