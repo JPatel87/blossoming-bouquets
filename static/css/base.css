@@ -218,6 +218,10 @@ input[name='q']::placeholder {
     width: 8%;
 }
 
+.bag-imgs {
+    max-width: 60%;
+}
+
 /* ------------------------------- bootstrap toasts */
 
 .message-container {

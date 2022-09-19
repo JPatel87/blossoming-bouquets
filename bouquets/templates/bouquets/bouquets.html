@@ -42,7 +42,7 @@
                     <div class="col-12 col-md-6 order-md-first">
                         <p class="mt-3 text-center text-md-left text-grey">
                             {% if search_term or current_categories or current_sorting != 'None_None' %}
-                                <span><a class="text-grey btt-link text-decoration-none" href="{% url 'bouquets' %}">Bouquets Home</a> | </span>
+                                <span><a class="btt-link text-decoration-none" href="{% url 'bouquets' %}?category=Wedding,Any%20occasion,Basket"><strong>Bouquets Home</strong></a> | </span>
                             {% endif %}
                             {{ bouquets|length }} Bouquets{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
                         </p>
