@@ -1,5 +1,7 @@
 """Imports from django."""
 from django.shortcuts import render, redirect, reverse, HttpResponse
+from django.contrib import messages
+from bouquets.models import Bouquet
 
 
 def view_bag(request):
@@ -11,6 +13,7 @@ def view_bag(request):
 def add_to_bag(request, item_id):
     """ Add quantity of the specified bouquet to bag. """
 
+    bouquet = Bouquet.objects.get(pk=item_id)
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
     bag = request.session.get('bag', {})
@@ -19,6 +22,7 @@ def add_to_bag(request, item_id):
         bag[item_id] += quantity
     else:
         bag[item_id] = quantity
+        messages.success(request, f'Added {bouquet.name} to your bag')
 
     request.session['bag'] = bag
     return redirect(redirect_url)
