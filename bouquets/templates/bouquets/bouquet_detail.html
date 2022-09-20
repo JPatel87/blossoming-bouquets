@@ -16,7 +16,7 @@
             <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
                 <div class="image-container my-4">
                     {% if bouquet.image %}
-                        <p class="mb-2 text-center d-md-none text-capitalize mt-0"><strong>{{ bouquet.name }}</strong></p>
+                        <p class="mb-2 text-center d-md-none mt-0"><strong>{{ bouquet.name }}</strong></p>
                         <a href="{{ bouquet.image.url }}" target="_blank" class="bouquet-img-center">
                             <img class="card-img-top img-fluid individual-bouquets rounded-lg mt-3" src="{{ bouquet.image.url }}" alt="{{ bouquet.name }}">
                         </a>
@@ -29,7 +29,7 @@
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="bouquet-details-container mb-5 mt-md-5">
-                    <p class="mb-1 text-md-left text-center d-none d-md-block text-capitalize"><strong>{{ bouquet.name }}</strong></p>
+                    <p class="mb-1 text-md-left text-center d-none d-md-block"><strong>{{ bouquet.name }}</strong></p>
                     <p class="lead mb-0 font-weight-bold text-pink text-md-left text-center">£{{ bouquet.price }}</p>
                     {% if bouquet.category %}
                     <p class="small mt-1 mb-0 text-md-left text-center">

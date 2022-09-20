@@ -41,7 +41,7 @@
                                         </div>
                                     </th> -->
                                     <td class="py-3 text-center">
-                                        <p class="my-0 text-grey"><strong>{{ item.bouquet.name }}</strong></p>
+                                        <p class="mt-0 mb-md-2 text-grey">{{ item.bouquet.name }}</p>
                                         <!-- <p class="my-0 text-grey small text-muted">SKU: {{ item.bouquet.sku|upper }}</p> -->
                                         <div class="bag-img-container rounded-lg w-75 mx-auto">
                                             <img class="img-fluid bag-img" src="{{ item.bouquet.image.url }}">
@@ -120,7 +120,7 @@
                     </div>
                 {% else %}
                     <p class="lead mb-5">Your bag is empty.</p>
-                    <a href="{% url 'bouquets' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                    <a href="{% url 'bouquets' %}?category=Wedding,Any%20occasion,Basket" class="btn btn-grey grey-shadow rounded-lg btn-md p-1 p-sm-2 mr-sm-2 mb-3 mb-sm-none">
                         <span class="icon">
                             <i class="fas fa-chevron-left"></i>
                         </span>
