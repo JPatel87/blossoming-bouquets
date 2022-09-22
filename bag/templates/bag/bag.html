@@ -15,7 +15,7 @@
     <div class="container mb-2">
         <div class="row">
             <div class="col mb-3">
-                <h3 class="text-center mt-3 mt-md-5"><strong>Shopping Bag</strong></h3>
+                <h2 class="logo-font text-center mt-3 mt-md-5">Shopping Bag</h2>
                 <hr class="w-50 mb-1">
             </div>
         </div>
@@ -35,22 +35,17 @@
                             <tbody>
                             {% for item in bag_items %}
                                 <tr>
-                                    <!-- <th scope="row" class="w-25 text-center">
-                                        <div class="bag-img-container rounded-lg">
-                                            <img class="img-fluid bag-img" src="{{ item.bouquet.image.url }}">
-                                        </div>
-                                    </th> -->
-                                    <td class="py-3 text-center">
+                                    <td class="py-2 text-center">
                                         <p class="mt-0 mb-md-2 text-grey">{{ item.bouquet.name }}</p>
                                         <!-- <p class="my-0 text-grey small text-muted">SKU: {{ item.bouquet.sku|upper }}</p> -->
-                                        <div class="bag-img-container rounded-lg w-75 mx-auto">
-                                            <img class="img-fluid bag-img" src="{{ item.bouquet.image.url }}">
+                                        <div class="bag-img-container rounded-lg w-75 mx-auto pb-0">
+                                            <img class="img-fluid bag-img rounded-lg" src="{{ item.bouquet.image.url }}">
                                         </div>
                                     </td>
-                                    <td class="py-3 text-center">
+                                    <td class="py-2 text-center">
                                         <p class="my-0 text-grey mr-2">£{{ item.bouquet.price }}</p>
                                     </td>
-                                    <td class="py-3">
+                                    <td class="py-2">
                                         <form class="form update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">
                                             {% csrf_token %}
                                             <div class="form-group">
@@ -82,7 +77,7 @@
                                         <a class="remove-item text-danger float-sm-right pr-md-5" id="remove_{{ item.item_id }}"><small>Remove</small></a>
                                         </div>
                                     </td>
-                                    <td class="py-3">
+                                    <td class="py-2">
                                         <p class="my-0 text-center ml-2">£{{ item.bouquet.price | calc_subtotal:item.quantity }}</p>
                                     </td>
                                 </tr>
@@ -107,7 +102,7 @@
                                             </span>
                                             <span class="text-uppercase">Keep Shopping</span>
                                         </a>
-                                        <a href="" class="btn btn-green grey-shadow rounded-lg btn-md p-1 p-sm-2 mb-2 mb-sm-none">
+                                        <a href="{% url 'checkout' %}" class="btn btn-green grey-shadow rounded-lg btn-md p-1 p-sm-2 mb-2 mb-sm-none">
                                             <span class="text-uppercase">Secure Checkout</span>
                                             <span class="icon">
                                                 <i class="fas fa-lock"></i>

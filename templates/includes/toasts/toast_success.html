@@ -20,10 +20,14 @@
                 {% for item in bag_items %}
                     <div class="row">
                         <div class="col-3 my-1">
-                            <img class="w-100 rounded-lg" src="{{ item.bouquet.image.url }}">
+                            {% if item.bouquet.image %}
+                                <img class="w-100 rounded-lg" src="{{ item.bouquet.image.url }}" alt="{{ item.bouquet.name }}">
+                            {% else %}
+                                <img class="w-100 rounded-lg" src="{{ MEDIA_URL }}image-coming-soon.jpg" alt="{{ bouquet.name }}">
+                            {% endif %}
                         </div>
                         <div class="col-9">
-                            <p class="my-0">{{ item.bouquet.name }}</p>
+                            <p class="my-0"><strong>{{ item.bouquet.name }}</strong></p>
                             <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
                         </div>
                     </div>
@@ -40,10 +44,16 @@
                             Spend <strong>£{{ free_delivery_delta }}</strong> more to get free next day delivery!
                         </p>
                     {% endif %}
-                    <a href="{% url 'view_bag' %}" class="btn btn-green grey-shadow btn-block rounded-0">
-                        <span class="text-uppercase">Go To Secure Checkout</span>
+                    <a href="{% url 'checkout' %}" class="btn btn-green grey-shadow btn-block rounded-0">
+                        <span class="text-uppercase">Secure Checkout</span>
                         <span class="icon">
                             <i class="fas fa-lock"></i>
+                        </span>
+                    </a>
+                    <a href="{% url 'view_bag' %}" class="btn btn-grey grey-shadow btn-block rounded-0">
+                        <span class="text-uppercase">View bag </span>
+                        <span class="icon">
+                            <i class="fas fa-shopping-bag fa-md"></i>
                         </span>
                     </a>
                 </div>
