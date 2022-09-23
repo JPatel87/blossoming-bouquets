@@ -39,7 +39,11 @@
                                         <p class="mt-0 mb-md-2 text-grey">{{ item.bouquet.name }}</p>
                                         <!-- <p class="my-0 text-grey small text-muted">SKU: {{ item.bouquet.sku|upper }}</p> -->
                                         <div class="bag-img-container rounded-lg w-75 mx-auto pb-0">
-                                            <img class="img-fluid bag-img rounded-lg" src="{{ item.bouquet.image.url }}">
+                                            {% if item.bouquet.image %}
+                                                <img class="img-fluid bag-img rounded-lg" src="{{ item.bouquet.image.url }}">
+                                            {% else %}
+                                                <img class="img-fluid bag-img rounded-lg" src="{{ MEDIA_URL }}image-coming-soon.jpg" alt="{{ bouquet.name }}">
+                                            {% endif %}
                                         </div>
                                     </td>
                                     <td class="py-2 text-center">
