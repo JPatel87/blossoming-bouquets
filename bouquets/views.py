@@ -80,9 +80,9 @@ def add_bouquet(request):
     if request.method == 'POST':
         form = BouquetForm(request.POST, request.FILES)
         if form.is_valid():
-            form.save()
+            bouquet = form.save()
             messages.success(request, 'Successfully added product!')
-            return redirect(reverse('add_bouquet'))
+            return redirect(reverse('bouquet_detail', args=[bouquet.id]))
         else:
             messages.error(request, 'Failed to add product. Please ensure the form is valid.')    
     
@@ -119,3 +119,11 @@ def edit_bouquet(request, bouquet_id):
     }
 
     return render(request, template, context)
+
+
+def delete_bouquet(request, bouquet_id):
+    """ Delete a product from the store """
+    bouquet = get_object_or_404(Bouquet, pk=bouquet_id)
+    bouquet.delete()
+    messages.success(request, 'Bouquet deleted!')
+    return redirect(reverse('bouquets'))
