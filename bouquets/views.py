@@ -95,3 +95,27 @@ def add_bouquet(request):
     }
 
     return render(request, template, context)
+
+
+def edit_bouquet(request, bouquet_id):
+    """ Edit a product in the store """
+    bouquet = get_object_or_404(Bouquet, pk=bouquet_id)
+    if request.method == 'POST':
+        form = BouquetForm(request.POST, request.FILES, instance=bouquet)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully updated product!')
+            return redirect(reverse('bouquet_detail', args=[bouquet.id]))
+        else:
+            messages.error(request, 'Failed to update product. Please ensure the form is valid.')
+    else:
+        form = BouquetForm(instance=bouquet)
+        messages.info(request, f'You are editing {bouquet.name}')
+
+    template = 'bouquets/edit_bouquet.html'
+    context = {
+        'form': form,
+        'bouquet': bouquet,
+    }
+
+    return render(request, template, context)
