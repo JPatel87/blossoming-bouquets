@@ -4,6 +4,7 @@ from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Category, Bouquet
+from .forms import BouquetForm
 
 
 def all_bouquets(request):
@@ -72,3 +73,14 @@ def bouquet_detail(request, bouquet_id):
     }
 
     return render(request, 'bouquets/bouquet_detail.html', context)
+
+
+def add_bouquet(request):
+    """ Add a product to the store """
+    form = BouquetForm()
+    template = 'bouquets/add_bouquet.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
