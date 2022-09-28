@@ -77,7 +77,18 @@ def bouquet_detail(request, bouquet_id):
 
 def add_bouquet(request):
     """ Add a product to the store """
-    form = BouquetForm()
+    if request.method == 'POST':
+        form = BouquetForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully added product!')
+            return redirect(reverse('add_bouquet'))
+        else:
+            messages.error(request, 'Failed to add product. Please ensure the form is valid.')    
+    
+    else:
+        form = BouquetForm()
+       
     template = 'bouquets/add_bouquet.html'
     context = {
         'form': form,
