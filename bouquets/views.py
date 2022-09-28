@@ -1,6 +1,7 @@
 """Imports from django and the bouquet and category model."""
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Category, Bouquet
@@ -75,8 +76,13 @@ def bouquet_detail(request, bouquet_id):
     return render(request, 'bouquets/bouquet_detail.html', context)
 
 
+@login_required
 def add_bouquet(request):
     """ Add a product to the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
     if request.method == 'POST':
         form = BouquetForm(request.POST, request.FILES)
         if form.is_valid():
@@ -97,8 +103,13 @@ def add_bouquet(request):
     return render(request, template, context)
 
 
+@login_required
 def edit_bouquet(request, bouquet_id):
     """ Edit a product in the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
     bouquet = get_object_or_404(Bouquet, pk=bouquet_id)
     if request.method == 'POST':
         form = BouquetForm(request.POST, request.FILES, instance=bouquet)
@@ -121,8 +132,13 @@ def edit_bouquet(request, bouquet_id):
     return render(request, template, context)
 
 
+@login_required
 def delete_bouquet(request, bouquet_id):
     """ Delete a product from the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
     bouquet = get_object_or_404(Bouquet, pk=bouquet_id)
     bouquet.delete()
     messages.success(request, 'Bouquet deleted!')
