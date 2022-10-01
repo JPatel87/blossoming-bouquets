@@ -54,7 +54,7 @@
                             <div class="card h-100 border-0">
                                 {% if bouquet.image %}
                                 <a href="{% url 'bouquet_detail' bouquet.id %}" class="bouquet-img-center">
-                                    <img class="card-img-top img-fluid bouquets rounded-lg" src="{{ bouquet.image.url }}" alt="{{ bouquet.name }}">
+                                    <img class="card-img-top img-fluid bouquets rounded-lg" src="{{ MEDIA_URL }}bouquet.image.url }}" alt="{{ bouquet.name }}">
                                 </a>
                                 {% else %}
                                 <a href="{% url 'bouquet_detail' bouquet.id %}" class="bouquet-img-center">
