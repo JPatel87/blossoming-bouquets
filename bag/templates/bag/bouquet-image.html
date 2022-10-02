@@ -1,5 +1,0 @@
-{% if item.bouquet.image %}
-<img class="img-fluid rounded" src="{{ item.bouquet.image.url }}" alt="{{ item.bouquet.name }}">
-{% else %}
-<img class="img-fluid rounded" src="{{ MEDIA_URL }}image-coming-soon.jpg" alt="{{ item.bouquet.name }}">
-{% endif %}
