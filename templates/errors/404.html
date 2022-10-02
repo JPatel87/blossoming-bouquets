@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="hero">
+        <div class="hero-text p-4">
+            <h1>This page isn't available</h1>
+            <a href="{% url 'bouquets' %}?category=Wedding,Any%20occasion,Basket" class="shop-now-button btn btn-lg rounded-lg text-uppercase py-3"><strong>Shop Now</strong></a>
+        </div>
+    </div>
+{% endblock %}
