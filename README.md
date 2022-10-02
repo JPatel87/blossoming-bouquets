@@ -97,7 +97,7 @@ There are two fonts used in this site which were sourced from [Google fonts](htt
 | Image | Description |
 | --- | --- |
 | ![logo and page heading font](readme_documents/typography/logo-heading-font.png) | Logo and page heading font - Sacramento (cursive), Regular 400 |
-| ![body text font](readme_documents/typography/body-text.png) | Body text font - Montserrat (sans-serif), ExtraLight 200 |
+| ![body font](readme_documents/typography/body-text.png) | Body font - Montserrat (sans-serif), ExtraLight 200 |
 
 ### Imagery
 
