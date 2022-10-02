@@ -92,7 +92,12 @@ The colour scheme used in this site consist of colours; #666666 (grey), #db7093 
 
 ### Typography 
 
-There are two fonts used in this site which were sourced from [Google fonts](https://fonts.google.com/). Playfair Display (serif) has been used for the site logo, slogan and page headings and Montserrat (sans-serif) for the site body text. The combination of these two fonts give the site a minimalistic and modern appearance.
+There are two fonts used in this site which were sourced from [Google fonts](https://fonts.google.com/). Sacramento (cursive) has been used for the site logo and page headings and Montserrat (sans-serif) for the site body text. The combination of these two fonts give the site a and elegant and minimalistic appearance.
+
+| Image | Description |
+| --- | --- |
+| ![logo and page heading font](readme_documents/typography/logo-heading-font.png) | Logo and page heading font - Sacramento (cursive), Regular 400 |
+| ![body text font](readme_documents/typography/body-text.png) | Body text font - Montserrat (sans-serif), ExtraLight 200 |
 
 ### Imagery
 
