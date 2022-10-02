@@ -92,7 +92,7 @@ The colour scheme used in this site consist of colours; #666666 (grey), #db7093 
 
 ### Typography 
 
-There are two fonts used in this site which were sourced from [Google fonts](https://fonts.google.com/). Sacramento (cursive) has been used for the site logo and page headings and Montserrat (sans-serif) for the site body text. The combination of these two fonts give the site a and elegant and minimalistic appearance.
+There are two fonts used in this site which were sourced from [Google fonts](https://fonts.google.com/). Sacramento (cursive) has been used for the site logo and page headings and Montserrat (sans-serif) for the site body text. The combination of these two fonts give the site an elegant and minimalistic appearance.
 
 | Image | Description |
 | --- | --- |
@@ -100,6 +100,16 @@ There are two fonts used in this site which were sourced from [Google fonts](htt
 | ![body font](readme_documents/typography/body-text.png) | Body font - Montserrat (sans-serif), ExtraLight 200 |
 
 ### Imagery
+
+The logo image has been created using a [Canva](https://www.canva.com/en_gb/) template. It was chosen to convey the purpose of the site; flower bouquets, in a minamalistic manner. The same image has been used to generate a favicon for the site, which was created using [Favicon.io](https://favicon.io/favicon-converter/)
+
+The hero image and the bouquet images used for the site have been sourced from [Pexels](https://www.pexels.com/). 
+
+The hero image was selected as it effectively portrays to the user the intent of the site and fits in well with the site colour scheme. The bouquet images selected, have all have been taken on a dark grey background (other than wedding bouquet images) and in the same pose, which adds a level of consistency to the site. 
+
+Images were compressed using [Tiny png](https://tinypng.com/) in order to improve site load times for better user experience. 
+
+[Font awesome](https://fontawesome.com/) icons have been used for navigation links (account, shopping bag, search), social media links (email and facebook) and key button links (keep shopping, checkout and view bag)
 
 ## Testing 
 
