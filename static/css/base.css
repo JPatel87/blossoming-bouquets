@@ -576,10 +576,6 @@ a.category-badge > span.badge:hover,
     body {
         height: calc(100vh - 150px);
     }
-
-    .hero-text.p-4 {
-        font-size: 2rem;
-    }
 }
 
 /* fixed top navbar only on medium and up */
