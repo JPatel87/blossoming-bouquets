@@ -72,6 +72,16 @@ In this project, xxxx applications (apps) have been created;
 
 Below are links to the initial wireframes created for this project. During development, plans were slightly modified in order to improve the user experience. 
 
+* [Home page](readme_documents/wireframes/home-page-wireframe.png)
+* [Bouquets page](readme_documents/wireframes/bouquets-page-wireframe.png)
+* [Blog page](readme_documents/wireframes/blog-page-wireframe.png)
+* [Blog page expanded](readme_documents/wireframes/blog-expanded-page-wireframe.png)
+* [Contact us page](readme_documents/wireframes/contact-us-page-wireframe.png)
+* [Sign up page](readme_documents/wireframes/sign-up-page-wireframe.png)
+* [Login page](readme_documents/wireframes/login-page-wireframe.png)
+* [Basket page](readme_documents/wireframes/basket-page-wireframe.png)
+* [Checkout page](readme_documents/wireframes/checkout-page-wireframe.png)
+
 ## Surface
 
 ### Colour scheme 
