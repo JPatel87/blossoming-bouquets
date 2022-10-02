@@ -77,7 +77,7 @@ Below are links to the initial wireframes created for this project. During devel
 * [Blog page](readme_documents/wireframes/blog-page-wireframe.png)
 * [Blog page expanded](readme_documents/wireframes/blog-expanded-page-wireframe.png)
 * [Contact us page](readme_documents/wireframes/contact-us-page-wireframe.png)
-* [Sign up page](readme_documents/wireframes/sign-up-page-wireframe.png)
+* [Sign up page](readme_documents/wireframes/signup-page-wireframe.png)
 * [Login page](readme_documents/wireframes/login-page-wireframe.png)
 * [Basket page](readme_documents/wireframes/basket-page-wireframe.png)
 * [Checkout page](readme_documents/wireframes/checkout-page-wireframe.png)
@@ -86,7 +86,9 @@ Below are links to the initial wireframes created for this project. During devel
 
 ### Colour scheme 
 
-The colour scheme used in this site consist of colours; xxxxxxxxxx. These colours give the site a feminine yet stylish look. 
+The colour scheme used in this site consist of colours; #666666 (grey), #db7093 (pink), #ffffff (white), #78866b (grey-green). These colours give a fresh yet minimalist look. 
+
+![Colour scheme](readme_documents/colour-scheme/colour-scheme.png)
 
 ### Typography 
 
