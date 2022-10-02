@@ -161,12 +161,17 @@ The following sites were used to assist in this project:
 
 ### Content
 
-The following sites where used to obtain information about salon services and site styles.
+The following sites were used to obtain information about flower shops:
+
+* [Bunches](https://www.bunches.co.uk)
+* [Blossoming gifts](https://www.blossominggifts.com)
+
 
 ### Media 
 
 All images for this project were taken from the below sites:
 
+* Logo - [Canva](https://www.canva.com/logos/)
 * Hero image and bouquets - [Pexels](https://www.pexels.com/)
 * Image coming soon - [Freepix](https://www.freepik.com)
 
