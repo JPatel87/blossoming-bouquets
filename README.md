@@ -153,6 +153,11 @@ A thorough walkthrough of the deployment steps taken for this project can be vie
 
 The languages used for this project are: 
 
+- HTML 
+- CSS
+- Javacript
+- Python 
+
 The frameworks, libraries, databases and programs used for this project are:
 
 ### Resources
@@ -165,7 +170,6 @@ The following sites were used to obtain information about flower shops:
 
 * [Bunches](https://www.bunches.co.uk)
 * [Blossoming gifts](https://www.blossominggifts.com)
-
 
 ### Media 
 
