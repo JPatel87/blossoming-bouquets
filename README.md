@@ -160,11 +160,37 @@ The languages used for this project are:
 - Javacript
 - Python 
 
-The frameworks, libraries, databases and programs used for this project are:
+The key frameworks, libraries, databases and programs used for this project are:
+
+- [Django](https://www.djangoproject.com/) - used as the python framework 
+- [Bootstrap version 4.6](https://getbootstrap.com/) - used for project styling and social media icons
+- [Google fonts](https://fonts.google.com/) - used to select project fonts
+- [Heroku Postgres](https://www.heroku.com/postgres) - used as the database after project was deployed and in production
+- [SQlite](https://www.sqlite.org/index.html) - used as the database before deployment to Heroku postgres and to perform unitests 
+- [Github](https://github.com/) - used for version control and project storage
+- [Gitpod](https://www.gitpod.io/blog/gitpod-launch) - used as the source code editor
+- [Heroku](https://www.heroku.com/) - used as the cloud based deployment platform
+- [Stripe](https://stripe.com/gb/payments) - used to handle secure payments
+- [Amazon Web Services S3](https://aws.amazon.com/free/?trk=d5254134-67ca-4a35-91cc-77868c97eedd&sc_channel=ps&s_kwcid=AL!4422!3!433803620861!e!!g!!amazon%20web%20services&ef_id=EAIaIQobChMIn-XCldTH-gIVsmDmCh004gB-EAAYASAAEgKK-fD_BwE:G:s&s_kwcid=AL!4422!3!433803620861!e!!g!!amazon%20web%20services) - used for cloud based storage of static and media files
+- [Lucidchart](https://www.lucidchart.com/pages/landing?utm_source=google&utm_medium=cpc&utm_campaign=_chart_en_tier1_mixed_search_brand_exact_&km_CPC_CampaignId=1490375427&km_CPC_AdGroupID=55688909257&km_CPC_Keyword=lucid%20chart&km_CPC_MatchType=e&km_CPC_ExtensionID=&km_CPC_Network=g&km_CPC_AdPosition=&km_CPC_Creative=442433236001&km_CPC_TargetID=kwd-55720648523&km_CPC_Country=9045963&km_CPC_Device=c&km_CPC_placement=&km_CPC_target=&gclid=Cj0KCQjwyYKUBhDJARIsAMj9lkGuAWT49rmauAUKPE1dZc32REnshWbCY-h0UoYogZ4mtAhFjn8IypsaAoYNEALw_wcB) - used to create the Entity Relationship Diagram (ERD)
+- [Favicon.io](https://favicon.io/favicon-generator/) - used to generate favicon
+- [Balsamiq](https://balsamiq.com/wireframes/?gclid=CjwKCAjw9-KTBhBcEiwAr19igzgSMCAHTuTIsTpGrtk-KZPATPmc7R0M9oo0VUs2jhgbGpmXmCnKSxoCstwQAvD_BwE) - used to create the wireframes
+- [Tiny png](https://tinypng.com/) - used to compress images.
+- [Color-hex](https://www.color-hex.com/user/add-palette.php) - used to create a colour palette
+- [PEP8 online](http://pep8online.com/) - used to check python code
+- [amiresponsive](https://ui.dev/amiresponsive) - used to generate responsive images of the site
+- [W3C Mark up Validation Service](https://validator.w3.org/) - used to validate html templates
+- [W3 CSS Validation Service](https://jigsaw.w3.org/css-validator/) - used to validate CSS stylesheet
 
 ### Resources
 
 The following sites were used to assist in this project:
+
+* [Stackoverflow](https://stackoverflow.com/) - used to resolve troubleshooting issues
+* [Codeinstitute](https://codeinstitute.net/full-stack-software-development-diploma/?utm_term=code%20institute&utm_campaign=CI+-+UK+-+Search+-+Brand&utm_source=adwords&utm_medium=ppc&hsa_acc=8983321581&hsa_cam=1578649861&hsa_grp=62188641240&hsa_ad=581730217381&hsa_src=g&hsa_tgt=kwd-319867646331&hsa_kw=code%20institute&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gclid=CjwKCAjwnZaVBhA6EiwAVVyv9F19a0Iyt9WIs12IIQEoad7khrICogE2M6ZFmKsMf-MpkNxtU55HGxoCE1QQAvD_BwE)  - how to set up and run an ecommerce site
+* [Coder-coder](https://coder-coder.com/) - how to add darker overlay to background image
+* [System 22](https://www.youtube.com/watch?v=LV3w60037EI) - how to add nav link underline hover effect
+* [Radu.link](https://radu.link/make-footer-stay-bottom-page-bootstrap/) - how to make footer stick to bottom of the page
 
 ### Content
 
