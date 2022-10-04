@@ -147,6 +147,8 @@ Lighthouse testing also carried out to review site performance and useability, t
 
 A thorough walkthrough of the deployment steps taken for this project can be viewed in the below document. 
 
+* [Deployment procedure](readme_documents/deployment/deployment_procedure.pdf)
+
 ## Credits
 
 ### Technologies 
