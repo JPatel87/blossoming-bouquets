@@ -38,7 +38,7 @@
 
 ### Project overview
 
-[This project is...]
+This project is a ficticious flower shop site selling flower bouquets and baskets for occasions such as birthdays and weddings. Clients are able to view bouquets, add them to a basket, review their basket and make a purchase. The customer is also given the chance to create an account where they would be able to perform the same actions as above but will also be able to view their past orders. 
 
 ### Project goals
 
