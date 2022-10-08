@@ -42,7 +42,7 @@ This project is a ficticious flower shop site selling flower bouquets and basket
 
 ### Project goals
 
-Below is a list of epics for this project which have been broken down into user stories. The implementation of these user stories have been planned and managed through the Github Kanban board tool. See the following link to the []().
+Below is a spreadsheet of epics for this project which have been broken down into user stories. The implementation of these user stories have been planned and managed through the Github Kanban board tool. See the following link to the []().
 
 ## Scope
 
@@ -163,7 +163,7 @@ The languages used for this project are:
 The key frameworks, libraries, databases and programs used for this project are:
 
 - [Django](https://www.djangoproject.com/) - used as the python framework 
-- [Bootstrap version 4.6](https://getbootstrap.com/) - used for project styling and social media icons
+- [Bootstrap version 4.6.2](https://getbootstrap.com/) - used for project styling and social media icons
 - [Google fonts](https://fonts.google.com/) - used to select project fonts
 - [Heroku Postgres](https://www.heroku.com/postgres) - used as the database after project was deployed and in production
 - [SQlite](https://www.sqlite.org/index.html) - used as the database before deployment to Heroku postgres and to perform unitests 
@@ -190,7 +190,7 @@ The following sites were used to assist in this project:
 * [Codeinstitute](https://codeinstitute.net/full-stack-software-development-diploma/?utm_term=code%20institute&utm_campaign=CI+-+UK+-+Search+-+Brand&utm_source=adwords&utm_medium=ppc&hsa_acc=8983321581&hsa_cam=1578649861&hsa_grp=62188641240&hsa_ad=581730217381&hsa_src=g&hsa_tgt=kwd-319867646331&hsa_kw=code%20institute&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gclid=CjwKCAjwnZaVBhA6EiwAVVyv9F19a0Iyt9WIs12IIQEoad7khrICogE2M6ZFmKsMf-MpkNxtU55HGxoCE1QQAvD_BwE)  - how to set up and run an ecommerce site
 * [Coder-coder](https://coder-coder.com/) - how to add darker overlay to background image
 * [System 22](https://www.youtube.com/watch?v=LV3w60037EI) - how to add nav link underline hover effect
-* [Radu.link](https://radu.link/make-footer-stay-bottom-page-bootstrap/) - how to make footer stick to bottom of the page
+* [Devpractical.com](https://devpractical.com/bootstrap-sticky-footer/#:~:text=To%20make%20your%20footer%20stick,100%20to%20tag.) - how to make footer stick to bottom of the page
 
 ### Content
 
