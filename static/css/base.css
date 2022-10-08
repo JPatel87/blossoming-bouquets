@@ -73,7 +73,7 @@ h1 {
 }
 
 .nav-hover:hover {
-    background-color: palevioletred;
+    color: palevioletred !important;
 }
 
 .active {
