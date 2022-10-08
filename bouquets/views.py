@@ -141,5 +141,5 @@ def delete_bouquet(request, bouquet_id):
 
     bouquet = get_object_or_404(Bouquet, pk=bouquet_id)
     bouquet.delete()
-    messages.success(request, 'Bouquet deleted!')
+    messages.success(request, f'Bouquet {bouquet.name} deleted!')
     return redirect(reverse('bouquets'))
