@@ -13,14 +13,12 @@
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-6">
-                <hr>
-                <h2 class="logo-font mb-4">Product Management</h2>
-                <h5 class="text-muted">Edit a Bouquet</h5>
-                <hr>
+            <div class="col">
+                <h2 class="logo-font mt-5 text-center">Manage bouquets</h2>
+                <hr class="w-50 mb-1">
             </div>
         </div>
-
+        <p class="font-weight-bold">Edit Bouquet</p>
         <div class="row">
             <div class="col-12 col-md-6">
                 <form method="POST" action="{% url 'edit_bouquet' bouquet.id %}" class="form mb-2" enctype="multipart/form-data">
@@ -32,9 +30,16 @@
                             {{ field }}
                         {% endif %}
                     {% endfor %}
-                    <div class="text-right">
-                        <a class="btn btn-outline-black rounded-0" href="{% url 'bouquets' %}">Cancel</a>
-                        <button class="btn btn-black rounded-0" type="submit">Update Bouquet</button>
+                    <div class="text-left">
+                        <a href="{% url 'bouquets' %}?category=Wedding,Any%20occasion,Basket" class="btn btn-grey grey-shadow rounded-lg btn-md p-1 p-sm-2 mr-sm-2 mb-2 mb-sm-none">
+                            <span class="icon">
+                                <i class="fas fa-chevron-left"></i>
+                            </span>
+                            <span class="text-uppercase">Cancel</span>
+                        </a>
+                        <button id="submit-button" class="btn btn-green grey-shadow rounded-lg btn-md p-1 p-sm-2 mb-2 mb-sm-none">
+							<span class="text-uppercase">Edit bouquet</span>
+						</button>
                     </div>
                 </form>
             </div>            
