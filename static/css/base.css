@@ -73,8 +73,11 @@ h1 {
 }
 
 .nav-hover:hover {
-    border-bottom: 2px solid palevioletred;
-    transition: 0.3s;
+    background-color: palevioletred;
+}
+
+.active {
+    text-decoration: underline;
 }
 
 /* from Bulma */
@@ -423,16 +426,6 @@ a.category-badge > span.badge:hover,
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.test {
-    background-color: #17a2b8;
-    display: flex;
-    justify-content: center;
-}
-
-.test-2 {
-    background-color: #ffc107;
 }
 
 /* -------------------------------- Media Queries */

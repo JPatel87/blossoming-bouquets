@@ -1,10 +1,16 @@
+<!-- App_url links for css active styling, inspired by techshinobi.com -->
+{% url 'home' as home_url %}
+{% url 'bouquets' as bouquets_url %}
+{% url 'blog' as blog_url %}
+{% url 'contact' as contact_url %}
+
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item">
-            <a class="nav-link text-black mr-5 font-weight-bold nav-hover" href="{% url 'home' %}">Home</a>
+            <a class="nav-link mr-5 font-weight-bold nav-hover {% if request.path == home_url %} active {% endif %}" href="{% url 'home' %}">Home</a>
         </li>
         <li class="nav-item dropdown">
-            <a class="nav-link text-black mr-5 font-weight-bold nav-hover" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link mr-5 font-weight-bold nav-hover {% if request.path == bouquets_url %} active {% endif %}" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Bouquets
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
@@ -14,10 +20,10 @@
             </div>
         </li>
         <li class="nav-item">
-            <a class="nav-link text-black mr-5 font-weight-bold nav-hover" href="#">Blog</a>
+            <a class="nav-link mr-5 font-weight-bold nav-hover {% if request.path == blog_url %} active {% endif %}" href="#">Blog</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link text-black mr-5 font-weight-bold nav-hover" href="#">Contact us</a>
+            <a class="nav-link font-weight-bold nav-hover {% if request.path == contact_url %} active {% endif %}" href="#">Contact us</a>
         </li>
     </ul>
 </div>
