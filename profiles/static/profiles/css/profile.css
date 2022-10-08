@@ -19,3 +19,11 @@
 #id_default_country option:first-child {
     color: #aab7c4;
 }
+
+.table {
+    color: #666666;
+}
+
+th {
+    font-weight: normal !important;
+}
