@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    margin-bottom: 150px;
+    margin-bottom: 350px;
     font-family: 'Montserrat', sans-serif;
     color: #666666;
 }
@@ -400,17 +400,19 @@ a.category-badge > span.badge:hover,
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 150px;
+    height: 350px;
     background-color: #666666;
     color: white;
+    display: flex;
+    justify-content: center;
 }
 
 .newsletter {
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .social {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: white;
 }
 
@@ -428,7 +430,23 @@ a.category-badge > span.badge:hover,
     align-items: center;
 }
 
-/* -------------------------------- Media Queries */
+/* Mailchimp */
+
+#mc_embed_signup {
+    background: #666666;
+    font: 14px Helvetica,Arial,sans-serif;
+    width: 620px;
+    height: 220px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+.social-media {
+    width: 100%;
+    background-color: #666666;
+}
+
+/* Media queries */
 
 @media (max-width: 360px) {
     .bag-img-container {
