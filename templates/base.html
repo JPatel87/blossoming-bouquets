@@ -75,7 +75,7 @@
                       <a class="nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           <div class="text-center">
                               <div class="nav-icon"><i class="fas fa-user fa-lg"></i></div>
-                              <p class="my-0">My Account</p>
+                              <p class="my-0 nav-hover font-weight-bold">My Account</p>
                           </div>
                       </a>
                       <div class="dropdown-menu border-0" aria-labelledby="user-options">
@@ -95,7 +95,7 @@
                     <a class="{% if grand_total %} font-weight-bold{% else %}{% endif %} nav-link" href="{% url 'view_bag' %}">
                       <div class="text-center">
                         <div class="nav-icon"><i class="fas fa-shopping-bag fa-lg"></i></div>
-                        <p class="my-0">
+                        <p class="my-0 nav-hover font-weight-bold">
                             {% if grand_total %}
                                 £{{ grand_total|floatformat:2 }}
                             {% else %}
@@ -159,7 +159,7 @@
         $('.toast').toast('show');
     </script>
     {% endblock %}
-    <div class="footer">
+    <div class="container-fluid footer">
         <footer>
             <h3 class="logo-font text-center pt-2">Keep in touch...</h3>
             <!-- Begin Mailchimp Signup Form -->
@@ -172,17 +172,18 @@
                             <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
                             </label>
                             <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required>
-                    </div>
-                    <div id="mce-responses" class="clear foot">
-                        <div class="response" id="mce-error-response" style="display:none"></div>
-                        <div class="response" id="mce-success-response" style="display:none"></div>
-                    </div>
-                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_690ead8f8e310af6cf7b39b06_75f2d3c3c2" tabindex="-1" value=""></div>
-                    <div class="optionalParent">
-                        <div class="clear foot">
-                            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-                            <p class="brandingLogo"><a href="http://eepurl.com/iaWdwv" title="Mailchimp - email marketing made easy and fun"><img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"></a></p>
+                        </div>
+                        <div id="mce-responses" class="clear foot">
+                            <div class="response" id="mce-error-response" style="display:none"></div>
+                            <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div>
+                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_690ead8f8e310af6cf7b39b06_75f2d3c3c2" tabindex="-1" value=""></div>
+                        <div class="optionalParent">
+                            <div class="clear foot">
+                                <input type="submit" value="SUBSCRIBE" name="subscribe" id="mc-embedded-subscribe" class="button">
+                                <p class="brandingLogo"><a href="http://eepurl.com/iaWdwv" title="Mailchimp - email marketing made easy and fun"><img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"></a></p>
+                            </div>
                         </div>
                     </div>
                 </form>

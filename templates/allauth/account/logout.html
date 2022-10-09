@@ -14,13 +14,13 @@
   {% if redirect_field_value %}
   <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
   {% endif %}
-  <a class="text-decoration-none" href="{% url 'home' %}">
+  <a class="btn btn-grey grey-shadow rounded-lg btn-md p-1 p-sm-2 mr-sm-2 mb-2 mb-sm-none" href="{% url 'home' %}">
     <span class="icon">
       <i class="fas fa-chevron-left"></i>
     </span>
-    <span class="text-uppercase mr-2"><strong>Cancel</strong></span>
+    <span class="text-uppercase mr-2">Cancel</span>
   </a>
-  <button class="primaryAction text-uppercase rounded grey-shadow" type="submit">{% trans 'Sign Out' %}</button>
+  <button id="submit-button" class="text-uppercase btn btn-green grey-shadow rounded-lg btn-md p-1 p-sm-2 mb-2 mb-sm-none">{% trans 'Sign Out' %}</button>
 </form>
 
 {% endblock %}
