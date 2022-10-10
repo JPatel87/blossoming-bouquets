@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    margin-bottom: 320px;
+    margin-bottom: 390px;
     font-family: 'Montserrat', sans-serif;
     color: #666666;
 }
@@ -28,6 +28,10 @@ body {
 
 .text-pink {
     color: palevioletred;
+}
+
+.text-white {
+    color: #fff;
 }
 
 .hero {
@@ -102,7 +106,7 @@ h1 {
 }
 
 .shop-now-button {
-    width: 200px;
+    width: 250px;
 }
 
 .btn-green {
@@ -356,7 +360,7 @@ input[name='q']::placeholder {
 }
 
 input[type='submit'] {
-    background-color: #78866b;
+    background-color: #78866b !important;
     color: white;
 }
 
@@ -408,17 +412,8 @@ a.category-badge > span.badge:hover,
     position: absolute;
     bottom: 0;
     width: 100vw;
-    height: 320px;
+    height: 390px;
     background-color: #666666;
-    color: white;
-    display: flex;
-    justify-content: center;
-}
-
-footer {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
 }
 
 .newsletter {
@@ -447,16 +442,14 @@ footer {
 /* Mailchimp */
 
 #mc_embed_signup {
-    background: #666666;
-    font: 14px Helvetica,Arial,sans-serif;
-    width: 620px;
-    height: 220px;
+    background:#fff;
+    font:14px;
+    width:500px;
     font-family: 'Montserrat', sans-serif;
-    color: #fff;
+    color: #666666;
 }
 
 .social-media {
-    width: 100vw;
     background-color: #78866b;
 }
 
