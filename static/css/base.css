@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    margin-bottom: 390px;
+    margin-bottom: 550px;
     font-family: 'Montserrat', sans-serif;
     color: #666666;
 }
@@ -409,10 +409,10 @@ a.category-badge > span.badge:hover,
 }
 
 .footer {
-    position: absolute;
+    position: static;
     bottom: 0;
     width: 100vw;
-    height: 390px;
+    height: 550px;
     background-color: #666666;
 }
 
@@ -442,11 +442,11 @@ a.category-badge > span.badge:hover,
 /* Mailchimp */
 
 #mc_embed_signup {
-    background:#fff;
+    background:#666666;
     font:14px;
     width:500px;
     font-family: 'Montserrat', sans-serif;
-    color: #666666;
+    color: #fff;
 }
 
 .social-media {
@@ -457,9 +457,14 @@ a.category-badge > span.badge:hover,
     justify-content: center;
 }
 
+.brandingLogo {
+    opacity: 1;
+}
+
 /* Media queries */
 
 @media (max-width: 360px) {
+
     .bag-img-container {
         width: 100%;
         overflow: hidden;
@@ -487,9 +492,11 @@ a.category-badge > span.badge:hover,
         width: 100%;
         height: 100%;
     }
+
 }
 
 @media (min-width: 361px) {
+
     .hero-text h1 {
         font-size: 1.7rem;
     }
@@ -521,6 +528,7 @@ a.category-badge > span.badge:hover,
         width: 100%;
         height: 100%;
     }
+
 }
 
 @media (min-width: 400px) {
@@ -555,6 +563,11 @@ a.category-badge > span.badge:hover,
 }
 
 @media (min-width: 577px) {
+
+    body {
+        margin-bottom: 550px;
+    }
+
     .hero-text h1 {
         font-size: 3rem;
     }
@@ -573,6 +586,12 @@ a.category-badge > span.badge:hover,
         width: 100%;
         height: 100%;
     }
+
+    .footer {
+        position: static;
+        height: 550px;
+    }
+
 }
 
 @media (min-width: 767px) {
@@ -624,6 +643,11 @@ a.category-badge > span.badge:hover,
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
+
+    body {
+        margin-bottom: 390px;
+    }
+    
     .fixed-top-desktop-only {
         position: fixed;
         top: 0;
@@ -672,6 +696,11 @@ a.category-badge > span.badge:hover,
     .bag-quantity {
         min-width: 30% !important;
         max-width: 30% !important;
+    }
+
+    .footer {
+        position: absolute;
+        height: 390px;
     }
 }
 
