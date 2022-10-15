@@ -6,7 +6,6 @@ class Category(models.Model):
     """
     Category model for bouquets.
     """
-
     class Meta:
         """
         Method to display category model name as categories in admin view.
