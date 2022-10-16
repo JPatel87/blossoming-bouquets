@@ -10,8 +10,7 @@ class ContactForm(forms.ModelForm):
     )
 
     email = forms.EmailField(
-        widget=forms.TextInput(attrs={'placeholder':'Email'}),
-        validators=[validators.EmailValidator(message="Invalid Email")]
+        widget=forms.EmailInput(attrs={'placeholder':'Email'}),
     )
 
     query = forms.CharField(
