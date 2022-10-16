@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2 class="logo-font mt-5 text-center">Blogs</h2>
+                <hr class="w-50 mb-1">
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            {% for post in posts %}
+                <div class="col-12 col-lg-6">
+                    <h2 class="subtitle">{{ post.title }}</h2>>
+                    <small>Posted at {{ post.date }}</small>
+                    <p>{{ post.intro }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
