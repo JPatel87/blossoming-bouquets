@@ -26,3 +26,6 @@ class Contact(models.Model):
         default="Bouquets"
     )
     query = models.TextField()
+
+    def __str__(self):
+        return f"Query about {self.subject} by {self.name}"
