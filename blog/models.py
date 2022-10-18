@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 class Post(models.Model):
     title = models.CharField(max_length=255)
-    slug = models.SlugField()
+    slug = models.SlugField(unique=True)
     body = models.TextField()
     date = models.DateTimeField(auto_now_add=True)
 
