@@ -14,7 +14,7 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <h1 class="logo-font mt-5 text-center">Blogs</h1>
+                <h1 class="logo-font mt-5 text-center">Post</h1>
                 <hr class="w-50 mb-1">
             </div>
         </div>
@@ -22,40 +22,9 @@
             <div class="col-12 col-lg-6">
                 <h2 class="subtitle">{{ post.title }}</h2>>
                 <small>Posted at {{ post.date }}</small>
-                <p><strong>{{ post.intro }}</strong></p>
+                <!-- <p><strong>{{ post.intro }}</strong></p> -->
                 <p>{{ post.body }}</p>
                 <hr>
-
-                <h2 class="subtitle">Comments</h2>
-
-                {% for comment in post.comments.all %}
-                    <article class="media">
-                        <div class="media-content">
-                            <div class="content">
-                                <p>
-                                    <strong>{{ comment.name }}</strong><small>{{ comment.date }}</small>
-                                    <br>
-                                    {{ comment.body }}
-                                </p>
-                            </div>
-                        </div>
-                    </article>
-                {% empty %}
-                    <div class="notification">
-                        <p>No comments yet!</p>
-                    </div>
-                {% endfor %}
-
-                <h2 class="subtitle">Add comment</h2>
-                <form action="post" action=".">
-                    {% csrf_token %}
-                    {{ form.as_p }}
-                    <div class="field">
-                        <div class="control">
-                            <button class="btn">Submit</button>
-                        </div>
-                    </div>
-                </form>
             </div>
         </div>
     </div>

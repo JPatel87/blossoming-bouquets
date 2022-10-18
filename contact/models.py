@@ -16,7 +16,7 @@ class Contact(models.Model):
         """
         Method to display category model name as categories in admin view.
         """
-        verbose_name_plural = 'Enquiries',
+        verbose_name_plural = 'Enquiries'
         ordering = ['-date']
 
     name = models.CharField(max_length=200)
