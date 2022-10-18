@@ -1,6 +1,8 @@
 from django.shortcuts import render, redirect
-from .models import Post
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
+from .models import Post
+
 
 from .forms import AddPostForm
 
@@ -13,6 +15,7 @@ def post_detail(request, slug):
     post = Post.objects.get(slug=slug)
     return render(request, 'blog/post_detail.html', {'post': post})
 
+@login_required(login_url="/accounts/login/")
 def add_post(request):
 
     if request.method == 'POST':
