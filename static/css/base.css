@@ -187,14 +187,16 @@ a.category-badge > span.badge {
     position: fixed;
     bottom: 10px;
     right: 10px;
+    z-index: 900;
+    background-color: white;
 }
 
 .btt-link {
-    color: palevioletred;
+    color: #78866b;
 }
 
 .btt-link:hover {
-    color: #666666;
+    color: palevioletred;
 }
 
 .btt-link,
