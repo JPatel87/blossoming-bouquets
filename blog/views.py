@@ -21,7 +21,9 @@ def add_post(request):
     if request.method == 'POST':
         form = AddPostForm(request.POST)
         if form.is_valid():
-            form.save()
+            instance = form.save(commit=False)
+            instance.author = request.user
+            instance.save()
             messages.success(request, 'Post has been created')
 
             return redirect('blog')

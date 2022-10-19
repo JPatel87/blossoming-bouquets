@@ -12,6 +12,7 @@ class ContactAdmin(admin.ModelAdmin):
         'name',
         'email',
         'subject',
+        'date',
     )
 
 admin.site.register(Contact, ContactAdmin)
