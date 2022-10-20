@@ -16,6 +16,9 @@ class AddPostForm(forms.ModelForm):
         widget=forms.Textarea(attrs={'placeholder':'Please enter your post details'}),
     )
 
+    image = forms.ImageField(
+        label='Image', required=False)
+
     class Meta:
         model = Post
         fields = ('title', 'slug', 'body',)
