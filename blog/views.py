@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, reverse
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from .models import Post
@@ -17,6 +17,9 @@ def post_detail(request, slug):
 
 @login_required(login_url="/accounts/login/")
 def add_post(request):
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('blog'))
 
     if request.method == 'POST':
         form = AddPostForm(request.POST)
