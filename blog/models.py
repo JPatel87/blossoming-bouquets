@@ -18,3 +18,16 @@ class Post(models.Model):
 
     def snippet(self):
         return self.body[:50] + '...'
+
+
+class Comment(models.Model):
+    post = models.ForeignKey(Post, related_name='comments', on_delete=models.CASCADE)
+    author = models.ForeignKey(User, on_delete=models.CASCADE, default=None)
+    body = models.TextField()
+    date = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ['date']
+
+    def __str__(self):
+        return f"Comment on {self.post.title} by {self.author}"     
