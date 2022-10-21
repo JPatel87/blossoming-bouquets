@@ -35,6 +35,14 @@
                 </div>
                 {% endif %}
                 <p class="lead mt-2 text-justify">{{ post.body }}</p>
+                <div>
+                    <a href="{% url 'blog' %}" class="btn btn-grey grey-shadow btn-md p-1 p-sm-2 mr-sm-2 mb-2 mb-sm-none">
+                        <span class="icon">
+                            <i class="fas fa-chevron-left"></i>
+                        </span>
+                        <span class="text-uppercase">Back</span>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
