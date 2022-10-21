@@ -22,7 +22,7 @@ def add_post(request):
         return redirect(reverse('blog'))
 
     if request.method == 'POST':
-        form = AddPostForm(request.POST)
+        form = AddPostForm(request.POST, request.FILES)
         if form.is_valid():
             instance = form.save(commit=False)
             instance.author = request.user

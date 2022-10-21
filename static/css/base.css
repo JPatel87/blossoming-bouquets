@@ -463,6 +463,11 @@ a.category-badge > span.badge:hover,
     opacity: 1;
 }
 
+.post-img {
+    width: 300px;
+    height: 300px;
+}
+
 /* Media queries */
 
 @media (max-width: 360px) {

@@ -4,21 +4,19 @@ from .models import Post
 
 class AddPostForm(forms.ModelForm):
 
-    title = forms.CharField(
-        widget=forms.TextInput(attrs={'placeholder':'Post title'}),
-    )
-
-    slug = forms.SlugField(
-        widget=forms.TextInput(attrs={'placeholder':'Post slug'}),
-    )
-
-    body = forms.CharField(
-        widget=forms.Textarea(attrs={'placeholder':'Please enter your post details'}),
-    )
-
-    image = forms.ImageField(
-        label='Image', required=False)
 
     class Meta:
         model = Post
-        fields = ('title', 'slug', 'body',)
+        fields = ('title', 'slug', 'body', 'image')
+
+    def clean_title(self):
+        """
+        Method to capitalize first names from bookings form.
+        """
+        return self.cleaned_data['title'].capitalize()
+
+    def clean_body(self):
+        """
+        Method to capitalize first names from bookings form.
+        """
+        return self.cleaned_data['body'].capitalize()
