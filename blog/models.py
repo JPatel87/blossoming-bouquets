@@ -31,4 +31,4 @@ class Comment(models.Model):
         ordering = ['date']
 
     def __str__(self):
-        return f"Comment on {self.post.title} by {self.author}"     
+        return f"{self.post.title} | {self.author}"     

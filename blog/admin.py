@@ -2,7 +2,6 @@ from django.contrib import admin
 from .models import Post, Comment
 
 # Register your models here.
-admin.site.register(Comment)
 
 class PostAdmin(admin.ModelAdmin):
     """
@@ -16,3 +15,17 @@ class PostAdmin(admin.ModelAdmin):
     )
 
 admin.site.register(Post, PostAdmin)
+
+class CommentAdmin(admin.ModelAdmin):
+    """
+    Comment model view on django admin for admin user.
+    """
+
+    list_display = (
+        'post',
+        'author',
+        'date',
+    )
+
+admin.site.register(Comment, CommentAdmin)
+
