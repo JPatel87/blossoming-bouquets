@@ -13,6 +13,8 @@ def contact(request):
             messages.success(request, 'Thank you for your email, we will get back to soon!')
 
             return redirect('contact')
+        else:
+            messages.error(request, 'Errors on form, not submitted')
     else:
         form = ContactForm()
 
