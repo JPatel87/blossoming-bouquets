@@ -52,12 +52,12 @@
                         {{ form|crispy }}
                         <div class="field">
                             <div class="control">
-                                <button class="btn" type="submit">Submit</button>
+                                <button class="btn btn-green grey-shadow rounded-lg btn-md p-1 p-sm-2 mb-3 mb-sm-none text-uppercase" type="submit">Submit</button>
                             </div>
                         </div>
                     </form>
                 {% else %}
-                    <p>You need to
+                    <p>Please
                         <a class= text-pink href="{% url 'account_login' %}"><strong>login</strong></a> to make a comment
                     </p>
                 {% endif %}
