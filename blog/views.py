@@ -27,6 +27,8 @@ def post_detail(request, slug):
             messages.success(request, 'Your comment has been added')
 
             return redirect('post_detail', slug)
+        else:
+            messages.error(request, 'Errors on form, not submitted')
     else:
         form = CommentForm()
 
@@ -48,6 +50,8 @@ def add_post(request):
             messages.success(request, 'Post has been created')
 
             return redirect('blog')
+        else: 
+            messages.error(request, 'Errors on form, not submitted')
     else:
         form = AddPostForm()
 
