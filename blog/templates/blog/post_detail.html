@@ -15,16 +15,13 @@
         <div class="row">
             <div class="col text-center mt-3">
                 <h2 class="logo-font mt-5 text-center">Post</h2>
-                <a class="category-badge text-decoration-none text-uppercase" href="{% url 'add_post' %}">
-                    <span class="p-2 mt-2 mr-2 badge badge-light rounded-lg">Add comment</span>
-                </a>
                 <hr class="w-50 mb-1">
             </div>
         </div>
         <div class="row justify-content-center">
             <div class="col-12 col-md-6">
                 <h3 class="subtitle text-center mt-3">{{ post.title }}</h3>
-                <p class="small text-center">Posted on {{ post.date }} by {{ post.author }}</p>
+                <p class="lead text-center">Post by: {{ post.author }} | {{ post.date }}</p>
                 {% if post.image %}
                 <div class="bouquet-img-center">
                     <img class="card-img-top img-fluid post-img rounded-lg" src="{{ post.image.url }}" alt="{{ post.name }}">
@@ -35,6 +32,35 @@
                 </div>
                 {% endif %}
                 <p class="lead mt-2 text-justify">{{ post.body }}</p>
+                <hr>
+                <h5><strong>Comments...</strong></h5><br>
+                {% if not post.comments.all %}
+                    <p>No comments yet!</p>
+                {% else %}
+                    {% for comment in post.comments.all %}
+                        <p>
+                            <strong>{{ comment.name }}</strong> | {{ comment.date }}
+                        </p>
+                        {{ comment.body}}                            
+                        <br><br>
+                    {% endfor %}
+                {% endif %}
+                <h5><strong>Post comment...</strong></h5>
+                {% if request.user.is_authenticated %}
+                    <form action="." method="POST" novalidate enctype= multipart/form-data>
+                        {% csrf_token %}
+                        {{ form|crispy }}
+                        <div class="field">
+                            <div class="control">
+                                <button class="btn" type="submit">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                {% else %}
+                    <p>You need to
+                        <a class= text-pink href="{% url 'account_login' %}"><strong>login</strong></a> to make a comment
+                    </p>
+                {% endif %}
                 <div>
                     <a href="{% url 'blog' %}" class="btn btn-grey grey-shadow btn-md p-1 p-sm-2 mr-sm-2 mb-2 mb-sm-none">
                         <span class="icon">
