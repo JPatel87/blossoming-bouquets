@@ -31,7 +31,7 @@ class CommentForm(forms.ModelForm):
         fields = ('name', 'body')
         labels = {
             'name': "Name",
-            'body': '',
+            'body': "Comment",
         }
 
     def clean_name(self):

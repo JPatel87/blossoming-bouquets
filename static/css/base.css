@@ -468,6 +468,11 @@ a.category-badge > span.badge:hover,
     height: 300px;
 }
 
+.post-detail-img {
+    width: 60vw;
+    height: auto;
+}
+
 /* Media queries */
 
 @media (max-width: 360px) {

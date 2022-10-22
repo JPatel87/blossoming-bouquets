@@ -24,11 +24,11 @@
                 <p class="lead text-center">Post by: {{ post.author }} | {{ post.date }}</p>
                 {% if post.image %}
                 <div class="bouquet-img-center">
-                    <img class="card-img-top img-fluid post-img rounded-lg" src="{{ post.image.url }}" alt="{{ post.name }}">
+                    <img class="card-img-top img-fluid post-detail-img rounded-lg" src="{{ post.image.url }}" alt="{{ post.name }}">
                 </div>
                 {% else %}
                 <div class="bouquet-img-center">
-                    <img class="card-img-top img-fluid post-img rounded-lg" src="{{ MEDIA_URL }}image-coming-soon.jpg" alt="{{ post.name }}">
+                    <img class="card-img-top img-fluid post-detail-img rounded-lg" src="{{ MEDIA_URL }}image-coming-soon.jpg" alt="{{ post.name }}">
                 </div>
                 {% endif %}
                 <p class="lead mt-2 text-justify">{{ post.body }}</p>
