@@ -126,7 +126,7 @@ def edit_post(request, slug):
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('blog'))
-        
+
     post = Post.objects.get(slug=slug)
 
     if request.method == 'POST':
@@ -145,3 +145,34 @@ def edit_post(request, slug):
         'form': form
     }
     return render(request, 'blog/edit_post.html', context)
+
+@login_required(login_url="/accounts/login/")
+def delete_post(request, slug):
+
+    """
+    Function to view edit services page.
+
+    The get request returns the edit services page.
+    The post request checks the form is valid,
+    saves the form if valid,
+    returns services page and displays
+    the success message. If not valid, error message
+    is displayed.
+    """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('blog'))
+        
+    post = Post.objects.get(slug=slug)
+
+    if request.method == "POST":
+        post.delete()
+        messages.success(request, 'Your post has been deleted')
+        return redirect(reverse('blog'))
+
+    context = {
+        'post': post,
+        'slug': slug
+    }
+
+    return render(request, 'blog/delete_post.html', context)

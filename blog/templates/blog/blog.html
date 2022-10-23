@@ -42,7 +42,7 @@
                     </div>
                     {% if user.is_superuser %}
                     <a href="{% url 'edit_post' post.slug %}" class="text-decoration-none edit-delete-link"><strong>Edit | </strong></a>
-                    <a href="#" class="text-decoration-none edit-delete-link"><strong> Delete</strong></a><hr>
+                    <a href="{% url 'delete_post' post.slug %}" class="text-decoration-none edit-delete-link"><strong> Delete</strong></a><hr>
                     {% endif %}
                 </div>
             {% endfor %}
