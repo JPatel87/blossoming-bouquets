@@ -84,7 +84,7 @@ def delete_comment(request, comment_id, slug):
     }
     return render(request, 'blog/delete_comment.html', context)
 
-
+@login_required(login_url="/accounts/login/")
 def edit_comment(request, comment_id, slug):
     """
     Function to view to edit a comment.
@@ -110,8 +110,9 @@ def edit_comment(request, comment_id, slug):
 
     return render(request, 'blog/post_detail.html', {'post': post, 'form': form})
 
-
+@login_required(login_url="/accounts/login/")
 def edit_post(request, slug):
+
     """
     Function to view edit services page.
 
@@ -122,6 +123,10 @@ def edit_post(request, slug):
     the success message. If not valid, error message
     is displayed.
     """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('blog'))
+        
     post = Post.objects.get(slug=slug)
 
     if request.method == 'POST':
@@ -129,8 +134,8 @@ def edit_post(request, slug):
 
         if form.is_valid():
             form.save()
-            messages.success(request, 'Your comment has been edited')
-            return redirect('blog')
+            messages.success(request, 'Your post has been edited')
+            return redirect(reverse('post_detail', kwargs={'slug': slug}))
 
     form = AddPostForm(instance=post)
     messages.info(request, 'You are about to edit your post')
