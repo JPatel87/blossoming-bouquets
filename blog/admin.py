@@ -3,6 +3,7 @@ from .models import Post, Comment
 
 # Register your models here.
 
+
 class PostAdmin(admin.ModelAdmin):
     """
     Post model view on django admin for admin user.
@@ -14,7 +15,9 @@ class PostAdmin(admin.ModelAdmin):
         'date',
     )
 
+
 admin.site.register(Post, PostAdmin)
+
 
 class CommentAdmin(admin.ModelAdmin):
     """
@@ -25,7 +28,8 @@ class CommentAdmin(admin.ModelAdmin):
         'post',
         'author',
         'date',
+        'updated',
     )
 
-admin.site.register(Comment, CommentAdmin)
 
+admin.site.register(Comment, CommentAdmin)

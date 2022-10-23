@@ -40,6 +40,10 @@
                     <div class="bouquet-img-center">
                         <a href="{% url 'post_detail' post.slug %}" class="text-center">Read more</a>
                     </div>
+                    {% if user.is_superuser %}
+                    <a href="#" class="text-decoration-none edit-delete-link"><strong>Edit | </strong></a>
+                    <a href="#" class="text-decoration-none edit-delete-link"><strong> Delete</strong></a><hr>
+                    {% endif %}
                 </div>
             {% endfor %}
         </div>

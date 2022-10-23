@@ -39,10 +39,13 @@
                 {% else %}
                     {% for comment in post.comments.all %}
                         <p>
-                            <strong>{{ comment.name }}</strong> | {{ comment.date }}
+                            <strong>{{ comment.name }}</strong> | {{ comment.updated }}
                         </p>
-                        {{ comment.body}}                            
-                        <br><br>
+                        <p>{{ comment.body}}  </p> 
+                        {% if request.user == comment.author %}
+                            <a href="{% url 'edit_comment' comment.id post.slug %}" class="btn">Edit</a>
+                            <a href="{% url 'delete_comment' comment.id post.slug %}" class="btn">Delete</a>
+                        {% endif %}
                     {% endfor %}
                 {% endif %}
                 <h5><strong>Post comment...</strong></h5>
