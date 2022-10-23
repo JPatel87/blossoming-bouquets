@@ -39,9 +39,10 @@
                 {% else %}
                     {% for comment in post.comments.all %}
                         <p>
-                            <strong>{{ comment.name }}</strong> | {{ comment.updated }}
+                            <strong>{{ comment.name }}</strong> | {{ comment.date }}
                         </p>
-                        <p>{{ comment.body}}  </p> 
+                        <p>{{ comment.body}}</p> 
+                        <p class="small"><strong>Updated: {{ comment.updated }}</strong></p>
                         {% if request.user == comment.author %}
                             <a href="{% url 'edit_comment' comment.id post.slug %}" class="btn">Edit</a>
                             <a href="{% url 'delete_comment' comment.id post.slug %}" class="btn">Delete</a>
@@ -55,7 +56,7 @@
                         {{ form|crispy }}
                         <div class="field">
                             <div class="control">
-                                <button class="btn btn-green grey-shadow rounded-lg btn-md p-1 p-sm-2 mb-3 mb-sm-none text-uppercase" type="submit">Submit</button>
+                                <button class="btn btn-green grey-shadow rounded-lg btn-md p-1 p-sm-2 mb-3 mb-sm-none text-uppercase" type="submit">Post</button>
                             </div>
                         </div>
                     </form>

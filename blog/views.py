@@ -109,3 +109,34 @@ def edit_comment(request, comment_id, slug):
     messages.info(request, 'You are about to edit your comment')
 
     return render(request, 'blog/post_detail.html', {'post': post, 'form': form})
+
+
+def edit_post(request, slug):
+    """
+    Function to view edit services page.
+
+    The get request returns the edit services page.
+    The post request checks the form is valid,
+    saves the form if valid,
+    returns services page and displays
+    the success message. If not valid, error message
+    is displayed.
+    """
+    post = Post.objects.get(slug=slug)
+
+    if request.method == 'POST':
+        form = AddPostForm(request.POST, request.FILES, instance=post)
+
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Your comment has been edited')
+            return redirect('blog')
+
+    form = AddPostForm(instance=post)
+    messages.info(request, 'You are about to edit your post')
+
+    context = {
+        'post': post,
+        'form': form
+    }
+    return render(request, 'blog/edit_post.html', context)
