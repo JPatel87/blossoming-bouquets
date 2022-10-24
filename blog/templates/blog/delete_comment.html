@@ -24,9 +24,18 @@
                 <form method="POST">
                     {% csrf_token %}
                     <p>Are you sure you want to delete comment</p>
-                    <p><strong>{{ comment.body }} made on {{ comment.updated }}?</strong></p>
-                    <button class="btn action-btn mb-3 px-4" type="submit">Yes</button>
-                    <a href="{% url 'post_detail' slug %}" class="btn action-btn mb-3 px-4 mx-2">No</a>
+                    <p><strong>"{{ comment.body }}" made on {{ comment.updated }}?</strong></p>
+                    <div class="d-flex">
+                        <a href="{% url 'post_detail' slug %}" class="btn btn-grey grey-shadow rounded-lg btn-md p-1 p-sm-2 mr-sm-2 mb-2 mb-sm-none">
+                            <span class="icon">
+                                <i class="fas fa-chevron-left"></i>
+                            </span>
+                            <span class="text-uppercase">Cancel</span>
+                        </a>
+                        <button class="btn btn-green grey-shadow rounded-lg btn-md p-1 p-sm-2 mb-2 mb-sm-none" type="submit">
+                            <span class="text-uppercase">Yes</span>
+                        </button>
+                    </div>
                   </form>
             </div>
         </div>

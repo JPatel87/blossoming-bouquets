@@ -25,8 +25,17 @@
                     {% csrf_token %}
                     <p>Are you sure you want to delete post</p>
                     <p><strong>{{ post.title }}?</strong></p>
-                    <button class="btn action-btn mb-3 px-4" type="submit">Yes</button>
-                    <a href="{% url 'blog' %}" class="btn action-btn mb-3 px-4 mx-2">No</a>
+                    <div class="d-flex">
+                        <a href="{% url 'blog' %}" class="btn btn-grey grey-shadow rounded-lg btn-md p-1 p-sm-2 mr-sm-2 mb-2 mb-sm-none">
+                            <span class="icon">
+                                <i class="fas fa-chevron-left"></i>
+                            </span>
+                            <span class="text-uppercase">Cancel</span>
+                        </a>
+                        <button class="btn btn-green grey-shadow rounded-lg btn-md p-1 p-sm-2 mb-2 mb-sm-none" type="submit">
+                            <span class="text-uppercase">Yes</span>
+                        </button>
+                    </div>
                   </form>
             </div>
         </div>

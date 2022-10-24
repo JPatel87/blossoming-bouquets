@@ -47,6 +47,7 @@
                         <a href="{% url 'edit_post' post.slug %}" class="pr-2">Edit</a> | 
                         <a class="text-danger pl-2" href="{% url 'delete_post' post.slug %}">Delete</a>
                     </div>
+                    <br>
                     {% endif %}
                 </div>
             {% endfor %}

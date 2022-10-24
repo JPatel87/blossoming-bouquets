@@ -78,8 +78,8 @@
                                             {% if request.user.is_superuser %}
                                             <div class="d-flex edit-delete-container">
                                                 <small class="ml-3">
-                                                    <a href="{% url 'edit_bouquet' bouquet.id %}">Edit</a> | 
-                                                    <a class="text-danger" href="{% url 'delete_bouquet' bouquet.id %}">Delete</a>
+                                                    <a href="{% url 'edit_bouquet' bouquet.id %}" class="pr-2">Edit</a> | 
+                                                    <a class="text-danger pl-2" href="{% url 'delete_bouquet' bouquet.id %}">Delete</a>
                                                 </small>
                                             </div>
                                             {% endif %}
