@@ -41,11 +41,13 @@
                         <p>
                             <strong>{{ comment.name }}</strong> | {{ comment.date }}
                         </p>
-                        <p>{{ comment.body}}</p> 
+                        <p>{{ comment.body}}<br>
+                        {% if request.user == comment.author %}    
+                            <a href="{% url 'edit_comment' comment.id post.slug %}">Edit</a> | 
+                            <a class="text-danger" href="{% url 'delete_comment' comment.id post.slug %}">Delete</a>
+                        </p> 
                         <p class="small"><strong>Updated: {{ comment.updated }}</strong></p>
-                        {% if request.user == comment.author %}
-                            <a href="{% url 'edit_comment' comment.id post.slug %}" class="btn">Edit</a>
-                            <a href="{% url 'delete_comment' comment.id post.slug %}" class="btn">Delete</a>
+                        <hr>
                         {% endif %}
                     {% endfor %}
                 {% endif %}
