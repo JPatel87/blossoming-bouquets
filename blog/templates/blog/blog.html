@@ -36,14 +36,16 @@
                         <img class="card-img-top img-fluid post-img rounded-lg" src="{{ MEDIA_URL }}image-coming-soon.jpg" alt="{{ post.name }}">
                     <a>
                     {% endif %}
-                    <p class="lead mt-2 mb-0 text-center">{{ post.snippet }}</p>
-                    <div class="bouquet-img-center">
+                    <p class="lead mt-2 mb-0 text-center">{{ post.snippet }}
                         <a href="{% url 'post_detail' post.slug %}" class="text-center">Read more</a>
+                    </p>
+                    <div class="bouquet-img-center">
+                        
                     </div>
                     {% if user.is_superuser %}
                     <div class="d-flex edit-delete-container">
-                        <a href="{% url 'edit_post' post.slug %}">Edit</a> | 
-                        <a class="text-danger" href="{% url 'delete_post' post.slug %}">Delete</a>
+                        <a href="{% url 'edit_post' post.slug %}" class="pr-2">Edit</a> | 
+                        <a class="text-danger pl-2" href="{% url 'delete_post' post.slug %}">Delete</a>
                     </div>
                     {% endif %}
                 </div>
