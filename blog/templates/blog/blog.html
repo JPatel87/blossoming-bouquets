@@ -41,8 +41,10 @@
                         <a href="{% url 'post_detail' post.slug %}" class="text-center">Read more</a>
                     </div>
                     {% if user.is_superuser %}
-                    <a href="{% url 'edit_post' post.slug %}" class="text-decoration-none edit-delete-link"><strong>Edit | </strong></a>
-                    <a href="{% url 'delete_post' post.slug %}" class="text-decoration-none edit-delete-link"><strong> Delete</strong></a><hr>
+                    <div class="d-flex edit-delete-container">
+                        <a href="{% url 'edit_post' post.slug %}">Edit</a> | 
+                        <a class="text-danger" href="{% url 'delete_post' post.slug %}">Delete</a>
+                    </div>
                     {% endif %}
                 </div>
             {% endfor %}
