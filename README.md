@@ -135,13 +135,12 @@ The features that respond to different screen sizes include:
 
 ### Validator testing
 
-W3 HTML Validator checks were carried out on all html pages, common errors have been reported below as well as resolutions.
+W3 HTML Validator checks were carried out on all html pages, main errors have been reported below as well as resolutions.
 
 | Error | Resolution |
 | --- | --- |
 | ![categories link](readme_documents/html-validator/categories-link.png) | Renamed any occasion category to occasional |
 | xxxx |
-
 
 
 CSS W3 Validator checks were carried out on the style.css file - no errors found.

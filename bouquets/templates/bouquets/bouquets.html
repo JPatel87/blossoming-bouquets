@@ -2,6 +2,7 @@
 {% load static %}
 
 {% block page_header %}
+    <!-- Header container - for logo and links -->
     <div class="container header-container">
         <div class="row">
             <div class="col"></div>
@@ -12,6 +13,7 @@
 {% block content %}
     <div class="overlay"></div>
     <div class="container-fluid">
+        <!-- Page heading row - for title and category links -->
         <div class="row">
             <div class="col text-center mt-3 mt-md-5">
                 <h2 class="logo-font text-grey">Bouquets</h2>
@@ -25,6 +27,7 @@
         </div>
         <div class="row">
             <div class="bouquet-container col-10 offset-1">
+                <!-- Sort by dropdown, home page link and number of products in selected category -->
                 <div class="row mt-1 mb-2">
                     <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
                         <div class="sort-select-wrapper w-50">
@@ -49,6 +52,7 @@
                     </div>
                 </div>
                 <div class="row">
+                <!-- Bouquet images, names, price and category and edit and delete links for superuser -->
                     {% for bouquet in bouquets %}
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="card h-100 border-0">
@@ -93,6 +97,7 @@
             </div>
         </div>
     </div>
+    <!-- Back to the top link -->
     <div class="btt-button shadow-sm rounded-0 border border-black">
         <a class="btt-link d-flex h-100">
             <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
