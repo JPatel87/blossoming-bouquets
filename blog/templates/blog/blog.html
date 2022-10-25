@@ -39,9 +39,7 @@
                     <p class="lead mt-2 mb-0 text-center">{{ post.snippet }}
                         <a href="{% url 'post_detail' post.slug %}" class="text-center">Read more</a>
                     </p>
-                    <div class="bouquet-img-center">
-                        
-                    </div>
+                    <br>
                     {% if user.is_superuser %}
                     <div class="d-flex edit-delete-container">
                         <a href="{% url 'edit_post' post.slug %}" class="pr-2">Edit</a> | 

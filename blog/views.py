@@ -36,7 +36,7 @@ def post_detail(request, slug):
     return render(request, 'blog/post_detail.html', {'post': post, 'form': form})
 
 
-@login_required(login_url="/accounts/login/")
+@login_required
 def add_post(request):
 
     if not request.user.is_superuser:
@@ -65,7 +65,7 @@ def add_post(request):
     return render(request, template, context)
 
 
-@login_required(login_url="/accounts/login/")
+@login_required
 def edit_post(request, slug):
 
     """
@@ -101,7 +101,7 @@ def edit_post(request, slug):
     return render(request, 'blog/edit_post.html', context)
 
 
-@login_required(login_url="/accounts/login/")
+@login_required
 def delete_post(request, slug):
 
     """
@@ -133,7 +133,7 @@ def delete_post(request, slug):
     return render(request, 'blog/delete_post.html', context)
 
 
-@login_required(login_url="/accounts/login/")
+@login_required
 def edit_comment(request, comment_id, slug):
     """
     Function to view to edit a comment.
@@ -160,7 +160,7 @@ def edit_comment(request, comment_id, slug):
     return render(request, 'blog/post_detail.html', {'post': post, 'form': form})
 
 
-@login_required(login_url="/accounts/login/")
+@login_required
 def delete_comment(request, comment_id, slug):
     """
     Function to view to delete a comment.
