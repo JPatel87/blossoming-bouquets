@@ -140,7 +140,7 @@ W3 HTML Validator checks were carried out on all html pages, main errors have be
 | Error | Resolution |
 | --- | --- |
 | ![categories link](readme_documents/html-validator/categories-link.png) | Renamed any occasion category to occasional |
-| xxxx |
+| ![javascript type](readme_documents/html-validator/javascript-type.png) | Removed "type" from script tag
 
 
 CSS W3 Validator checks were carried out on the style.css file - no errors found.

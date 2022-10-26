@@ -2,6 +2,7 @@
 {% load static %}
 
 {% block page_header %}
+    <!-- Header container - for logo and links -->
     <div class="container header-container">
         <div class="row">
             <div class="col"></div>
@@ -13,6 +14,7 @@
     <div class="overlay"></div>
     <div class="container-fluid">
         <div class="row">
+            <!--Bouquet image container-->
             <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
                 <div class="image-container my-4">
                     {% if bouquet.image %}
@@ -27,6 +29,7 @@
                     {% endif %}
                 </div>
             </div>
+            <!--Bouquet image, price, description, quantity nd action buttons container -->
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="bouquet-details-container mb-5 mt-md-5">
                     <p class="mb-1 text-md-left text-center d-none d-md-block"><strong>{{ bouquet.name }}</strong></p>
@@ -38,6 +41,7 @@
                         </a>
                     </p>
                     {% endif %}
+                    <!-- If user is a superuser, show edit and delete bouquet links -->
                     {% if request.user.is_superuser %}
                         <small class="ml-3">
                             <a href="{% url 'edit_bouquet' bouquet.id %}">Edit</a> | 
@@ -85,7 +89,6 @@
                                     </span>
                                     <span class="text-uppercase">Keep Shopping</span>
                                 </a>
-                                <!-- <input type="submit" class="btn btn-shopping rounded-lg text-uppercase mt-5" value="Add to Bag"> -->
                             </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                         </div>
