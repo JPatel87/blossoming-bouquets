@@ -473,6 +473,15 @@ a.category-badge > span.badge:hover,
     height: auto;
 }
 
+.add-img-btn {
+    background: white;
+    outline: #666666 solid 1px;
+}
+
+.add-img-btn:hover {
+    box-shadow: 0 10px 20px #666666;
+}
+
 /* Media queries */
 
 @media (max-width: 360px) {
