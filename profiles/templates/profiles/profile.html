@@ -32,7 +32,7 @@
                 <form class="mt-3" action="{% url 'profile' %}" method="POST" id="profile-update-form" novalidate>
                     {% csrf_token %}
                     {{ form|crispy }}
-                    <button class="btn btn-green grey-shadow rounded-lg btn-md p-1 p-sm-2 mb-3 mb-sm-none text-uppercase">Update</button>
+                    <button class="btn btn-green grey-shadow rounded-lg btn-md p-1 p-sm-2 mb-3 mb-sm-none text-uppercase" type="submit">Update</button>
                 </form>
             </div>
             <div class="col-12 col-lg-6">
@@ -41,32 +41,22 @@
                     <table class="table table-sm table-borderless">
                         <thead>
                             <tr>
-                                <th>Order Number</th>
-                                <th>Date</th>
-                                <th>Items</th>
-                                <th>Order Total</th>
+                                <th class="text-left font-weight-bold">Order number</th>
+                                <th class="text-center font-weight-bold">Grand total</th>
+                                <th class="text-right font-weight-bold">Order date</th>
                             </tr>
                         </thead>
                         <tbody>
                             {% for order in orders %}
                                 <tr>
-                                    <td>
+                                    <td class="text-left">
                                         <a href="{% url 'order_history' order.order_number %}"
                                         title="{{ order.order_number }}">
                                             {{ order.order_number|truncatechars:6 }}
                                         </a>
                                     </td>
-                                    <td>{{ order.date }}</td>
-                                    <td>
-                                        <ul class="list-unstyled">
-                                            {% for item in order.lineitems.all %}
-                                                <li class="small">
-                                                    {{ item.product.name }} x{{ item.quantity }}
-                                                </li>
-                                            {% endfor %}
-                                        </ul>
-                                    </td>
-                                    <td>${{ order.grand_total }}</td>
+                                    <td class="text-center">£{{ order.grand_total }}</td>
+                                    <td class="text-right">{{ order.date }}</td>                         
                                 </tr>
                             {% endfor %}
                         </tbody>
