@@ -5,11 +5,11 @@
 {% block head_title %}{% trans "Sign Out" %}{% endblock %}
 
 {% block inner_content %}
-<h2 class="logo-font mb-4 text-center mt-5">{% trans "Sign Out" %}</h2>
+<h2 class="logo-font mb-4 text-center mt-5">{% trans "Logout" %}</h2>
 <hr class="w-50 mb-1">
-<p class="text-center">{% trans 'Are you sure you want to sign out?' %}</p>
+<p class="text-center">{% trans 'Are you sure you want to logout?' %}</p>
 
-<form class="text-center mb-3" method="post" action="{% url 'account_logout' %}" novalidate>
+<form class="text-center mb-3" method="post" action="{% url 'account_logout' %}">
   {% csrf_token %}
   {% if redirect_field_value %}
   <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
@@ -20,7 +20,7 @@
     </span>
     <span class="text-uppercase mr-2">Cancel</span>
   </a>
-  <button id="submit-button" class="text-uppercase btn btn-green grey-shadow rounded-lg btn-md p-1 p-sm-2 mb-2 mb-sm-none">{% trans 'Sign Out' %}</button>
+  <button id="submit-button" class="text-uppercase btn btn-green grey-shadow rounded-lg btn-md p-1 p-sm-2 mb-2 mb-sm-none">{% trans 'Log out' %}</button>
 </form>
 
 {% endblock %}
