@@ -3,6 +3,7 @@
 {% load bag_tools %}
 
 {% block page_header %}
+    <!-- Header container - for logo and links -->
     <div class="container header-container">
         <div class="row">
             <div class="col"></div>
@@ -13,6 +14,7 @@
 {% block content %}
     <div class="overlay"></div>
     <div class="container mb-2">
+        <!-- Page heading -->
         <div class="row">
             <div class="col mb-3">
                 <h2 class="logo-font text-center mt-3 mt-md-5">Shopping Bag</h2>
@@ -20,6 +22,7 @@
             </div>
         </div>
         <div class="row">
+            <!-- Bag details responsive table including update/remove/checkout/keep shopping links -->
             <div class="col">
                 {% if bag_items %}
                     <div class="table-responsive container-fluid">
@@ -37,10 +40,9 @@
                                 <tr>
                                     <td class="py-2 text-center">
                                         <p class="mt-0 mb-md-2 text-grey">{{ item.bouquet.name }}</p>
-                                        <!-- <p class="my-0 text-grey small text-muted">SKU: {{ item.bouquet.sku|upper }}</p> -->
                                         <div class="bag-img-container rounded-lg w-75 mx-auto pb-0">
                                             {% if item.bouquet.image %}
-                                                <img class="img-fluid bag-img rounded-lg" src="{{ item.bouquet.image.url }}">
+                                                <img class="img-fluid bag-img rounded-lg" src="{{ item.bouquet.image.url }}" alt="{{ bouquet.name }}">
                                             {% else %}
                                                 <img class="img-fluid bag-img rounded-lg" src="{{ MEDIA_URL }}image-coming-soon.jpg" alt="{{ bouquet.name }}">
                                             {% endif %}
@@ -79,18 +81,18 @@
                                         </form>
                                         <a class="update-link text-info ml-sm-2 pl-md-5"><small>Update</small></a>
                                         <a class="remove-item text-danger float-sm-right pr-md-5" id="remove_{{ item.item_id }}"><small>Remove</small></a>
-                                        </div>
                                     </td>
                                     <td class="py-2">
                                         <p class="my-0 text-center ml-2">£{{ item.bouquet.price | calc_subtotal:item.quantity }}</p>
                                     </td>
                                 </tr>
                             {% endfor %}
-                                <tr scope="row">
-                                    <td colspan="12" class="pt-5 text-right">
+                                <tr>
+                                    <td colspan="4" class="pt-5 text-right">
                                         <h6 class="text-grey"><strong>Bag Total: £{{ total|floatformat:2 }}</strong></h6>
                                         <h6 class="text-grey">Delivery: £{{ delivery|floatformat:2 }}</h6>
                                         <h4 class="mt-4 text-grey"><strong>Grand Total: £{{ grand_total|floatformat:2 }}</strong></h4>
+                                        <!-- If bag contents do not exceed free delivery limit than inform users of amount pending -->
                                         {% if free_delivery_delta > 0 %}
                                             <p class="mb-1 text-danger">
                                                 Get free delivery by spending just <strong>£{{ free_delivery_delta }}</strong> more!
@@ -99,8 +101,8 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="12" class="text-right">
-                                        <a href="{% url 'bouquets' %}?category=Wedding,Any%20occasion,Basket" class="btn btn-grey grey-shadow rounded-lg btn-md p-1 p-sm-2 mr-sm-2 mb-2 mb-sm-none">
+                                    <td colspan="4" class="text-right">
+                                        <a href="{% url 'bouquets' %}?category=Wedding,Occasional,Basket" class="btn btn-grey grey-shadow rounded-lg btn-md p-1 p-sm-2 mr-sm-2 mb-2 mb-sm-none">
                                             <span class="icon">
                                                 <i class="fas fa-chevron-left"></i>
                                             </span>
@@ -119,7 +121,7 @@
                     </div>
                 {% else %}
                     <p class="lead mb-5">Your bag is empty.</p>
-                    <a href="{% url 'bouquets' %}?category=Wedding,Any%20occasion,Basket" class="btn btn-green grey-shadow rounded-lg btn-md p-1 p-sm-2 mr-sm-2 mb-3 mb-sm-none">
+                    <a href="{% url 'bouquets' %}?category=Wedding,Occasional,Basket" class="btn btn-green grey-shadow rounded-lg btn-md p-1 p-sm-2 mr-sm-2 mb-3 mb-sm-none">
                         <span class="icon">
                             <i class="fas fa-chevron-left"></i>
                         </span>
@@ -135,7 +137,7 @@
 {{ block.super }}
 {% include 'bouquets/includes/quantity_input_script.html' %}
 
-<script type="text/javascript">
+<script>
     // Update quantity on click
     $('.update-link').click(function(e) {
         var form = $(this).prev('.update-form');
