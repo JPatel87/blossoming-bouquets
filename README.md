@@ -148,6 +148,8 @@ W3 HTML Validator checks were carried out on all html pages, main errors have be
 | ![bag scope](readme_documents/html-validator/bag-scope.png) | Bag page - table "scope" used twice in the same bag details table. Removed unrequired scope to define subtotal/delivery/checkout row |
 | ![bag colspan](readme_documents/html-validator/bag-colspan.png) | Bag page - defined 4 columns at the beginning of the bag details table then further down set colspan to 12 for the subtotal/delivery/checkout row. Reset colspan from 12 to 4. |
 | ![label for attribute](readme_documents/html-validator/label-for-attribute.png) | Checkout page - A label tag was present for an element that did not have an input field hence did not require a "for" attribute. Changed label element to a div element as label not required. |
+| ![loading spinner](readme_documents/html-validator/loading-spinner.png) | Checkout page - the checkout complete loading spinner was kept inside an empty "h1" tag. Replaced "h1" tag with a "div" tag. |
+| ![stray div tag](readme_documents/html-validator/stray-div-tag.png) | Checkout success page - A stray "div" end tag found - tag removed as not required. |
 
 
 
