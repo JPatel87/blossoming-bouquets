@@ -135,7 +135,7 @@ The features that respond to different screen sizes include:
 
 ### Validator testing
 
-W3 HTML Validator checks were carried out on all html pages, main errors have been reported below as well as resolutions.
+W3 HTML Validator checks were carried out on all viewable site pages, main errors and warnings have been reported below as well as resolutions. Once all page errors and warnings were addressed, validator checks were re-run and no further errors appeared on any page.
 
 | Error | Resolution |
 | --- | --- |
