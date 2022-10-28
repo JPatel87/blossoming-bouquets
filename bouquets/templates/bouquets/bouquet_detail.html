@@ -13,6 +13,13 @@
 {% block content %}
     <div class="overlay"></div>
     <div class="container-fluid">
+        <!-- Page heading -->
+        <div class="row">
+            <div class="col">
+                <h2 class="logo-font mt-5 text-center">Bouquets</h2>
+                <hr class="w-50 mb-1">
+            </div>
+        </div>
         <div class="row">
             <!--Bouquet image container-->
             <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
@@ -29,7 +36,7 @@
                     {% endif %}
                 </div>
             </div>
-            <!--Bouquet image, price, description, quantity nd action buttons container -->
+            <!--Bouquet name, price, category, description, quantity and action buttons container -->
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="bouquet-details-container mb-5 mt-md-5">
                     <p class="mb-1 text-md-left text-center d-none d-md-block"><strong>{{ bouquet.name }}</strong></p>
