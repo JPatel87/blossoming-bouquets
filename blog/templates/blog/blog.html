@@ -2,6 +2,7 @@
 {% load static %}
 
 {% block page_header %}
+    <!-- Header container - for logo and links -->
     <div class="container header-container">
         <div class="row">
             <div class="col"></div>
@@ -12,6 +13,7 @@
 {% block content %}
     <div class="overlay"></div>
     <div class="container">
+        <!-- Page heading row - for title and add post link displayed to only superusers -->
         <div class="row">
             <div class="col text-center mt-3">
                 <h2 class="logo-font mt-5 text-center">Blog</h2>
@@ -23,6 +25,7 @@
                 <hr class="w-50 mb-1">
             </div>
         </div>
+        <!-- blog title, image, snippet and edit/delete buttons displayed to only superusers -->
         <div class="row justify-content-center">
             {% for post in posts %}
                 <div class="col-12 col-md-6">
@@ -34,7 +37,7 @@
                     {% else %}
                     <a href="{% url 'post_detail' post.slug %}" class="bouquet-img-center">
                         <img class="card-img-top img-fluid post-img rounded-lg" src="{{ MEDIA_URL }}image-coming-soon.jpg" alt="{{ post.name }}">
-                    <a>
+                    </a>
                     {% endif %}
                     <p class="lead mt-2 mb-0 text-center">{{ post.snippet }}
                         <a href="{% url 'post_detail' post.slug %}" class="text-center">Read more</a>

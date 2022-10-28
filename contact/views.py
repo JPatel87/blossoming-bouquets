@@ -10,11 +10,11 @@ def contact(request):
         form = ContactForm(request.POST)
         if form.is_valid():
             form.save()
-            messages.success(request, 'Thank you for your email, we will get back to soon!')
+            messages.success(request, 'Thank you for your enquiry, we will get back to soon!')
 
             return redirect('contact')
         else:
-            messages.error(request, 'Errors on form, not submitted')
+            messages.error(request, 'Failed to send enquiry. Please ensure the form is valid.')
     else:
         form = ContactForm()
 

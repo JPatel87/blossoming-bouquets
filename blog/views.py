@@ -91,6 +91,8 @@ def edit_post(request, slug):
             form.save()
             messages.success(request, 'Your post has been edited')
             return redirect(reverse('post_detail', kwargs={'slug': slug}))
+        else:
+            messages.error(request, 'Errors on form, not submitted')
 
     form = AddPostForm(instance=post)
 
