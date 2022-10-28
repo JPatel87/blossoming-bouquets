@@ -144,7 +144,7 @@ W3 HTML Validator checks were carried out on all html pages, main errors have be
 | ![strong tag](readme_documents/html-validator/strong-tag.png) | Add bouquet page - Removed strong tag and added Bootstrap 4 class "font-weight-bold" to perform a similar function |
 | ![duplicate id](readme_documents/html-validator/duplicate-id.png) ![duplicate-id-detail](readme_documents/html-validator/duplicate-id-detail.png) | Add bouquet page - This error occured because on the custom_clearable_file_input.html page there is an input field with an id but the django forms include also has an id. Removed the input id tag and re-tested the page - no issues |
 | ![image alt tag](readme_documents/html-validator/image-alt.png) | Edit bouquet page - Added "alt" attribute to image tag for bouquet images |
-
+| ![unclosed link](readme_documents/html-validator/unclosed-link.png) | Blog page - four errors resulted due to two open "a" tags for an image. Resolved by changing one open "a" tag to a closed "a" tag |
 
 
 
