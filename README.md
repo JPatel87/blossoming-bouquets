@@ -135,7 +135,7 @@ The features that respond to different screen sizes include:
 
 ### Validator testing
 
-W3 HTML Validator checks were carried out on all viewable site pages, main errors and warnings have been reported below as well as resolutions. Once all page errors and warnings were addressed, validator checks were re-run and no further errors appeared on any page.
+W3 HTML Validator checks were carried out on all viewable site pages. Main errors and warnings have been reported below as well as resolutions. Once all page errors and warnings were addressed, validator checks were re-run and no further errors appeared on any page.
 
 | Error | Resolution |
 | --- | --- |
@@ -150,9 +150,6 @@ W3 HTML Validator checks were carried out on all viewable site pages, main error
 | ![label for attribute](readme_documents/html-validator/label-for-attribute.png) | Checkout page - A label tag was present for an element that did not have an input field hence did not require a "for" attribute. Changed label element to a div element as label not required. |
 | ![loading spinner](readme_documents/html-validator/loading-spinner.png) | Checkout page - the checkout complete loading spinner was kept inside an empty "h1" tag. Replaced "h1" tag with a "div" tag. |
 | ![stray div tag](readme_documents/html-validator/stray-div-tag.png) | Checkout success page - A stray "div" end tag found - tag removed as not required. |
-
-
-
 
 
 CSS W3 Validator checks were carried out on the style.css file - no errors found.
