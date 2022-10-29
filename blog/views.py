@@ -12,6 +12,7 @@ def blog(request):
     posts = Post.objects.all()
     return render(request, 'blog/blog.html', {'posts': posts})
 
+
 def post_detail(request, slug):
     """
     Function to view post detail and add comment.
@@ -39,7 +40,11 @@ def post_detail(request, slug):
     else:
         form = CommentForm()
 
-    return render(request, 'blog/post_detail.html', {'post': post, 'form': form})
+    return render(
+        request,
+        'blog/post_detail.html',
+        {'post': post, 'form': form}
+        )
 
 
 @login_required
@@ -162,7 +167,11 @@ def edit_comment(request, comment_id, slug):
     form = CommentForm(instance=comment)
     messages.info(request, 'You are about to edit your comment')
 
-    return render(request, 'blog/post_detail.html', {'post': post, 'form': form})
+    return render(
+        request,
+        'blog/post_detail.html',
+        {'post': post, 'form': form}
+        )
 
 
 @login_required

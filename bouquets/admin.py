@@ -3,6 +3,7 @@ from django.contrib.admin import ModelAdmin
 from django.contrib import admin
 from .models import Bouquet, Category
 
+
 @admin.register(Bouquet)
 class BouquetAdmin(ModelAdmin):
     """

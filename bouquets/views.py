@@ -1,4 +1,4 @@
-"""Imports from django and the bouquet and category model."""
+"""Imports from django and the bouquet and category model and bouquet form."""
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
@@ -45,10 +45,15 @@ def all_bouquets(request):
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                messages.error(request, "You didn't enter any search criteria!")
+                messages.error(
+                    request,
+                    "You didn't enter any search criteria!"
+                    )
                 return redirect(reverse('bouquets'))
 
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
+            queries = (
+                Q(name__icontains=query) | Q(description__icontains=query)
+                )
             bouquets = bouquets.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
@@ -92,8 +97,9 @@ def add_bouquet(request):
             return redirect(reverse('bouquet_detail', args=[bouquet.id]))
         else:
             messages.error(request,
-            'Failed to add product.\
-            Please ensure the form is valid.')
+                           'Failed to add product.\
+                            Please ensure the form is valid.'
+                           )
 
     else:
         form = BouquetForm()
@@ -122,8 +128,9 @@ def edit_bouquet(request, bouquet_id):
             return redirect(reverse('bouquet_detail', args=[bouquet.id]))
         else:
             messages.error(request,
-            'Failed to update product.\
-            Please ensure the form is valid.')
+                           'Failed to update product.\
+                            Please ensure the form is valid.'
+                           )
     else:
         form = BouquetForm(instance=bouquet)
         messages.info(request, f'You are editing {bouquet.name}')

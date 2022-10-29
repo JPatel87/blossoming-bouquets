@@ -2,6 +2,7 @@
 from django import forms
 from .models import Post, Comment
 
+
 class AddPostForm(forms.ModelForm):
     """Add post form used to add posts for admin only."""
 

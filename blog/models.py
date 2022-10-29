@@ -21,13 +21,16 @@ class Post(models.Model):
         return str(self.title)
 
     def snippet(self):
-        """Display post instance using a snippet of post in blog overview page."""
+        """Display snippet of post instance."""
         return self.body[:50] + '...'
 
 
 class Comment(models.Model):
     """Comment model for comment database."""
-    post = models.ForeignKey(Post, related_name='comments', on_delete=models.CASCADE)
+    post = models.ForeignKey(
+        Post, related_name='comments',
+        on_delete=models.CASCADE
+        )
     author = models.ForeignKey(User, on_delete=models.CASCADE, default=None)
     name = models.CharField(max_length=100, default=None)
     body = models.TextField()
