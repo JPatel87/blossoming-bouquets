@@ -38,7 +38,9 @@
 
 ### Project overview
 
-This project is a ficticious flower shop site selling flower bouquets and baskets for occasions such as birthdays and weddings. Clients are able to view bouquets, add them to a basket, review their basket and make a purchase. The customer is also given the chance to create an account where they would be able to perform the same actions as above but will also be able to view their past orders. 
+This project is a ficticious flower shop site selling flower bouquets and baskets for occasions such as birthdays and weddings. Clients are able to view bouquets, add them to a basket, review their basket, make a purchase, make contact with the store as well as view blog posts. The customer is also given the chance to create an account with the store which would give them additional access to create an up to date profile to aid with quicker checkout and also allow them to comment on blog posts.
+
+This site is an example of an e-commerce application as it faciliates business transactions. Specifically it is a Business to Customer (B2C) e-commerce application, as it is primarily aimed at customers and not businesses.
 
 ### Project goals
 
