@@ -1,11 +1,10 @@
+"""Imports from django."""
 from django.shortcuts import render, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-
+from checkout.models import Order
 from .models import UserProfile
 from .forms import UserProfileForm
-
-from checkout.models import Order
 
 
 @login_required(login_url="/accounts/login/")
@@ -20,7 +19,7 @@ def profile(request):
             messages.success(request, 'Profile updated successfully')
         else:
             messages.error(request, 'Update failed. Please ensure the form is valid.')
-    
+
     else:
         form = UserProfileForm(instance=profile)
     orders = profile.orders.all()
@@ -37,6 +36,7 @@ def profile(request):
 
 @login_required(login_url="/accounts/login/")
 def order_history(request, order_number):
+    """ Display order history from profile page. """
     order = get_object_or_404(Order, order_number=order_number)
 
     messages.info(request, (
