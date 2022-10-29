@@ -1,8 +1,10 @@
+"""Imports from django."""
 from django.db import models
 from django.contrib.auth.models import User
 
-# Create your models here.
+
 class Post(models.Model):
+    """Post model for post database."""
     title = models.CharField(max_length=255)
     slug = models.SlugField(unique=True)
     body = models.TextField()
@@ -11,16 +13,20 @@ class Post(models.Model):
     image = models.ImageField(null=True, blank=True)
 
     class Meta:
+        """Display post with most recent one first."""
         ordering = ['-date']
 
     def __str__(self):
-        return self.title
+        """Method to display post instance by its title."""
+        return str(self.title)
 
     def snippet(self):
+        """Display post instance using a snippet of post in blog overview page."""
         return self.body[:50] + '...'
 
 
 class Comment(models.Model):
+    """Comment model for comment database."""
     post = models.ForeignKey(Post, related_name='comments', on_delete=models.CASCADE)
     author = models.ForeignKey(User, on_delete=models.CASCADE, default=None)
     name = models.CharField(max_length=100, default=None)
@@ -29,7 +35,9 @@ class Comment(models.Model):
     updated = models.DateTimeField(auto_now=True)
 
     class Meta:
+        """Display comment with oldest one first."""
         ordering = ['date']
 
     def __str__(self):
-        return f"{self.post.title} | {self.author}"     
+        """Display comment instance as comment title and author."""
+        return f"{self.post.title} | {self.author}"

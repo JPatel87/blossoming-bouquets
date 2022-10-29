@@ -1,10 +1,10 @@
+"""Imports from django and post and comment models."""
+from django.contrib.admin import ModelAdmin
 from django.contrib import admin
 from .models import Post, Comment
 
-# Register your models here.
-
-
-class PostAdmin(admin.ModelAdmin):
+@admin.register(Post)
+class PostAdmin(ModelAdmin):
     """
     Post model view on django admin for admin user.
     """
@@ -16,10 +16,8 @@ class PostAdmin(admin.ModelAdmin):
     )
 
 
-admin.site.register(Post, PostAdmin)
-
-
-class CommentAdmin(admin.ModelAdmin):
+@admin.register(Comment)
+class CommentAdmin(ModelAdmin):
     """
     Comment model view on django admin for admin user.
     """
@@ -30,6 +28,3 @@ class CommentAdmin(admin.ModelAdmin):
         'date',
         'updated',
     )
-
-
-admin.site.register(Comment, CommentAdmin)

@@ -8,11 +8,19 @@ from .forms import CommentForm
 
 
 def blog(request):
+    """ Function to view blog overview page."""
     posts = Post.objects.all()
     return render(request, 'blog/blog.html', {'posts': posts})
 
-
 def post_detail(request, slug):
+    """
+    Function to view post detail and add comment.
+
+    If comment form is valid, save,
+    return the blog post. Else,
+    return error message.
+    """
+
     post = Post.objects.get(slug=slug)
 
     if request.method == 'POST':
@@ -36,6 +44,13 @@ def post_detail(request, slug):
 
 @login_required
 def add_post(request):
+    """
+    Function to view add post form by admin only.
+
+    If comment form is valid,
+    save, return the blog overview page. Else,
+    return error message.
+    """
 
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
@@ -65,17 +80,14 @@ def add_post(request):
 
 @login_required
 def edit_post(request, slug):
-
     """
-    Function to view edit services page.
+    Function to view edit post form by admin only.
 
-    The get request returns the edit services page.
-    The post request checks the form is valid,
-    saves the form if valid,
-    returns services page and displays
-    the success message. If not valid, error message
-    is displayed.
+    If comment form is valid,
+    save, return the post detail page. Else,
+    return error message.
     """
+
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('blog'))
@@ -103,21 +115,12 @@ def edit_post(request, slug):
 
 @login_required
 def delete_post(request, slug):
+    """Function to view delete post form by admin only."""
 
-    """
-    Function to view edit services page.
-
-    The get request returns the edit services page.
-    The post request checks the form is valid,
-    saves the form if valid,
-    returns services page and displays
-    the success message. If not valid, error message
-    is displayed.
-    """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('blog'))
-        
+
     post = Post.objects.get(slug=slug)
 
     if request.method == "POST":
@@ -136,11 +139,13 @@ def delete_post(request, slug):
 @login_required
 def edit_comment(request, comment_id, slug):
     """
-    Function to view to edit a comment.
+    Function to view edit comment form by authenticated users.
 
-    The get request returns the post_detail page with the comment instance.
-    The post request edits the comment instance.
+    If comment form is valid,
+    save, return the post detail page. Else,
+    return error message.
     """
+
     post = Post.objects.get(slug=slug)
     comment = get_object_or_404(Comment, id=comment_id)
 
@@ -162,15 +167,10 @@ def edit_comment(request, comment_id, slug):
 
 @login_required
 def delete_comment(request, comment_id, slug):
-    """
-    Function to view to delete a comment.
-
-    The get request returns the delete comments page.
-    The post request deletes the comment instance.
-    """
+    """Function to view delete comment form by authenticated users."""
 
     comment = get_object_or_404(Comment, id=comment_id)
-    
+
     if request.method == "POST":
         comment.delete()
         messages.success(request, 'Comment has been deleted')
