@@ -154,7 +154,13 @@ W3 HTML Validator checks were carried out on all viewable site pages. Main error
 
 CSS W3 Validator checks were carried out on the style.css file - no errors found.
 
-PEP8 checks were carried out on the below files, no errors were found:
+PEP8 checks were carried out on all python files. As the PEP8 online site is currently down, in order to validate pyton code, "pycodestyle" was used inside the gitpod workspace.This was used by pressing Ctrl+Shift+P inside the workspace, then "linter" was selected from the search bar, followed by "Python: Select Linter". All error messages were addressed - besides ones list below, which were not addressed due to possible resulting effects on project functionality.
+
+| Error | Resolution |
+| --- | --- |
+| ![settings pep8](readme_documents/python-validator/settings-pep8.png) | settings.py - long line errors were not addressed as may effect project functionality. Upon reviewing comments from other students on Code Institute slack - to prevent any errors displaying, the comment "#  noqa" (no quality assurance) was used. |
+| ![webhooks-pep8](readme_documents/python-validator/webhooks-pep8.png) | webhooks.py - long line error was not addressed as may effect project functionality. Upon reviewing comments from other students on Code Institute slack - to prevent any errors displaying, the comment "#  noqa" (no quality assurance) was used. |
+
 
 Lighthouse testing also carried out to review site performance and useability, the results of these tests can be found below.
 
