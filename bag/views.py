@@ -1,5 +1,8 @@
 """Imports from django and bouquet model."""
-from django.shortcuts import render, redirect, reverse, HttpResponse, get_object_or_404
+from django.shortcuts import (
+    render, redirect, reverse,
+    HttpResponse, get_object_or_404
+)
 from django.contrib import messages
 from bouquets.models import Bouquet
 
@@ -24,7 +27,10 @@ def add_to_bag(request, item_id):
 
     if item_id in list(bag.keys()):
         bag[item_id] += quantity
-        messages.success(request, f'Updated {bouquet.name} quantity to {bag[item_id]}')
+        messages.success(
+            request,
+            f'Updated {bouquet.name} quantity to {bag[item_id]}'
+            )
     else:
         bag[item_id] = quantity
         messages.success(request, f'Added {bouquet.name} to your bag')
@@ -44,7 +50,10 @@ def adjust_bag(request, item_id):
 
     if quantity > 0:
         bag[item_id] = quantity
-        messages.success(request, f'Updated {bouquet.name} quantity to {bag[item_id]}')
+        messages.success(
+            request,
+            f'Updated {bouquet.name} quantity to {bag[item_id]}'
+            )
     else:
         bag.pop(item_id)
         messages.success(request, f'Removed {bouquet.name} from your bag')
