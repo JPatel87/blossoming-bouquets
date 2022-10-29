@@ -1,4 +1,4 @@
-"""Imports from django and post and comment models."""
+""" Imports from django and post and comment models. """
 from django.contrib.admin import ModelAdmin
 from django.contrib import admin
 from .models import Post, Comment
@@ -7,7 +7,7 @@ from .models import Post, Comment
 @admin.register(Post)
 class PostAdmin(ModelAdmin):
     """
-    Post model view on django admin for admin user.
+    Post model view on django admin.
     """
 
     list_display = (
@@ -20,7 +20,7 @@ class PostAdmin(ModelAdmin):
 @admin.register(Comment)
 class CommentAdmin(ModelAdmin):
     """
-    Comment model view on django admin for admin user.
+    Comment model view on django admin.
     """
 
     list_display = (

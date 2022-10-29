@@ -4,7 +4,9 @@ from django.contrib.auth.models import User
 
 
 class Post(models.Model):
-    """Post model for post database."""
+    """
+    Blog post model for database.
+    """
     title = models.CharField(max_length=255)
     slug = models.SlugField(unique=True)
     body = models.TextField()
@@ -13,20 +15,22 @@ class Post(models.Model):
     image = models.ImageField(null=True, blank=True)
 
     class Meta:
-        """Display post with most recent one first."""
+        """ Display most recent post first. """
         ordering = ['-date']
 
     def __str__(self):
-        """Method to display post instance by its title."""
+        """ Display post instance by its title. """
         return str(self.title)
 
     def snippet(self):
-        """Display snippet of post instance."""
+        """ Display snippet of post instance. """
         return self.body[:50] + '...'
 
 
 class Comment(models.Model):
-    """Comment model for comment database."""
+    """
+    Comment model for database.
+    """
     post = models.ForeignKey(
         Post, related_name='comments',
         on_delete=models.CASCADE
@@ -38,7 +42,7 @@ class Comment(models.Model):
     updated = models.DateTimeField(auto_now=True)
 
     class Meta:
-        """Display comment with oldest one first."""
+        """ Display oldest comment first. """
         ordering = ['date']
 
     def __str__(self):

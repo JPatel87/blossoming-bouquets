@@ -1,10 +1,12 @@
-"""Imports from django and post and comment model."""
+""" Imports from django and post and comment model. """
 from django import forms
 from .models import Post, Comment
 
 
 class AddPostForm(forms.ModelForm):
-    """Add post form used to add posts for admin only."""
+    """
+    Add post form for admin only.
+    """
 
     class Meta:
         """Class to define form fields."""
@@ -21,10 +23,12 @@ class AddPostForm(forms.ModelForm):
 
 
 class CommentForm(forms.ModelForm):
-    """Add comment form used to add comments for authenticated users."""
+    """
+    Comment form for authenticated users.
+    """
 
     class Meta:
-        """Class to define form fields and labels."""
+        """ Define form fields and labels. """
         model = Comment
         fields = ('name', 'body')
         labels = {
@@ -33,9 +37,9 @@ class CommentForm(forms.ModelForm):
         }
 
     def clean_name(self):
-        """Method to capitalize names from comments form."""
+        """ Capitalize author names. """
         return self.cleaned_data['name'].capitalize()
 
     def clean_body(self):
-        """Method to capitalize body text from comments form."""
+        """ Capitalize body text. """
         return self.cleaned_data['body'].capitalize()

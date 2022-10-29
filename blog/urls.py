@@ -1,4 +1,4 @@
-"""Imports from django and views."""
+""" Imports from django and views. """
 from django.urls import path
 from . import views
 
@@ -9,11 +9,9 @@ urlpatterns = [
     path('edit_post/<slug:slug>/', views.edit_post, name='edit_post'),
     path('delete_post/<slug:slug>/', views.delete_post, name='delete_post'),
     path('edit_comment/<int:comment_id>/<slug:slug>/',
-         views.edit_comment, name='edit_comment'
-         ),
+         views.edit_comment, name='edit_comment'),
     path(
         'delete_comment/<int:comment_id>/<slug:slug>/',
-        views.delete_comment, name='delete_comment'
-        ),
+        views.delete_comment, name='delete_comment'),
     path('<slug:slug>/', views.post_detail, name='post_detail'),
 ]

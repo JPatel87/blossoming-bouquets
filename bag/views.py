@@ -1,4 +1,4 @@
-"""Imports from django and bouquet model."""
+""" Imports from django and bouquet model. """
 from django.shortcuts import (
     render, redirect, reverse,
     HttpResponse, get_object_or_404
@@ -9,7 +9,7 @@ from bouquets.models import Bouquet
 
 def view_bag(request):
     """
-    Function to renders the bag contents page.
+    Render bag contents page.
     """
 
     return render(request, 'bag/bag.html')
@@ -41,7 +41,7 @@ def add_to_bag(request, item_id):
 
 def adjust_bag(request, item_id):
     """
-    Adjust the quantity of the specified product to the specified amount.
+    Adjust quantity of specified bouquet to specified amount.
     """
 
     bouquet = get_object_or_404(Bouquet, pk=item_id)
@@ -64,7 +64,7 @@ def adjust_bag(request, item_id):
 
 def remove_from_bag(request, item_id):
     """
-    Remove the item from the shopping bag.
+    Remove bouquet from bag.
     """
 
     try:

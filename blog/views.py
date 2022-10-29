@@ -1,4 +1,4 @@
-"""Imports from django and post and comment model."""
+"""Imports from django and post and comment models and forms."""
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
@@ -8,14 +8,16 @@ from .forms import CommentForm
 
 
 def blog(request):
-    """ Function to view blog overview page."""
+    """
+    View blog overview page.
+    """
     posts = Post.objects.all()
     return render(request, 'blog/blog.html', {'posts': posts})
 
 
 def post_detail(request, slug):
     """
-    Function to view post detail and add comment.
+    View post detail and add comment.
 
     If comment form is valid, save,
     return the blog post. Else,
@@ -50,7 +52,7 @@ def post_detail(request, slug):
 @login_required
 def add_post(request):
     """
-    Function to view add post form by admin only.
+    View add post form by admin only.
 
     If comment form is valid,
     save, return the blog overview page. Else,
@@ -86,7 +88,7 @@ def add_post(request):
 @login_required
 def edit_post(request, slug):
     """
-    Function to view edit post form by admin only.
+    View edit post form by admin only.
 
     If comment form is valid,
     save, return the post detail page. Else,
@@ -120,7 +122,9 @@ def edit_post(request, slug):
 
 @login_required
 def delete_post(request, slug):
-    """Function to view delete post form by admin only."""
+    """
+    View to delete post by admin only.
+    """
 
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
@@ -144,7 +148,7 @@ def delete_post(request, slug):
 @login_required
 def edit_comment(request, comment_id, slug):
     """
-    Function to view edit comment form by authenticated users.
+    View edit comment form by authenticated users.
 
     If comment form is valid,
     save, return the post detail page. Else,
@@ -176,7 +180,9 @@ def edit_comment(request, comment_id, slug):
 
 @login_required
 def delete_comment(request, comment_id, slug):
-    """Function to view delete comment form by authenticated users."""
+    """
+    View to delete comment by authenticated users.
+    """
 
     comment = get_object_or_404(Comment, id=comment_id)
 
