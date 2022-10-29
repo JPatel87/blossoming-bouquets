@@ -1,11 +1,11 @@
-"""Imports from django and contact model."""
+""" Imports from django and contact model. """
 from django import forms
 from .models import Contact
 
 
 class ContactForm(forms.ModelForm):
     """
-    Contact form used to make enquiries.
+    Contact form to make enquiries.
     """
 
     name = forms.CharField(
@@ -22,9 +22,7 @@ class ContactForm(forms.ModelForm):
     )
 
     class Meta:
-        """
-        Class to define booking form fields and widgets.
-        """
+        """ Define booking form fields and widgets. """
 
         model = Contact
         fields = "__all__"

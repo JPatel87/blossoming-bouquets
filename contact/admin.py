@@ -1,4 +1,4 @@
-"""Imports from django and contact model."""
+""" Imports from django and contact model. """
 from django.contrib.admin import ModelAdmin
 from django.contrib import admin
 from .models import Contact
@@ -7,7 +7,7 @@ from .models import Contact
 @admin.register(Contact)
 class ContactAdmin(ModelAdmin):
     """
-    Contact model view on django admin for admin user.
+    Contact model view on django admin.
     """
 
     list_display = (

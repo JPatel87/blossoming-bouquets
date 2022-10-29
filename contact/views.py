@@ -1,4 +1,4 @@
-"""Imports from django and contact form."""
+""" Imports from django and contact form. """
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from .forms import ContactForm
@@ -6,12 +6,11 @@ from .forms import ContactForm
 
 def contact(request):
     """
-    Function to view contact us form.
+    View to display contact us form.
 
-    If the form is valid,
-    a success message is displayed
-    and the contact page is returned.
-    If invalid, error message is displayed.
+    If the form is valid, save, display a
+    success message and return the contact us form.
+    If invalid, display error message.
     """
 
     if request.method == 'POST':

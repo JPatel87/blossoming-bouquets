@@ -1,11 +1,9 @@
-"""Imports from django model."""
+""" Imports from django model. """
 from django.db import models
 
 
 class Contact(models.Model):
-    """
-    Contact model for contact database.
-    """
+    """ Contact model for database. """
 
     SUBJECT_CHOICES = (
         ("Bouquets", "Bouquets"),
@@ -16,9 +14,7 @@ class Contact(models.Model):
     )
 
     class Meta:
-        """
-        Method to display category model name as categories in admin view.
-        """
+        """ Display category model name as categories. """
         verbose_name_plural = 'Enquiries'
         ordering = ['-date']
 
@@ -33,7 +29,5 @@ class Contact(models.Model):
     date = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        """
-        Method to display contact instance by subject and person name.
-        """
+        """ Display contact instance by subject and person name. """
         return f"Query about {self.subject} by {self.name}"

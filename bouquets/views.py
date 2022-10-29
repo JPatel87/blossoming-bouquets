@@ -1,4 +1,4 @@
-"""Imports from django and the bouquet and category model and bouquet form."""
+""" Imports from django and bouquet and category models and bouquet form. """
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
@@ -10,7 +10,7 @@ from .forms import BouquetForm
 
 def all_bouquets(request):
     """
-    Function to view all bouquets.
+    View to display all bouquets.
 
     Sorting and search queries also
     included.
@@ -71,7 +71,9 @@ def all_bouquets(request):
 
 
 def bouquet_detail(request, bouquet_id):
-    """ Function to view individual bouquet detail."""
+    """
+    View to display individual bouquet detail.
+    """
 
     bouquet = get_object_or_404(Bouquet, pk=bouquet_id)
 
@@ -84,7 +86,9 @@ def bouquet_detail(request, bouquet_id):
 
 @login_required
 def add_bouquet(request):
-    """ Add a product to the store """
+    """
+    View to add a product for admin only.
+    """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
@@ -114,7 +118,9 @@ def add_bouquet(request):
 
 @login_required
 def edit_bouquet(request, bouquet_id):
-    """ Edit a product in the store. """
+    """
+    View to edit a product for admin only.
+    """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
@@ -146,7 +152,9 @@ def edit_bouquet(request, bouquet_id):
 
 @login_required
 def delete_bouquet(request, bouquet_id):
-    """ Delete a product from the store. """
+    """
+    View to delete a product for admin only.
+    """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))

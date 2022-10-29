@@ -1,4 +1,4 @@
-"""Imports from django."""
+""" Imports from django. """
 from decimal import Decimal
 from django.conf import settings
 from django.shortcuts import get_object_or_404
@@ -6,7 +6,7 @@ from bouquets.models import Bouquet
 
 
 def bag_contents(request):
-    """ Function to renders the bag contents. """
+    """ Renders the bag contents. """
 
     bag_items = []
     total = 0

@@ -1,11 +1,11 @@
-"""Imports from django and order models."""
+""" Imports from django and order models. """
 from django.contrib import admin
 from .models import Order, OrderLineItem
 
 
 class OrderLineItemAdminInline(admin.TabularInline):
     """
-    OrderLineItem model view for admin user.
+    OrderLineItem model view on django admin.
     """
 
     model = OrderLineItem
@@ -14,7 +14,7 @@ class OrderLineItemAdminInline(admin.TabularInline):
 
 class OrderAdmin(admin.ModelAdmin):
     """
-    Order model view for admin user.
+    Order model view on django admin.
     """
 
     inlines = (OrderLineItemAdminInline,)

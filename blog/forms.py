@@ -9,16 +9,16 @@ class AddPostForm(forms.ModelForm):
     """
 
     class Meta:
-        """Class to define form fields."""
+        """ Define form fields. """
         model = Post
         fields = ('title', 'slug', 'body', 'image')
 
     def clean_title(self):
-        """Method to capitalize post title from add post form."""
+        """ Capitalize post title. """
         return self.cleaned_data['title'].capitalize()
 
     def clean_body(self):
-        """Method to capitalize body text from add post form."""
+        """ Capitalize body text."""
         return self.cleaned_data['body'].capitalize()
 
 

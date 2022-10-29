@@ -1,4 +1,4 @@
-"""Imports from django, bouquet and category models."""
+""" Imports from django, bouquet and category models. """
 from django.contrib.admin import ModelAdmin
 from django.contrib import admin
 from .models import Bouquet, Category
@@ -7,7 +7,7 @@ from .models import Bouquet, Category
 @admin.register(Bouquet)
 class BouquetAdmin(ModelAdmin):
     """
-    bouquet model view for admin user.
+    Bouquet model view on django admin.
     """
 
     list_display = (
@@ -23,7 +23,7 @@ class BouquetAdmin(ModelAdmin):
 @admin.register(Category)
 class CategoryAdmin(ModelAdmin):
     """
-    Category model view for admin user.
+    Category model view on django admin.
     """
 
     list_display = (

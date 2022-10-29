@@ -1,4 +1,4 @@
-"""Imports from django, json, stripe and bouquet, profile and order models."""
+""" Imports from django, json, stripe, bouquet, profile and order models. """
 import json
 from django.shortcuts import (render, redirect,
                               reverse, get_object_or_404, HttpResponse)
@@ -16,7 +16,9 @@ from .models import Order, OrderLineItem
 
 @require_POST
 def cache_checkout_data(request):
-    """Function to cache checkout for Stripe payment."""
+    """
+    View to cache checkout for Stripe payment.
+    """
     try:
         pid = request.POST.get('client_secret').split('_secret')[0]
         stripe.api_key = settings.STRIPE_SECRET_KEY
@@ -33,10 +35,11 @@ def cache_checkout_data(request):
 
 
 def checkout(request):
-    """Function to handle checkout.
+    """
+    View to handle checkout.
 
     Checkout form is rendered. If form
-    is valid, payment is processed, else
+    is valid, save, payment is processed, else
     error message is displayed.
     """
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
@@ -143,7 +146,7 @@ def checkout(request):
 
 def checkout_success(request, order_number):
     """
-    Handle successful checkouts
+    View to handle successful checkouts.
     """
     save_info = request.session.get('save_info')
     order = get_object_or_404(Order, order_number=order_number)

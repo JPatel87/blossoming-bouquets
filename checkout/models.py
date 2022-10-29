@@ -1,4 +1,4 @@
-"""Imports from django, bouquet and user profile models."""
+""" Imports from django, bouquet and user profile models. """
 import uuid
 from django.db import models
 from django.db.models import Sum
@@ -10,7 +10,7 @@ from profiles.models import UserProfile
 
 class Order(models.Model):
     """
-    Order model for order database.
+    Order model for database.
     """
 
     order_number = models.CharField(max_length=32, null=False, editable=False)
@@ -39,7 +39,7 @@ class Order(models.Model):
 
     def _generate_order_number(self):
         """
-        Generate a random, unique order number using UUID
+        Generate a random, unique order number using UUID.
         """
         return uuid.uuid4().hex.upper()
 
@@ -68,9 +68,7 @@ class Order(models.Model):
         super().save(*args, **kwargs)
 
     def __str__(self):
-        """
-        Method to display order instance order number.
-        """
+        """ Display order instance by its order number. """
         return self.order_number
 
 
@@ -99,7 +97,5 @@ class OrderLineItem(models.Model):
         super().save(*args, **kwargs)
 
     def __str__(self):
-        """
-        Method to display order line instance by sku and order number.
-        """
+        """ Display order line instance by its sku and order number. """
         return f'SKU {self.bouquet.sku} on order {self.order.order_number}'

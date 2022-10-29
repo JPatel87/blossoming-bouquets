@@ -1,4 +1,4 @@
-"""Imports from django and userprofile model."""
+""" Imports from django and userprofile model. """
 from django import forms
 from .models import UserProfile
 
@@ -9,9 +9,7 @@ class UserProfileForm(forms.ModelForm):
     """
 
     class Meta:
-        """
-        Class to define profile form fields and labels.
-        """
+        """ Define profile form exlude fields. """
         model = UserProfile
         exclude = ('user',)
 

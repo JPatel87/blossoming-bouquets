@@ -1,15 +1,15 @@
-"""Imports from django and order model."""
+""" Imports from django and order model. """
 from django import forms
 from .models import Order
 
 
 class OrderForm(forms.ModelForm):
     """
-    Order form used to make appointments.
+    Order form to make appointments.
     """
     class Meta:
         """
-        Class to define booking form fields.
+        Define order form fields.
         """
         model = Order
         fields = ('full_name', 'email', 'phone_number',
@@ -20,7 +20,7 @@ class OrderForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         """
         Add placeholders and classes, remove auto-generated
-        labels and set autofocus on first field
+        labels and set autofocus on first field.
         """
         super().__init__(*args, **kwargs)
         placeholders = {

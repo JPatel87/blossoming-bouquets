@@ -1,26 +1,25 @@
-"""Imports from django."""
+""" Imports from django. """
 from django.db import models
 
 
 class Category(models.Model):
     """
-    Category model for bouquets.
+    Category model for database.
     """
     class Meta:
-        """
-        Method to display category model name as categories in admin view.
-        """
+        """ Display category model name as categories in admin view. """
         verbose_name_plural = 'Categories'
 
     name = models.CharField(max_length=100)
 
     def __str__(self):
+        """ Display category instance by its name. """
         return str(self.name)
 
 
 class Bouquet(models.Model):
     """
-    Bouquet model for bouquets.
+    Bouquet model for database.
     """
     category = models.ForeignKey(
         'Category', null=True,
@@ -33,7 +32,5 @@ class Bouquet(models.Model):
     image = models.ImageField(null=True, blank=True)
 
     def __str__(self):
-        """
-        Method to display bouquet instance by its name.
-        """
+        """ Display bouquet instance by its name. """
         return str(self.name)
