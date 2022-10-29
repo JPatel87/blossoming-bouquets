@@ -135,7 +135,7 @@ The features that respond to different screen sizes include:
 
 ### Validator testing
 
-- W3 HTML Validator checks were carried out on all viewable site pages. Main errors and warnings have been reported below as well as resolutions. Once all page errors and warnings were addressed, validator checks were re-run and no further errors appeared on any page.
+- [W3 HTML Validator](https://validator.w3.org/#validate_by_input) checks were carried out on all viewable site pages. Main errors and warnings have been reported below as well as resolutions. Once all page errors and warnings were addressed, validator checks were re-run and no further errors appeared on any page.
 
 | Error | Resolution |
 | --- | --- |
@@ -151,17 +151,23 @@ The features that respond to different screen sizes include:
 | ![loading spinner](readme_documents/html-validator/loading-spinner.png) | Checkout page - the checkout complete loading spinner was kept inside an empty "h1" tag. Replaced "h1" tag with a "div" tag. |
 | ![stray div tag](readme_documents/html-validator/stray-div-tag.png) | Checkout success page - A stray "div" end tag found - tag removed as not required. |
 
-- CSS W3 Validator checks were carried out on the three css files present in this project; one in the root app, one in the bag app and one in the profile app - no errors were found.
+- [CSS W3 Validator](https://jigsaw.w3.org/css-validator/) checks were carried out on the three css files present in this project; one in the root app, one in the checkout app and one in the profile app - no errors were found.
 
-- PEP8 checks were carried out on all python files. As the PEP8 online site is currently down, in order to validate pyton code, "pycodestyle" was used inside the gitpod workspace.This was used by pressing Ctrl+Shift+P inside the workspace, then "linter" was selected from the search bar, followed by "Python: Select Linter". All error messages were addressed - besides ones list below, which were not addressed due to possible resulting effects on project functionality.
+- [JShint Validator](https://jshint.com/) checks on Javascript files/script tags was performed. The table below captures any errors and how they were resolved. There was no errors on the script tags in the edit_bouquets html file, or the sadd_bouquets html file.
 
 | Error | Resolution |
 | --- | --- |
-| ![settings pep8](readme_documents/python-validator/settings-pep8.png) | settings.py - long line errors were not addressed as may effect project functionality. Upon reviewing comments from other students on Code Institute slack - to prevent any errors displaying, the comment "#  noqa" (no quality assurance) was used. |
+| ![stripe element js](readme_documents/js-validator/stripe-element-js.png) | stripe-element-js file in the Checkout app - In JShint, clicked on "configure" on the top right, then selected "JQuery" from the "Assume" section - this removed the "undefined "$" variables. Also, in the "Assume" section selected "New Javascript features (ES6)" - this removed the "template literal syntax" error. A missing colon was added at the end of line 117. |
+| ![countryfield js](readme_documents/js-validator/countryfield-js.png) | countryfield.js file in the Profile app - Removed semicolon from end of line 4. |
+| ![bag js](readme_documents/js-validator/bag-js.png) | bag html file, script tag - Added semicolons at the end of lines 5 and 18. |
+| ![bouquets js](readme_documents/js-validator/bouquets-js.png) | bouquets html file, script tag - Added semicolons at the end of lines 2, 3 and 24. |
+
+- PEP8 checks were carried out on all python files. As the PEP8 online site is currently down, in order to validate pyton code, "pycodestyle" was used inside the [Gitpod](https://www.gitpod.io/) workspace.This was used by pressing Ctrl+Shift+P inside the workspace, then "linter" was selected from the search bar, followed by "Python: Select Linter". All error messages were addressed - besides ones list below, which were not addressed due to possible resulting effects on project functionality.
+
+| Error | Resolution |
+| --- | --- |
+| ![settings pep8](readme_documents/python-validator/settings-pep8.png) | settings.py - long line errors were not addressed as may effect project functionality. Upon reviewing comments on the Code Institute [Slack](https://slack.com/intl/en-gb/trials?remote_promo=f4d95f0b&utm_medium=ppc&utm_source=google&utm_campaign=ppc_google_emea_uk_en_brand_selfserve_discount&utm_term=Slack_Exact_._slack_._e_._c&utm_content=617329610604&gclid=EAIaIQobChMItMjmh8SG-wIVEu7tCh3JBQhlEAAYASAAEgIGPPD_BwE&gclsrc=aw.ds) community - to prevent any errors displaying, the comment "#  noqa" (no quality assurance) was used. |
 | ![webhooks-pep8](readme_documents/python-validator/webhooks-pep8.png) | webhooks.py - long line error was not addressed as may effect project functionality. Upon reviewing comments from other students on Code Institute slack - to prevent any errors displaying, the comment "#  noqa" (no quality assurance) was used. |
-
-
-Lighthouse testing also carried out to review site performance and useability, the results of these tests can be found below.
 
 ## Deployment 
 
