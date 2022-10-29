@@ -135,7 +135,7 @@ The features that respond to different screen sizes include:
 
 ### Validator testing
 
-W3 HTML Validator checks were carried out on all viewable site pages. Main errors and warnings have been reported below as well as resolutions. Once all page errors and warnings were addressed, validator checks were re-run and no further errors appeared on any page.
+- W3 HTML Validator checks were carried out on all viewable site pages. Main errors and warnings have been reported below as well as resolutions. Once all page errors and warnings were addressed, validator checks were re-run and no further errors appeared on any page.
 
 | Error | Resolution |
 | --- | --- |
@@ -151,10 +151,9 @@ W3 HTML Validator checks were carried out on all viewable site pages. Main error
 | ![loading spinner](readme_documents/html-validator/loading-spinner.png) | Checkout page - the checkout complete loading spinner was kept inside an empty "h1" tag. Replaced "h1" tag with a "div" tag. |
 | ![stray div tag](readme_documents/html-validator/stray-div-tag.png) | Checkout success page - A stray "div" end tag found - tag removed as not required. |
 
+- CSS W3 Validator checks were carried out on the three css files present in this project; one in the root app, one in the bag app and one in the profile app - no errors were found.
 
-CSS W3 Validator checks were carried out on the style.css file - no errors found.
-
-PEP8 checks were carried out on all python files. As the PEP8 online site is currently down, in order to validate pyton code, "pycodestyle" was used inside the gitpod workspace.This was used by pressing Ctrl+Shift+P inside the workspace, then "linter" was selected from the search bar, followed by "Python: Select Linter". All error messages were addressed - besides ones list below, which were not addressed due to possible resulting effects on project functionality.
+- PEP8 checks were carried out on all python files. As the PEP8 online site is currently down, in order to validate pyton code, "pycodestyle" was used inside the gitpod workspace.This was used by pressing Ctrl+Shift+P inside the workspace, then "linter" was selected from the search bar, followed by "Python: Select Linter". All error messages were addressed - besides ones list below, which were not addressed due to possible resulting effects on project functionality.
 
 | Error | Resolution |
 | --- | --- |
