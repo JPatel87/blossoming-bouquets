@@ -1,11 +1,18 @@
+"""Imports from django, widgets and bouquet model."""
 from django import forms
 from .widgets import CustomClearableFileInput
 from .models import Bouquet
 
 
 class BouquetForm(forms.ModelForm):
+    """
+    Bouquet form used to add bouquets.
+    """
 
     class Meta:
+        """
+        Class to define bouquet form fields and widgets.
+        """
         model = Bouquet
         fields = '__all__'
 

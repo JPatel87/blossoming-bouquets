@@ -9,7 +9,8 @@ from .forms import BouquetForm
 
 
 def all_bouquets(request):
-    """ Function to view all bouquets.
+    """
+    Function to view all bouquets.
 
     Sorting and search queries also
     included.
@@ -90,11 +91,13 @@ def add_bouquet(request):
             messages.success(request, 'Successfully added product!')
             return redirect(reverse('bouquet_detail', args=[bouquet.id]))
         else:
-            messages.error(request, 'Failed to add product. Please ensure the form is valid.')    
-    
+            messages.error(request,
+            'Failed to add product.\
+            Please ensure the form is valid.')
+
     else:
         form = BouquetForm()
-       
+
     template = 'bouquets/add_bouquet.html'
     context = {
         'form': form,
@@ -105,7 +108,7 @@ def add_bouquet(request):
 
 @login_required
 def edit_bouquet(request, bouquet_id):
-    """ Edit a product in the store """
+    """ Edit a product in the store. """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
@@ -118,7 +121,9 @@ def edit_bouquet(request, bouquet_id):
             messages.success(request, 'Successfully updated product!')
             return redirect(reverse('bouquet_detail', args=[bouquet.id]))
         else:
-            messages.error(request, 'Failed to update product. Please ensure the form is valid.')
+            messages.error(request,
+            'Failed to update product.\
+            Please ensure the form is valid.')
     else:
         form = BouquetForm(instance=bouquet)
         messages.info(request, f'You are editing {bouquet.name}')
@@ -134,7 +139,7 @@ def edit_bouquet(request, bouquet_id):
 
 @login_required
 def delete_bouquet(request, bouquet_id):
-    """ Delete a product from the store """
+    """ Delete a product from the store. """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))

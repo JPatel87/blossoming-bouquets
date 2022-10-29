@@ -33,4 +33,7 @@ class Contact(models.Model):
     date = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
+        """
+        Method to display contact instance by subject and person name.
+        """
         return f"Query about {self.subject} by {self.name}"

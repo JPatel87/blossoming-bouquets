@@ -1,14 +1,12 @@
+"""Imports from django and post and comment model."""
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from .models import Post, Comment
-
-
 from .forms import AddPostForm
 from .forms import CommentForm
 
 
-# Create your views here.
 def blog(request):
     posts = Post.objects.all()
     return render(request, 'blog/blog.html', {'posts': posts})

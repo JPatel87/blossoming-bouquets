@@ -1,9 +1,16 @@
+"""Imports from django and order model."""
 from django import forms
 from .models import Order
 
 
 class OrderForm(forms.ModelForm):
+    """
+    Order form used to make appointments.
+    """
     class Meta:
+        """
+        Class to define booking form fields.
+        """
         model = Order
         fields = ('full_name', 'email', 'phone_number',
                   'street_address1', 'street_address2',

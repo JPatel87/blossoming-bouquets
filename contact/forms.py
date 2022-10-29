@@ -1,8 +1,12 @@
+"""Imports from django and contact model."""
 from django import forms
 from .models import Contact
 
 
 class ContactForm(forms.ModelForm):
+    """
+    Contact form used to make enquiries.
+    """
 
     name = forms.CharField(
         widget=forms.TextInput(attrs={'placeholder':'Name'}),
@@ -17,6 +21,10 @@ class ContactForm(forms.ModelForm):
     )
 
     class Meta:
+        """
+        Class to define booking form fields and widgets.
+        """
+
         model = Contact
         fields = "__all__"
         widgets = {

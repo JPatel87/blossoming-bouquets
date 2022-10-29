@@ -1,9 +1,10 @@
+"""Imports from django and contact model."""
+from django.contrib.admin import ModelAdmin
 from django.contrib import admin
 from .models import Contact
 
-# Register your models here.
-
-class ContactAdmin(admin.ModelAdmin):
+@admin.register(Contact)
+class ContactAdmin(ModelAdmin):
     """
     Contact model view on django admin for admin user.
     """
@@ -14,5 +15,3 @@ class ContactAdmin(admin.ModelAdmin):
         'subject',
         'date',
     )
-
-admin.site.register(Contact, ContactAdmin)
