@@ -1,8 +1,11 @@
+"""Imports from django model."""
 from django.db import models
 
 
-# Create your models here.
 class Contact(models.Model):
+    """
+    Contact model for contact database.
+    """
 
     SUBJECT_CHOICES = (
         ("Bouquets", "Bouquets"),
@@ -28,7 +31,6 @@ class Contact(models.Model):
     )
     query = models.TextField()
     date = models.DateTimeField(auto_now_add=True)
-
 
     def __str__(self):
         return f"Query about {self.subject} by {self.name}"
