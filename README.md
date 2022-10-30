@@ -159,7 +159,7 @@ The features that respond to different screen sizes include:
 
 | Error | Resolution |
 | --- | --- |
-| ![stripe element js](readme_documents/js-validator/stripe-element-js.png) | stripe-element-js file in the Checkout app - In JShint, clicked on "configure" on the top right, then selected "JQuery" from the "Assume" section - this removed the "undefined "$" variables. Also, in the "Assume" section selected "New Javascript features (ES6)" - this removed the "template literal syntax" error. A missing colon was added at the end of line 117. |
+| ![stripe element js](readme_documents/js-validator/stripe-element-js.png) | stripe-element-js file in the Checkout app - In JShint, clicked on "configure" on the top right, then selected "JQuery" from the "Assume" section - this removed the "undefined "$" variables. Also, in the "Assume" section selected "New Javascript features (ES6)" - this removed the "template literal syntax" error. A missing colon was added at the end of line 117. The only undefine variable left is now Stripe which is coming from another Script hence there is nothing that can be done about this. 
 | ![countryfield js](readme_documents/js-validator/countryfield-js.png) | countryfield.js file in the Profile app - Removed semicolon from end of line 4. |
 | ![bag js](readme_documents/js-validator/bag-js.png) | bag html file, script tag - Added semicolons at the end of lines 5 and 18. |
 | ![bouquets js](readme_documents/js-validator/bouquets-js.png) | bouquets html file, script tag - Added semicolons at the end of lines 2, 3 and 24. |
