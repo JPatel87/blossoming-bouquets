@@ -44,7 +44,7 @@ This site is an example of an e-commerce application as it faciliates business t
 
 ### Project goals
 
-Below is a spreadsheet of epics for this project which have been broken down into user stories. The implementation of these user stories have been planned and managed through the Github Kanban board tool. See the following link to the []().
+Attached is list of epics for this project which have been broken down into [user stories](readme_documents/user-stories/user-stories.pdf). The implementation of these user stories have been planned and managed through the Github Kanban board tool. See the following link to the [Blossoming Bouquets Kanban board](https://github.com/users/JPatel87/projects/3/views/1).
 
 ## Scope
 
