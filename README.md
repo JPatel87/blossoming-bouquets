@@ -18,6 +18,9 @@
         * [Colour scheme](#colour-scheme)
         * [Typography](#typography)
         * [Imagery](#imagery)
+    * [Web marketing](#web-marketing)
+        * [Search Engine Optimization](#search-engine-optimization)
+        * [Social media marketing](#social-media-marketing)
 * [Testing](#testing)
     * [User story testing](#user-story-testing)
     * [Manual testing](#manual-testing)
@@ -130,6 +133,18 @@ The hero image was selected as it effectively portrays to the user the intent of
 Images were compressed using [Tiny png](https://tinypng.com/) in order to improve site load times for better user experience. 
 
 [Font awesome](https://fontawesome.com/) icons have been used for navigation links (account, shopping bag, search), social media links (email and facebook) and key button links (keep shopping, checkout and view bag)
+
+## Web marketing
+
+### Search Engine Optimization
+
+Search engine optimization (SEO), is a means to optimize web pages for better rankings in search engines.
+
+- One method by which to do this, is to select the right meta keywords for a site. For this site, deciding on the keywords began with summarising the site content into three general topics; bouquets, occasions and orders. Under these topics, a mixture of short tail and long tail keywords were listed. The effectiveness of these keywords was reviewed on Google search followed by Word Tracker to narrow down the list of key words to 10 keywords. These keywords were selected as they are popular, however, not as widely searched for as the keywords crossed through so as to minimize competition. These keywords were added to a head keyword meta tag in the base.html file, in order for them to be applied across the site. 
+
+![keywords](readme_documents/web-marketing/keywords.png)
+
+- To further aid SEO, the site has been given an appropriate title tag and meta description tag in the base.html file, in order for them to be applied across the site. Title: "Blossoming bouquets". Meta description: “Buy fresh flower bouquets and baskets for any occasion from the UK, free delivery on orders over £30.”
 
 ## Testing 
 
