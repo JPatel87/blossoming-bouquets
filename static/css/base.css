@@ -51,6 +51,10 @@ h1 {
     color: white !important;
 }
 
+.btn-green {
+    min-width: 140px;
+}
+
 .border-grey {
     border: 1px solid #666666 !important;
 }
@@ -420,6 +424,15 @@ a.category-badge > span.badge:hover,
 
 .add-img-btn:hover {
     box-shadow: 0 10px 20px #666666;
+}
+
+.social-link {
+    color: white;
+    font-size: 20px;
+}
+
+.social-link:hover {
+    color: palevioletred;
 }
 
 /* Media queries */
