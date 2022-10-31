@@ -70,15 +70,18 @@ There is a single One to One relationship in this project. This is the relations
 
 There is no relationship associated with the Contact model and any other model; it is a standalone model. 
 
-One of the requirements for this project was to create at least three custom Django models. This has been achieved through the creation of the Contact model, Blog Post model and the Blog Comments model.
-
-
-
-
-
 ### Applications
 
-In this project, xxxx applications (apps) have been created; 
+In this project, six applications (apps) have been created; 
+
+- Home
+- Bouquets
+- Bag
+- Profile
+- Blog
+- Contact
+
+One of the requirements for this project was to create at least three custom Django models. This has been achieved through the creation of the Contact model (Contact app), Blog Post model (Blog app) and the Blog Comments model (Blog app).
 
 ## Skeleton
 
