@@ -140,11 +140,25 @@ Images were compressed using [Tiny png](https://tinypng.com/) in order to improv
 
 Search engine optimization (SEO), is a means to optimize web pages for better rankings in search engines.
 
-- One method by which to do this, is to select the right meta keywords for a site. For this site, deciding on the keywords began with summarising the site content into three general topics; bouquets, occasions and orders. Under these topics, a mixture of short tail and long tail keywords were listed. The effectiveness of these keywords was reviewed on Google search followed by Word Tracker to narrow down the list of key words to 10 keywords. These keywords were selected as they are popular, however, not as widely searched for as the keywords crossed through so as to minimize competition. These keywords were added to a head keyword meta tag in the base.html file, in order for them to be applied across the site. 
+- One method by which to do this, is to select the right meta keywords for a site. For this site, deciding on the keywords began with summarising the site content into three general topics; bouquets, occasions and orders. Under these topics, a mixture of short tail and long tail keywords were listed. The effectiveness of these keywords was reviewed on [Google](https://www.google.com/) search followed by [Word Tracker](https://www.wordtracker.com/) to narrow down the list of key words to 10 keywords. These keywords were selected as they are popular, however, not as widely searched for as the keywords crossed through so as to minimize competition. These keywords were added to a head keyword meta tag in the base.html file, in order for them to be applied across the site. 
 
 ![keywords](readme_documents/web-marketing/keywords.png)
 
 - To further aid SEO, the site has been given an appropriate title tag and meta description tag in the base.html file, in order for them to be applied across the site. Title: "Blossoming bouquets". Meta description: “Buy fresh flower bouquets and baskets for any occasion from the UK, free delivery on orders over £30.”
+
+### Social media marketing
+
+The purpose of social media marketing is to increase awareness of the site, resulting in an increase in sales. 
+
+A [Facebook](https://en-gb.facebook.com/) page has been created for the site to aid the above purpose - Facebook page link, see method of how Facebook page was created and screenshots below:
+
+* [Facebook link](https://www.facebook.com/people/Blossoming-Bouquets/100087176540298/)
+* [Facebook page creation](readme_documents/web-marketing/facebook-page-creation)
+
+| Image | Description |
+| --- | --- |
+| ![facebook image 1](readme_documents/web-marketing/facebook-page-1.png) | Site Facebook page - image 1 |
+| ![facebook image 2](readme_documents/web-marketing/facebook-page-2.png) | Site Facebook page - image 2 |
 
 ## Testing 
 
