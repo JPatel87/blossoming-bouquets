@@ -62,7 +62,19 @@ Refer to the future improvements of [user story testing](#user-story-testing)
 
 ### Database model
 
-Below is a link to the ERD created for this project.
+Attached is the [Blossoming bouquets ERD](readme_documents/erd/blossoming-bouquets-erd.pdf) model created for this project.
+
+In the ERD model it can be seen that there a multiple one to many relationships (also known as "Foreign Key" relationships). The User Profile model has a one to many relationship with the Order model because one user profile can be linked to one or many orders. The Order model has a one to many relationship with the OrderLineItem model because one order can have one order line or many lines. The Bouquet model has a one to many relationship with the OrderLineItem model because one Bouquet can appear in one or many order line items. The Category model has a one to many relationship with the Bouquet model because a category can be associated with one or more bouquets. The User model (created by Django Allauth) has a one to many relationship with the BlogPost model because in theory one user can create one or many blog posts (although in this project adding blog posts is restricted to only superusers). The User model also has a one to many relationship with the BlogComment model because one user can make one comment or many comments on a blog post. 
+
+There is a single One to One relationship in this project. This is the relationship between the UserProfile model and the User model, as there can only be one UserProfile associated with one user. 
+
+There is no relationship associated with the Contact model and any other model; it is a standalone model. 
+
+One of the requirements for this project was to create at least three custom Django models. This has been achieved through the creation of the Contact model, Blog Post model and the Blog Comments model.
+
+
+
+
 
 ### Applications
 
