@@ -21,6 +21,7 @@
     * [Web marketing](#web-marketing)
         * [Search Engine Optimization](#search-engine-optimization)
         * [Social media marketing](#social-media-marketing)
+        * [Email marketing](#email-marketing)
 * [Testing](#testing)
     * [User story testing](#user-story-testing)
     * [Manual testing](#manual-testing)
@@ -136,6 +137,8 @@ Images were compressed using [Tiny png](https://tinypng.com/) in order to improv
 
 ## Web marketing
 
+The web marketing techniques implemented in this project have been inspired from the [Code Institute](https://codeinstitute.net/full-stack-software-development-diploma/?utm_term=code%20institute&utm_campaign=CI+-+UK+-+Search+-+Brand&utm_source=adwords&utm_medium=ppc&hsa_acc=8983321581&hsa_cam=1578649861&hsa_grp=62188641240&hsa_ad=581730217381&hsa_src=g&hsa_tgt=kwd-319867646331&hsa_kw=code%20institute&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gclid=EAIaIQobChMInaGDucCL-wIViOvtCh2XxgcgEAAYASAAEgI2MfD_BwE) series of videos on Introduction to Search Engine Optimization and Web Marketing, for the Full Stack Development (E-commerce applications) course. 
+
 ### Search Engine Optimization
 
 Search engine optimization (SEO), is a means to optimize web pages for better rankings in search engines.
@@ -150,7 +153,7 @@ Search engine optimization (SEO), is a means to optimize web pages for better ra
 
 The purpose of social media marketing is to increase awareness of the site, resulting in an increase in sales. 
 
-A [Facebook](https://en-gb.facebook.com/) page has been created for the site to aid the above purpose - Facebook page link, see method of how Facebook page was created and screenshots below:
+A [Facebook](https://en-gb.facebook.com/) page has been created for the site to aid the above purpose. See Facebook page link, method of how Facebook page was created and Facebook screenshots below:
 
 * [Facebook link](https://www.facebook.com/people/Blossoming-Bouquets/100087176540298/)
 * [Facebook page creation](readme_documents/web-marketing/facebook-page-creation)
@@ -159,6 +162,19 @@ A [Facebook](https://en-gb.facebook.com/) page has been created for the site to 
 | --- | --- |
 | ![facebook image 1](readme_documents/web-marketing/facebook-page-1.png) | Site Facebook page - image 1 |
 | ![facebook image 2](readme_documents/web-marketing/facebook-page-2.png) | Site Facebook page - image 2 |
+
+### Email marketing 
+
+The purpose of social media marketing is to gain and retain existing customers through regular contact to inform them of latest news and offers. 
+
+In this site, this has been achieved through a subscription form to the site newsletter, created using [MailChimp](https://login.mailchimp.com/). Instructions on how this subscription form was added to the site have been given below as well as an image of the subscription form.
+
+* [Mailchimp subscription form creation](readme_documents/web-marketing/mailchimp-subscription-form-creation)
+
+| Image | Description |
+| --- | --- |
+| ![mailchimp subscription form](readme_documents/web-marketing/mailchimp-form.png) | Mailchimp newsletter subscription form |
+
 
 ## Testing 
 
