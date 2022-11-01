@@ -22,6 +22,7 @@
         * [Search Engine Optimization](#search-engine-optimization)
         * [Social media marketing](#social-media-marketing)
         * [Email marketing](#email-marketing)
+        * [Privacy policy](#privacy-policy)
 * [Testing](#testing)
     * [User story testing](#user-story-testing)
     * [Manual testing](#manual-testing)
@@ -143,7 +144,7 @@ The web marketing techniques implemented in this project have been inspired from
 
 Search engine optimization (SEO), is a means to optimize web pages for better rankings in search engines.
 
-- One method by which to do this, is to select the right meta keywords for a site. For this site, deciding on the keywords began with summarising the site content into three general topics; bouquets, occasions and orders. Under these topics, a mixture of short tail and long tail keywords were listed. The effectiveness of these keywords was reviewed on [Google](https://www.google.com/) search followed by [Word Tracker](https://www.wordtracker.com/) to narrow down the list of key words to 10 keywords. These keywords were selected as they are popular, however, not as widely searched for as the keywords crossed through so as to minimize competition. These keywords were added to a head keyword meta tag in the base.html file, in order for them to be applied across the site. 
+- One method by which to do this, is to select the right meta keywords for a site. For this site, deciding on the keywords began with summarising the site content into three general topics; bouquets, occasions and orders. Under these topics, a mixture of short tail and long tail keywords were listed. The effectiveness of these keywords was reviewed on [Google](https://www.google.com/) search (reviewing related searches, questions people have asked and how many search results were found) followed by [Word Tracker](https://www.wordtracker.com/) to narrow down the list of key words to 10 keywords. These keywords were selected as they are popular, however, not as widely searched for as the keywords crossed through so as to minimize competition. These keywords were added to a head keyword meta tag in the base.html file, in order for them to be applied across the site. 
 
 ![keywords](readme_documents/web-marketing/keywords.png)
 
@@ -167,14 +168,16 @@ A [Facebook](https://en-gb.facebook.com/) page has been created for the site to 
 
 The purpose of social media marketing is to gain and retain existing customers through regular contact to inform them of latest news and offers. 
 
-In this site, this has been achieved through a subscription form to the site newsletter, created using [MailChimp](https://login.mailchimp.com/). Instructions on how this subscription form was added to the site have been given below as well as an image of the subscription form.
+In this site, this has been achieved through a subscription form to the site newsletter, created using [MailChimp](https://login.mailchimp.com/). Instructions on how this subscription form was added to the site have been given below.
 
 * [Mailchimp subscription form creation](readme_documents/web-marketing/mailchimp-subscription-form-creation)
 
-| Image | Description |
-| --- | --- |
-| ![mailchimp subscription form](readme_documents/web-marketing/mailchimp-form.png) | Mailchimp newsletter subscription form |
+### Privacy policy
 
+An important consideration of web marketing is compliance with the General Data Protection Regulation (GDPR) which is the EU privacy and security law. A requirement of GDPR is for a web application to have Privacy policy which informs users of how their data is being collected and processed. The privacy policy for this site has been created using [Privacy Policy Generator](https://www.privacypolicygenerator.info/). The privacy policy link and instructions on how this privacy policy was generated have been attached below.
+
+* [Privacy policy link](https://www.privacypolicygenerator.info/live.php?token=bGtpnjBSg9ErRxcXBwppPgOcBWUh8QTb)
+* [Privacy policy creation](readme_documents/web-marketing/privacy-policy-creation)
 
 ## Testing 
 
@@ -251,7 +254,7 @@ The languages used for this project are:
 - Javacript
 - Python 
 
-The key frameworks, libraries, databases and programs used for this project are:
+The key frameworks, libraries, databases used for this project are:
 
 - [Django](https://www.djangoproject.com/) - used as the python framework 
 - [Bootstrap version 4.6.2](https://getbootstrap.com/) - used for project styling and social media icons
@@ -263,6 +266,16 @@ The key frameworks, libraries, databases and programs used for this project are:
 - [Heroku](https://www.heroku.com/) - used as the cloud based deployment platform
 - [Stripe](https://stripe.com/gb/payments) - used to handle secure payments
 - [Amazon Web Services S3](https://aws.amazon.com/free/?trk=d5254134-67ca-4a35-91cc-77868c97eedd&sc_channel=ps&s_kwcid=AL!4422!3!433803620861!e!!g!!amazon%20web%20services&ef_id=EAIaIQobChMIn-XCldTH-gIVsmDmCh004gB-EAAYASAAEgKK-fD_BwE:G:s&s_kwcid=AL!4422!3!433803620861!e!!g!!amazon%20web%20services) - used for cloud based storage of static and media files
+
+### Resources
+
+The following sites were used to assist in this project:
+
+* [Stackoverflow](https://stackoverflow.com/) - used to resolve troubleshooting issues
+* [Codeinstitute](https://codeinstitute.net/full-stack-software-development-diploma/?utm_term=code%20institute&utm_campaign=CI+-+UK+-+Search+-+Brand&utm_source=adwords&utm_medium=ppc&hsa_acc=8983321581&hsa_cam=1578649861&hsa_grp=62188641240&hsa_ad=581730217381&hsa_src=g&hsa_tgt=kwd-319867646331&hsa_kw=code%20institute&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gclid=CjwKCAjwnZaVBhA6EiwAVVyv9F19a0Iyt9WIs12IIQEoad7khrICogE2M6ZFmKsMf-MpkNxtU55HGxoCE1QQAvD_BwE)  - how to set up and run an ecommerce site, this includes the Codeinstitute Slack community with site troubleshooting issues.
+* [Coder-coder](https://coder-coder.com/) - how to add darker overlay to background image
+* [System 22](https://www.youtube.com/watch?v=LV3w60037EI) - how to add nav link underline hover effect
+* [Devpractical.com](https://devpractical.com/bootstrap-sticky-footer/#:~:text=To%20make%20your%20footer%20stick,100%20to%20tag.) - how to make footer stick to bottom of the page.
 - [Lucidchart](https://www.lucidchart.com/pages/landing?utm_source=google&utm_medium=cpc&utm_campaign=_chart_en_tier1_mixed_search_brand_exact_&km_CPC_CampaignId=1490375427&km_CPC_AdGroupID=55688909257&km_CPC_Keyword=lucid%20chart&km_CPC_MatchType=e&km_CPC_ExtensionID=&km_CPC_Network=g&km_CPC_AdPosition=&km_CPC_Creative=442433236001&km_CPC_TargetID=kwd-55720648523&km_CPC_Country=9045963&km_CPC_Device=c&km_CPC_placement=&km_CPC_target=&gclid=Cj0KCQjwyYKUBhDJARIsAMj9lkGuAWT49rmauAUKPE1dZc32REnshWbCY-h0UoYogZ4mtAhFjn8IypsaAoYNEALw_wcB) - used to create the Entity Relationship Diagram (ERD)
 - [Favicon.io](https://favicon.io/favicon-generator/) - used to generate favicon
 - [Balsamiq](https://balsamiq.com/wireframes/?gclid=CjwKCAjw9-KTBhBcEiwAr19igzgSMCAHTuTIsTpGrtk-KZPATPmc7R0M9oo0VUs2jhgbGpmXmCnKSxoCstwQAvD_BwE) - used to create the wireframes
@@ -273,16 +286,11 @@ The key frameworks, libraries, databases and programs used for this project are:
 - [W3C Mark up Validation Service](https://validator.w3.org/) - used to validate html templates
 - [W3 CSS Validation Service](https://jigsaw.w3.org/css-validator/) - used to validate CSS stylesheet
 - [JShint Validator](https://jshint.com/) - used to validate Javascript
-
-### Resources
-
-The following sites were used to assist in this project:
-
-* [Stackoverflow](https://stackoverflow.com/) - used to resolve troubleshooting issues
-* [Codeinstitute](https://codeinstitute.net/full-stack-software-development-diploma/?utm_term=code%20institute&utm_campaign=CI+-+UK+-+Search+-+Brand&utm_source=adwords&utm_medium=ppc&hsa_acc=8983321581&hsa_cam=1578649861&hsa_grp=62188641240&hsa_ad=581730217381&hsa_src=g&hsa_tgt=kwd-319867646331&hsa_kw=code%20institute&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gclid=CjwKCAjwnZaVBhA6EiwAVVyv9F19a0Iyt9WIs12IIQEoad7khrICogE2M6ZFmKsMf-MpkNxtU55HGxoCE1QQAvD_BwE)  - how to set up and run an ecommerce site, this includes the Codeinstitute Slack community with site troubleshooting issues.
-* [Coder-coder](https://coder-coder.com/) - how to add darker overlay to background image
-* [System 22](https://www.youtube.com/watch?v=LV3w60037EI) - how to add nav link underline hover effect
-* [Devpractical.com](https://devpractical.com/bootstrap-sticky-footer/#:~:text=To%20make%20your%20footer%20stick,100%20to%20tag.) - how to make footer stick to bottom of the page
+- [Google](https://www.google.com/) - search engine for all searches and for meta keyword reviews.
+- [Word Tracker](https://www.wordtracker.com/) - used for meta keyword reviews.
+- [Facebook](https://en-gb.facebook.com/) - used to create site Facebook page.
+- [MailChimp](https://login.mailchimp.com/) - used to create site newsletter subscription form.
+- [Privacy Policy Generator](https://www.privacypolicygenerator.info/) - used to create the site privacy policy.
 
 ### Content
 
