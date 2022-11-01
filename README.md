@@ -189,6 +189,15 @@ Tests were performed to determine whether the user story acceptance criteria wer
 
 Manual testing of interactive features was carried out, see tests and results of testing below:
 
+* Home page
+
+| Section | Test | Result |
+| --- | --- | --- |
+| Footer | Footer stays on bottom on different size screens | 1)  |
+| Footer | Mailchimp subscription form working | 1)  Subscription successful message displayed upon valid email entry 2) Email updated on Mailchimp account contact list 3) If an email is not entered and the subscribe button is selected, message is displayed below the email input field to state "This field is required" 4) Tested an invalid email address and the following error message is displayed: "This email cannot be added to this list. Please enter a different email address". |
+| Footer | Facebook link opens correct page in new tab | 1) Correct Facebook page loads 2) Facebook page loads in a new tab. |
+| Footer | Correct Privacy policy loads in new tab | 1) Correct Policy loads 2) Policy loads in a new tab. |
+
 ### Automated testing 
 
 Automated testing of the service model was also carried out using Django TestCase to test the service views, forms and model. 
