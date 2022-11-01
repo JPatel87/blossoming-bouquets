@@ -11,7 +11,7 @@ body {
 }
 
 .hero {
-    height: calc(100vh - 164px);
+    height: calc(100vh - 150px);
     display: flex;
     background: url('/media/hero-image.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -21,7 +21,7 @@ body {
 }
 
 .header-container {
-    padding-top: 164px;
+    padding-top: 150px;
 }
 
 .footer {
@@ -443,6 +443,10 @@ a.category-badge > span.badge:hover,
 
     .top-header-xs {
         padding-left: 0;
+    }
+
+    .hero-text h1 {
+        font-size: 1.7rem;
     }
 } 
 
