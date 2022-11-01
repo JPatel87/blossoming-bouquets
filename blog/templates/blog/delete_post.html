@@ -12,33 +12,30 @@
 
 {% block content %}
     <div class="overlay"></div>
-    <div class="container">
+    <div class="container-fluid">
         <!-- Page heading -->
         <div class="row">
-            <div class="col">
-                <h2 class="logo-font mt-5 text-center">Blog</h2>
+            <div class="col text-center">
+                <h2 class="logo-font text-grey mt-3 mt-sm-2 pt-5 mb-1">Blog</h2>
                 <hr class="w-50 mb-1">
             </div>
         </div>
         <!-- Delete post query and action buttons -->
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-6">
+        <div class="row text-center">
+            <div class="col-12">
                 <p class="font-weight-bold">Delete post</p>
                 <form method="POST">
                     {% csrf_token %}
-                    <p>Are you sure you want to delete post</p>
-                    <p><strong>{{ post.title }}?</strong></p>
-                    <div class="d-flex">
-                        <a href="{% url 'blog' %}" class="btn btn-grey grey-shadow rounded-lg btn-md p-1 p-sm-2 mr-sm-2 mb-2 mb-sm-none">
-                            <span class="icon">
-                                <i class="fas fa-chevron-left"></i>
-                            </span>
-                            <span class="text-uppercase">Cancel</span>
-                        </a>
-                        <button class="btn btn-green grey-shadow rounded-lg btn-md p-1 p-sm-2 mb-2 mb-sm-none" type="submit">
-                            <span class="text-uppercase">Yes</span>
-                        </button>
-                    </div>
+                    <p>Are you sure you want to delete <strong>{{ post.title }}?</strong></p>
+                    <a href="{% url 'blog' %}" class="btn btn-grey grey-shadow rounded-lg btn-md p-1 p-sm-2 mr-2 mb-2 mb-sm-none">
+                        <span class="icon">
+                            <i class="fas fa-chevron-left"></i>
+                        </span>
+                        <span class="text-uppercase">Cancel</span>
+                    </a>
+                    <button class="btn btn-green grey-shadow rounded-lg btn-md p-1 p-sm-2 mb-2 mb-sm-none" type="submit">
+                        <span class="text-uppercase">Yes</span>
+                    </button>
                   </form>
             </div>
         </div>

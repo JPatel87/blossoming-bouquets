@@ -12,11 +12,11 @@
 
 {% block content %}
     <div class="overlay"></div>
-    <div class="container">
+    <div class="container-fluid">
         <!-- Page heading -->
         <div class="row">
-            <div class="col text-center mt-3">
-                <h2 class="logo-font mt-5 text-center">Blog</h2>
+            <div class="col text-center">
+                <h2 class="logo-font text-grey mt-3 mt-sm-2 pt-5 mb-1">Blog</h2>
                 <hr class="w-50 mb-1">
             </div>
         </div>
@@ -63,25 +63,19 @@
                     <form action="." method="POST" novalidate>
                         {% csrf_token %}
                         {{ form|crispy }}
-                        <div class="field">
-                            <div class="control">
-                                <button class="btn btn-green grey-shadow rounded-lg btn-md p-1 p-sm-2 mb-3 mb-sm-none text-uppercase" type="submit">Post</button>
-                            </div>
-                        </div>
+                        <a href="{% url 'blog' %}" class="btn btn-grey grey-shadow rounded-lg btn-md p-1 p-sm-2 mr-sm-2 mb-2 mb-sm-none">
+                            <span class="icon">
+                                <i class="fas fa-chevron-left"></i>
+                            </span>
+                            <span class="text-uppercase">Back</span>
+                        </a>
+                        <button class="btn btn-green grey-shadow rounded-lg btn-md p-1 p-sm-2 mb-2 mb-sm-none text-uppercase" type="submit">Post</button>
                     </form>
                 {% else %}
                     <p>Please
                         <a class= text-pink href="{% url 'account_login' %}"><strong>login</strong></a> to make a comment
                     </p>
                 {% endif %}
-                <div>
-                    <a href="{% url 'blog' %}" class="btn btn-grey grey-shadow btn-md p-1 p-sm-2 mr-sm-2 mb-2 mb-sm-none">
-                        <span class="icon">
-                            <i class="fas fa-chevron-left"></i>
-                        </span>
-                        <span class="text-uppercase">Back</span>
-                    </a>
-                </div>
             </div>
         </div>
     </div>

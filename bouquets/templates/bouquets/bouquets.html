@@ -15,8 +15,8 @@
     <div class="container-fluid">
         <!-- Page heading -->
         <div class="row">
-            <div class="col text-center mt-3">
-                <h2 class="logo-font mt-5 mt-sm-3 text-grey">Bouquets</h2>
+            <div class="col text-center">
+                <h2 class="logo-font mt-3 mt-sm-2 pt-5 mb-1 text-grey">Bouquets</h2>
                 {% for c in current_categories %}
                     <a class="category-badge text-decoration-none text-uppercase" href="{% url 'bouquets' %}?category={{ c.name }}">
                         <span class="p-2 mt-2 mr-2 badge badge-light rounded-lg">{{ c.name }}</span>
