@@ -157,7 +157,7 @@ The purpose of social media marketing is to increase awareness of the site, resu
 A [Facebook](https://en-gb.facebook.com/) page has been created for the site to aid the above purpose. See Facebook page link, method of how Facebook page was created and Facebook screenshots below:
 
 * [Facebook link](https://www.facebook.com/people/Blossoming-Bouquets/100087176540298/)
-* [Facebook page creation](readme_documents/web-marketing/facebook-page-creation)
+* [Facebook page creation](readme_documents/web-marketing/facebook-page-creation.pdf)
 
 | Image | Description |
 | --- | --- |
@@ -170,14 +170,14 @@ The purpose of social media marketing is to gain and retain existing customers t
 
 In this site, this has been achieved through a subscription form to the site newsletter, created using [MailChimp](https://login.mailchimp.com/). Instructions on how this subscription form was added to the site have been given below.
 
-* [Mailchimp subscription form creation](readme_documents/web-marketing/mailchimp-subscription-form-creation)
+* [Mailchimp subscription form creation](readme_documents/web-marketing/mailchimp-subscription-form-creation.pdf)
 
 ### Privacy policy
 
 An important consideration of web marketing is compliance with the General Data Protection Regulation (GDPR) which is the EU privacy and security law. A requirement of GDPR is for a web application to have Privacy policy which informs users of how their data is being collected and processed. The privacy policy for this site has been created using [Privacy Policy Generator](https://www.privacypolicygenerator.info/). The privacy policy link and instructions on how this privacy policy was generated have been attached below.
 
 * [Privacy policy link](https://www.privacypolicygenerator.info/live.php?token=bGtpnjBSg9ErRxcXBwppPgOcBWUh8QTb)
-* [Privacy policy creation](readme_documents/web-marketing/privacy-policy-creation)
+* [Privacy policy creation](readme_documents/web-marketing/privacy-policy-creation.pdf)
 
 ## Testing 
 
