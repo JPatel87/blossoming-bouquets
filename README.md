@@ -170,7 +170,7 @@ The purpose of social media marketing is to gain and retain existing customers t
 
 In this site, this has been achieved through a subscription form to the site newsletter, created using [MailChimp](https://login.mailchimp.com/). Instructions on how this subscription form was added to the site have been given below.
 
-* [Mailchimp subscription form creation](readme_documents/web-marketing/mailchimp-subscription-form-creation.pdf)
+* [Mailchimp subscription form creation](readme_documents/web-marketing/mailchimp-subscription-creation.pdf)
 
 ### Privacy policy
 
