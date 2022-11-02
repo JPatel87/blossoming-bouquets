@@ -303,10 +303,12 @@ The following sites were used to assist in this project:
 
 ### Content
 
-The following sites were used to obtain information about flower shops:
+The following sites were used to obtain information about flower shops, bouquet care and flower arrangements:
 
 * [Bunches](https://www.bunches.co.uk)
 * [Blossoming gifts](https://www.blossominggifts.com)
+* [Waitrose](https://www.waitroseflorist.com/inspiration-and-advice/care-guides/caring-for-your-flowers)
+* [Better Homes and Gardens](https://www.bhg.com/decorating/home-accessories/flower-arranging/how-to-make-a-flower-arrangement/)
 
 ### Media 
 
