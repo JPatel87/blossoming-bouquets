@@ -150,11 +150,16 @@ Search engine optimization (SEO), is a means to optimize web pages for better ra
 
 - To further aid SEO, the site has been given an appropriate title tag and meta description tag in the base.html file, in order for them to be applied across the site. Title: "Blossoming bouquets". Meta description: “Buy fresh flower bouquets and baskets for any occasion from the UK, free delivery on orders over £30.”
 
+- To help search engines review the site efficiently, two files were created; sitemap.xml and robots.txt. The sitemap.xml file, lists the site's important pages. This allows search engines to better understand the site structure, ensuring that they navigate through the site's important pages which helps speed up content discovery. The robots.txt file tells search engines which pages they are not allowed to navigate to, so in effect by having this file shows acknowledgment that search engines can visit the site but just avoid the pages specified in the robots.txt file. The presence of a robots.txt file helps to improve site SEO ranking. See method of how the sitemap.xml file and the robots.txt file were created below.
+
+* [sitemap.xml and robots.txt file creation](readme_documents/web-marketing/sitemap-robots-page-creation.pdf)
+
+
 ### Social media marketing
 
 The purpose of social media marketing is to increase awareness of the site, resulting in an increase in sales. 
 
-A [Facebook](https://en-gb.facebook.com/) page has been created for the site to aid the above purpose. See Facebook page link, method of how Facebook page was created and Facebook screenshots below:
+A [Facebook](https://en-gb.facebook.com/) page has been created for the site to aid the above purpose. See Facebook page link, method of how Facebook page was created and Facebook screenshots below.
 
 * [Facebook link](https://www.facebook.com/people/Blossoming-Bouquets/100087176540298/)
 * [Facebook page creation](readme_documents/web-marketing/facebook-page-creation.pdf)
