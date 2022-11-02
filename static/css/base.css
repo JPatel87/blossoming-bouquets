@@ -250,6 +250,55 @@ a.category-badge > span.badge {
     overflow-y: auto;
 }
 
+.bag-img-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 100px;
+}
+
+.bag-img {
+    display: block;
+    position: absolute;
+    height: 100%;
+}
+
+/* Checkout page styles */
+
+.checkout-img-container {
+    width: 160%;
+    overflow: hidden;
+    position: relative;
+    height: 80px;
+}
+
+.checkout-img {
+    display: block;
+    position: absolute;
+    height: 100%;
+}
+
+/* Blog pages styles */
+
+.post-img {
+    width: 200px;
+    height: 300px;
+}
+
+.post-detail-img {
+    width: 250px;
+    height: 350px;
+}
+
+.add-img-btn {
+    background: white;
+    outline: #666666 solid 1px;
+}
+
+.add-img-btn:hover {
+    box-shadow: 0 10px 20px #666666;
+}
+
 /* Styles used across multiple classes */
 
 .shop-now-button,
@@ -394,6 +443,15 @@ a.category-badge > span.badge:hover,
     justify-content: center;
 }
 
+.social-link {
+    color: white;
+    font-size: 20px;
+}
+
+.social-link:hover {
+    color: palevioletred;
+}
+
 /* Mailchimp */
 #mc_embed_signup {
     background:#666666;
@@ -405,62 +463,6 @@ a.category-badge > span.badge:hover,
 
 .brandingLogo {
     opacity: 1;
-}
-
-/* Blog pages styles */
-
-.post-img {
-    width: 300px;
-    height: 300px;
-}
-
-.post-detail-img {
-    width: 400px;
-    height: auto;
-}
-
-.add-img-btn {
-    background: white;
-    outline: #666666 solid 1px;
-}
-
-.add-img-btn:hover {
-    box-shadow: 0 10px 20px #666666;
-}
-
-.social-link {
-    color: white;
-    font-size: 20px;
-}
-
-.social-link:hover {
-    color: palevioletred;
-}
-
-.checkout-img-container {
-    width: 160%;
-    overflow: hidden;
-    position: relative;
-    height: 80px;
-}
-
-.checkout-img {
-    display: block;
-    position: absolute;
-    height: 100%;
-}
-
-.bag-img-container {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    height: 100px;
-}
-
-.bag-img {
-    display: block;
-    position: absolute;
-    height: 100%;
 }
 
 /* Media queries */
@@ -517,6 +519,16 @@ a.category-badge > span.badge:hover,
 
     .bag-img-container {
         height: 200px;
+    }
+
+    .post-img {
+        width: 250px;
+        height: 350px;
+    }
+
+    .post-detail-img {
+        width: 300px;
+        height: 400px;
     }
 }
 
