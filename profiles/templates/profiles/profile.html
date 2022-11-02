@@ -17,11 +17,11 @@
 
 {% block content %}
     <div class="overlay"></div>
-    <div class="container">
+    <div class="container-fluid">
         <!-- Page heading -->
         <div class="row">
-            <div class="col">
-                <h2 class="logo-font mt-5 text-center">My profile</h2>
+            <div class="col text-center">
+                <h2 class="logo-font mt-3 mt-sm-2 pt-5 mb-1 text-grey">My profile</h2>
                 <hr class="w-50 mb-3">
             </div>
         </div>
@@ -41,9 +41,9 @@
                     <table class="table table-sm table-borderless">
                         <thead>
                             <tr>
-                                <th class="text-left font-weight-bold">Order number</th>
-                                <th class="text-center font-weight-bold">Grand total</th>
-                                <th class="text-right font-weight-bold">Order date</th>
+                                <th class="text-left font-weight-bold">Order</th>
+                                <th class="text-center font-weight-bold">Total</th>
+                                <th class="text-center font-weight-bold">Date</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -56,7 +56,7 @@
                                         </a>
                                     </td>
                                     <td class="text-center">£{{ order.grand_total }}</td>
-                                    <td class="text-right">{{ order.date }}</td>                         
+                                    <td class="text-center">{{ order.date }}</td>                         
                                 </tr>
                             {% endfor %}
                         </tbody>
