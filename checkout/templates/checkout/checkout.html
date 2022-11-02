@@ -31,7 +31,10 @@
             <div class="col-12 col-lg-6 order-lg-last mb-5">
                 <p class="text-muted">Order Summary ({{ bouquet_count }})</p>
                 <div class="row">
-                    <div class="col-7 offset-2">
+                    <div class="col-3 text-left">
+                        <p class="mb-1 mt-0 small text-muted">Image</p>
+                    </div>
+                    <div class="col-6 text-center">
                         <p class="mb-1 mt-0 small text-muted">Bouquet</p>
                     </div>
                     <div class="col-3 text-right">
@@ -41,7 +44,7 @@
                 {% for item in bag_items %}
                 <!-- For the order summary display either the bouquet image or default image -->
                     <div class="row">
-                        <div class="col-2 mb-1">
+                        <div class="col-3 mb-1">
                             <a href="{% url 'bouquet_detail' item.bouquet.id %}">
                                 <div class="checkout-img-container">
                                     {% if item.bouquet.image %}
@@ -52,7 +55,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-7">
+                        <div class="col-6 text-center">
                             <p class="my-0"><strong>{{ item.bouquet.name }}</strong></p>
                             <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
                         </div>
@@ -77,7 +80,7 @@
             </div>
             <!-- Order form -->
             <div class="col-12 col-lg-6">
-                <p class="text-muted">Please fill out the form below to complete your order</p>
+                <p class="text-muted text-center text-md-left">Please fill out the form below to complete your order</p>
                 <form action="{% url 'checkout' %}" method="POST" id="payment-form">
                     {% csrf_token %}
                     <fieldset class="rounded px-3 mb-5">
