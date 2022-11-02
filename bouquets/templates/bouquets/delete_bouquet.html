@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <!-- Header container - for logo and links -->
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="overlay"></div>
+    <div class="container-fluid">
+        <!-- Page heading -->
+        <div class="row">
+            <div class="col text-center">
+                <h2 class="logo-font text-grey mt-3 mt-sm-2 pt-5 mb-1">Bouquets</h2>
+                <hr class="w-50 mb-1">
+            </div>
+        </div>
+        <!-- Delete post query and action buttons -->
+        <div class="row text-center">
+            <div class="col-12">
+                <p class="font-weight-bold">Delete bouquet</p>
+                <form method="POST">
+                    {% csrf_token %}
+                    <p>Are you sure you want to delete <strong>{{ bouquet.name }}?</strong></p>
+                    <a href="{% url 'bouquets' %}?category=Wedding,Occasional,Basket" class="btn btn-grey grey-shadow rounded-lg btn-md p-1 p-sm-2 mr-2 mb-2 mb-sm-none">
+                        <span class="icon">
+                            <i class="fas fa-chevron-left"></i>
+                        </span>
+                        <span class="text-uppercase">Cancel</span>
+                    </a>
+                    <button class="btn btn-green grey-shadow rounded-lg btn-md p-1 p-sm-2 mb-2 mb-sm-none" type="submit">
+                        <span class="text-uppercase">Yes</span>
+                    </button>
+                  </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

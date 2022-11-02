@@ -159,7 +159,12 @@ def delete_bouquet(request, bouquet_id):
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
 
-    bouquet = get_object_or_404(Bouquet, pk=bouquet_id)
-    bouquet.delete()
-    messages.success(request, f'Bouquet {bouquet.name} deleted!')
-    return redirect(reverse('bouquets'))
+    bouquet = get_object_or_404(Bouquet, id=bouquet_id)
+    if request.method == "POST":
+        bouquet.delete()
+        messages.success(request, f'Bouquet {bouquet.name} deleted!')
+        return redirect(reverse('bouquets'))
+    context = {
+        'bouquet': bouquet
+    }
+    return render(request, 'bouquets/delete_bouquet.html', context)
