@@ -49,7 +49,10 @@ def all_bouquets(request):
                     request,
                     "You didn't enter any search criteria!"
                     )
-                return redirect(reverse('bouquets'))
+                redirect_url = reverse('bouquets')
+                params = "Wedding,Occasional,Basket"
+
+                return redirect(f'{redirect_url}?category={params}')
 
             queries = (
                 Q(name__icontains=query) | Q(description__icontains=query)
