@@ -26,6 +26,12 @@
                 <h3 class="subtitle text-center mt-3">{{ post.title }}</h3>
                 <p class="lead text-center text-capitalize">Author: {{ post.author }}
                 <p class="lead text-center">{{ post.date }}</p>
+                {% if user.is_superuser %}
+                <div class="d-flex edit-delete-container">
+                    <a href="{% url 'edit_post' post.slug %}" class="pr-2">Edit</a> | 
+                    <a class="text-danger pl-2" href="{% url 'delete_post' post.slug %}">Delete</a>
+                </div>
+                {% endif %}
                 {% if post.image %}
                 <div class="bouquet-img-center">
                     <img class="card-img-top img-fluid post-detail-img rounded-lg" src="{{ post.image.url }}" alt="{{ post.name }}">
@@ -47,15 +53,15 @@
                         <p>
                             <strong>{{ comment.name }}</strong> | {{ comment.date }}
                         </p>
-                        <p>{{ comment.body}}<br>
+                        <p>{{ comment.body}}</br>
                         <!-- Authors can only edit their own comments -->
                         {% if request.user == comment.author %}    
                             <a href="{% url 'edit_comment' comment.id post.slug %}">Edit</a> | 
                             <a class="text-danger" href="{% url 'delete_comment' comment.id post.slug %}">Delete</a>
-                        </p> 
+                        {% endif %}
+                        </p>
                         <p class="small"><strong>Updated: {{ comment.updated }}</strong></p>
                         <hr>
-                        {% endif %}
                     {% endfor %}
                 {% endif %}
                 <!-- Only allow authenticated users to post comments, otherwise request users to login -->

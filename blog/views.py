@@ -162,6 +162,11 @@ def edit_comment(request, comment_id, slug):
     post = get_object_or_404(query, slug=slug)
     comment = get_object_or_404(Comment, id=comment_id)
 
+    if not request.user == comment.author:
+        messages.error(request,
+                       'Sorry, only the author has access to do that.')
+        return redirect(reverse('post_detail', kwargs={'slug': slug}))
+
     if request.method == 'POST':
         form = CommentForm(request.POST, instance=comment)
 
@@ -187,8 +192,12 @@ def delete_comment(request, comment_id, slug):
     """
     View to delete comment by authenticated users.
     """
-
     comment = get_object_or_404(Comment, id=comment_id)
+
+    if request.user != comment.author:
+        messages.error(request,
+                       'Sorry, only the author has access to do that.')
+        return redirect(reverse('post_detail', kwargs={'slug': slug}))
 
     if request.method == "POST":
         comment.delete()
