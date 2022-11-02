@@ -27,33 +27,33 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-12 col-lg-7">
-                <p>Your order information is below. A confirmation email will be sent to <strong>{{ order.email }}</strong></p>
+                <p class="text-center">Your order information is below. A confirmation email will be sent to <strong>{{ order.email }}</strong></p>
                 <!-- Order confirmation details -->
-                <div class="order-confirmation-wrapper p-2 border">
+                <div class="order-confirmation-wrapper p-2">
                     <div class="row">
                         <div class="col-12 col-md-4">
-                            <p class="mb-0 text-muted font-weight-bold">Order number:</p>
+                            <p class="mb-0 text-muted text-center text-md-left font-weight-bold">Order number:</p>
                         </div>
-                        <div class="col-12 col-md-8 text-md-right">
+                        <div class="col-12 col-md-8 text-center text-md-right">
                             <p class="mb-0">{{ order.order_number }}</p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-12 col-md-4">
-                            <p class="mb-0 text-muted font-weight-bold">Order date:</p>
+                            <p class="mb-0 text-muted text-center text-md-left font-weight-bold">Order date:</p>
                         </div>
-                        <div class="col-12 col-md-8 text-md-right">
+                        <div class="col-12 col-md-8 text-center text-md-right">
                             <p class="mb-0">{{ order.date }}</p>
                         </div>
                     </div>
                     <br>
                     <div class="row">
                         <div class="col-12 col-md-4">
-                            <p class="mb-0 text-muted font-weight-bold">
+                            <p class="mb-0 text-muted text-center text-md-left font-weight-bold">
                                 Order item(s):
                             </p>
                         </div>
-                        <div class="col-12 col-md-8 text-md-right">
+                        <div class="col-12 col-md-8 text-center text-md-right">
                             {% for item in order.lineitems.all %}
                             <p class="mb-0">{{ item.bouquet.name }} - x{{ item.quantity }} @ £{{ item.bouquet.price }} each</p>
                             {% endfor %}
@@ -62,11 +62,11 @@
                     <br>
                     <div class="row">
                         <div class="col-12 col-md-4">
-                            <p class="mb-0 text-muted font-weight-bold">
+                            <p class="mb-0 text-muted text-center text-md-left font-weight-bold">
                                 Delivery address:
                             </p>
                         </div>
-                        <div class="col-12 col-md-8 text-md-right">
+                        <div class="col-12 col-md-8 text-center text-md-right">
                             <p class="mb-0">{{ order.full_name }}</p>
                             <p class="mb-0">{{ order.street_address1 }}</p>
                             {% if order.street_address2 %}
@@ -85,36 +85,36 @@
                     <br>
                     <div class="row">
                         <div class="col-12 col-md-4">
-                            <p class="mb-0 text-muted font-weight-bold">
+                            <p class="mb-0 text-muted text-center text-md-left font-weight-bold">
                                 Contact number:
                             </p>
                         </div>
-                        <div class="col-12 col-md-8 text-md-right">
+                        <div class="col-12 col-md-8 text-center text-md-right">
                             <p class="mb-0">{{ order.phone_number }}</p>
                         </div>
                     </div>
                     <br>
                     <div class="row">
                         <div class="col-12 col-md-4">
-                            <p class="mb-0 text-muted font-weight-bold">Order total:</p>
+                            <p class="mb-0 text-muted text-center text-md-left font-weight-bold">Order total:</p>
                         </div>
-                        <div class="col-12 col-md-8 text-md-right">
+                        <div class="col-12 col-md-8 text-center text-md-right">
                             <p class="mb-0">£{{ order.order_total }}</p>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-12 col-md-4 font-weight-bold">
+                        <div class="col-12 col-md-4 text-center text-md-left font-weight-bold">
                             <p class="mb-0 text-muted">Delivery total:</p>
                         </div>
-                        <div class="col-12 col-md-8 text-md-right">
+                        <div class="col-12 col-md-8 text-center text-md-right">
                             <p class="mb-0">£{{ order.delivery_cost }}</p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-12 col-md-4">
-                            <p class="mb-0 font-weight-bold">Grand total:</p>
+                            <p class="mb-0 text-center text-md-left font-weight-bold">Grand total:</p>
                         </div>
-                        <div class="col-12 col-md-8 text-md-right">
+                        <div class="col-12 col-md-8 text-center text-md-right">
                             <p class="mb-0">£{{ order.grand_total }}</p>
                         </div>
                     </div>
@@ -124,10 +124,10 @@
     </div>
     <br>
     <div class="row">
-        <div class="col-12 col-lg-7 text-right">
+        <div class="col-12 col-lg-7 text-center text-sm-right">
             <!-- If user reviews a past order from their profile page, display a back button from order page -->
             {% if from_profile %}
-                <a href="{% url 'profile' %}" class="btn btn-green grey-shadow rounded-lg btn-md p-1 p-sm-2 mb-3 mb-sm-none text-uppercase">
+                <a href="{% url 'profile' %}" class="btn btn-green grey-shadow rounded-lg btn-md p-1 p-sm-2 mb-3 mb-sm-none mr-2 text-uppercase">
                     <span class="icon mr-2">
                         <i class="fas fa-angle-left"></i>
                     </span>
