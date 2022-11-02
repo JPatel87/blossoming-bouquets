@@ -105,6 +105,8 @@ def edit_post(request, slug):
     query = Post.objects
     post = get_object_or_404(query, slug=slug)
 
+    form = AddPostForm(instance=post)
+
     if request.method == 'POST':
         form = AddPostForm(request.POST, request.FILES, instance=post)
 
@@ -115,8 +117,6 @@ def edit_post(request, slug):
         else:
             messages.error(request,
                            'Failed to edit post, please address errors')
-
-    form = AddPostForm(instance=post)
 
     context = {
         'post': post,
