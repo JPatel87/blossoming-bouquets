@@ -184,6 +184,10 @@ input[name='q']::placeholder {
     color: palevioletred !important;
 }
 
+.nav-icon:hover {
+    color: palevioletred;
+}
+
 .active {
     text-decoration: underline;
 }
@@ -390,14 +394,14 @@ a.category-badge > span.badge {
 	/* btn */
 	display: inline-block;
     font-weight: 400;
-    color: #fff;
+    color: white;
     text-align: center;
     vertical-align: middle;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background-color: #78866b;
+    background-color: #666666;
     border: none;
     padding: .375rem .75rem;
     font-size: 1rem;
