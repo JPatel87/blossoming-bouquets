@@ -25,11 +25,11 @@
             <!-- Bag details responsive table including update/remove/checkout/keep shopping links -->
             <div class="col">
                 {% if bag_items %}
-                    <div class="table-responsive container-fluid">
+                    <div class="table-responsive container">
                         <table class="table table-sm table-borderless">
                             <thead class="text-grey">
                                 <tr>
-                                    <th scope="col" class="text-center">Bouquet</th>
+                                    <th scope="col">Bouquet</th>
                                     <th scope="col" class="text-center">Price</th>
                                     <th scope="col" class="text-center">Qty</th>
                                     <th scope="col" class="text-center">Subtotal</th>
@@ -38,13 +38,13 @@
                             <tbody>
                             {% for item in bag_items %}
                                 <tr>
-                                    <td class="py-2 text-center">
+                                    <td class="py-2">
                                         <p class="mt-0 mb-md-2 text-grey">{{ item.bouquet.name }}</p>
-                                        <div class="bag-img-container rounded-lg w-75 mx-auto pb-0">
+                                        <div class="bag-img-container rounded-lg mx-auto pb-0">
                                             {% if item.bouquet.image %}
-                                                <img class="img-fluid bag-img rounded-lg" src="{{ item.bouquet.image.url }}" alt="{{ bouquet.name }}">
+                                                <img class="bag-img rounded-lg" src="{{ item.bouquet.image.url }}" alt="{{ bouquet.name }}">
                                             {% else %}
-                                                <img class="img-fluid bag-img rounded-lg" src="{{ MEDIA_URL }}image-coming-soon.jpg" alt="{{ bouquet.name }}">
+                                                <img class="bag-img rounded-lg" src="{{ MEDIA_URL }}image-coming-soon.jpg" alt="{{ bouquet.name }}">
                                             {% endif %}
                                         </div>
                                     </td>
