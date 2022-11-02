@@ -75,6 +75,10 @@ h1 {
     min-width: 140px;
 }
 
+.btn-white {
+    color: white;
+}
+
 .border-grey {
     border: 1px solid #666666 !important;
 }
@@ -105,7 +109,7 @@ h1 {
 }
 
 .btt-link {
-    color: #78866b;
+    color: #666666;
 }
 
 .btt-link:hover {
@@ -182,6 +186,10 @@ input[name='q']::placeholder {
 
 .nav-hover:hover {
     color: palevioletred !important;
+}
+
+.nav-icon {
+    color: #666666;
 }
 
 .nav-icon:hover {
@@ -401,7 +409,7 @@ a.category-badge > span.badge {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background-color: #666666;
+    background-color: #78866b;
     border: none;
     padding: .375rem .75rem;
     font-size: 1rem;
