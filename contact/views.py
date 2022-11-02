@@ -24,10 +24,8 @@ def contact(request):
 
             return redirect('contact')
         else:
-            messages.error(
-                request,
-                'Failed to send enquiry.\
-                Check form is valid.')
+            messages.error(request,
+                           'Failed to send enquiry, please address errors')
     else:
         form = ContactForm()
 

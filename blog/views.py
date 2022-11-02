@@ -39,7 +39,8 @@ def post_detail(request, slug):
 
             return redirect('post_detail', slug)
         else:
-            messages.error(request, 'Errors on form, not submitted')
+            messages.error(request,
+                           'Failed to add comment, please address errors')
     else:
         form = CommentForm()
 
@@ -61,7 +62,7 @@ def add_post(request):
     """
 
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only store owners can do that.')
+        messages.error(request, 'Sorry, only store owners can do that')
         return redirect(reverse('blog'))
 
     if request.method == 'POST':
@@ -70,11 +71,12 @@ def add_post(request):
             instance = form.save(commit=False)
             instance.author = request.user
             instance.save()
-            messages.success(request, 'Post has been created')
+            messages.success(request, 'Successfully added post')
 
             return redirect('blog')
         else:
-            messages.error(request, 'Errors on form, not submitted')
+            messages.error(request,
+                           'Failed to add post, please address errors')
     else:
         form = AddPostForm()
 
@@ -97,7 +99,7 @@ def edit_post(request, slug):
     """
 
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only store owners can do that.')
+        messages.error(request, 'Sorry, only store owners can do that')
         return redirect(reverse('blog'))
 
     query = Post.objects
@@ -108,10 +110,11 @@ def edit_post(request, slug):
 
         if form.is_valid():
             form.save()
-            messages.success(request, 'Your post has been edited')
+            messages.success(request, 'Successfully edited post')
             return redirect(reverse('post_detail', kwargs={'slug': slug}))
         else:
-            messages.error(request, 'Errors on form, not submitted')
+            messages.error(request,
+                           'Failed to edit post, please address errors')
 
     form = AddPostForm(instance=post)
 
@@ -137,7 +140,7 @@ def delete_post(request, slug):
 
     if request.method == "POST":
         post.delete()
-        messages.success(request, 'Your post has been deleted')
+        messages.success(request, 'Successfully deleted post')
         return redirect(reverse('blog'))
 
     context = {
@@ -172,10 +175,11 @@ def edit_comment(request, comment_id, slug):
 
         if form.is_valid():
             form.save()
-            messages.success(request, 'Your comment has been edited')
+            messages.success(request, 'Successfully edited comment')
             return redirect(reverse('post_detail', kwargs={'slug': slug}))
         else:
-            messages.error(request, 'Errors on form, not submitted')
+            messages.error(request,
+                           'Failed to edit comment, please address errors')
 
     form = CommentForm(instance=comment)
     messages.info(request, 'You are about to edit your comment')
@@ -201,7 +205,7 @@ def delete_comment(request, comment_id, slug):
 
     if request.method == "POST":
         comment.delete()
-        messages.success(request, 'Comment has been deleted')
+        messages.success(request, 'Succesfully deleted comment')
         return redirect(reverse('post_detail', kwargs={'slug': slug}))
 
     context = {

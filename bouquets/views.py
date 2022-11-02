@@ -100,7 +100,7 @@ def add_bouquet(request):
         form = BouquetForm(request.POST, request.FILES)
         if form.is_valid():
             bouquet = form.save()
-            messages.success(request, 'Successfully added product!')
+            messages.success(request, 'Successfully added bouquet')
             return redirect(reverse('bouquet_detail', args=[bouquet.id]))
         else:
             messages.error(request,
@@ -133,12 +133,12 @@ def edit_bouquet(request, bouquet_id):
         form = BouquetForm(request.POST, request.FILES, instance=bouquet)
         if form.is_valid():
             form.save()
-            messages.success(request, 'Successfully updated product!')
+            messages.success(request, 'Successfully edited bouquet')
             return redirect(reverse('bouquet_detail', args=[bouquet.id]))
         else:
             messages.error(request,
-                           'Failed to update product.\
-                            Please ensure the form is valid.'
+                           'Failed to edit bouquet,\
+                            please address errors.'
                            )
     else:
         form = BouquetForm(instance=bouquet)
