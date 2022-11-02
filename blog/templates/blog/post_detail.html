@@ -67,7 +67,7 @@
                 <!-- Only allow authenticated users to post comments, otherwise request users to login -->
                 <h5><strong>Post comment...</strong></h5>
                 {% if request.user.is_authenticated %}
-                    <form action="." method="POST" novalidate>
+                    <form action="." method="POST">
                         {% csrf_token %}
                         {{ form|crispy }}
                         <a href="{% url 'blog' %}" class="btn btn-grey grey-shadow rounded-lg btn-md p-1 p-sm-2 mr-sm-2 mb-2 mb-sm-none">

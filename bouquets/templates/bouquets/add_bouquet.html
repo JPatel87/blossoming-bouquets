@@ -24,7 +24,7 @@
         <div class="row justify-content-center">
             <div class="col-12 col-md-6">
                 <p class="font-weight-bold">Add bouquet</p>
-                <form method="POST" action="{% url 'add_bouquet' %}" class="form mb-2" enctype="multipart/form-data" novalidate>
+                <form method="POST" action="{% url 'add_bouquet' %}" class="form mb-2" enctype="multipart/form-data">
                     {% csrf_token %}
                     {% for field in form %}
                         {% if field.name != 'image' %}

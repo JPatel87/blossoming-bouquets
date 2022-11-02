@@ -29,7 +29,7 @@
             <!-- Add post form, order history information and action button -->
             <div class="col-12 col-lg-6">
                 <p class="font-weight-bold">Default delivery information</p>
-                <form class="mt-3" action="{% url 'profile' %}" method="POST" id="profile-update-form" novalidate>
+                <form class="mt-3" action="{% url 'profile' %}" method="POST" id="profile-update-form">
                     {% csrf_token %}
                     {{ form|crispy }}
                     <button class="btn btn-green grey-shadow rounded-lg btn-md p-1 p-sm-2 mb-3 mb-sm-none text-uppercase" type="submit">Update</button>
