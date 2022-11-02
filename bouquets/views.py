@@ -162,9 +162,14 @@ def delete_bouquet(request, bouquet_id):
     bouquet = get_object_or_404(Bouquet, id=bouquet_id)
     if request.method == "POST":
         bouquet.delete()
-        messages.success(request, f'Bouquet {bouquet.name} deleted!')
-        return redirect(reverse('bouquets'))
+        messages.success(request, f'Bouquet {bouquet.name} deleted')
+        redirect_url = reverse('bouquets')
+        params = "Wedding,Occasional,Basket"
+
+        return redirect(f'{redirect_url}?category={params}')
+
     context = {
         'bouquet': bouquet
     }
+
     return render(request, 'bouquets/delete_bouquet.html', context)
