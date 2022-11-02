@@ -24,7 +24,8 @@ def post_detail(request, slug):
     return error message.
     """
 
-    post = Post.objects.get(slug=slug)
+    query = Post.objects
+    post = get_object_or_404(query, slug=slug)
 
     if request.method == 'POST':
         form = CommentForm(request.POST)
@@ -99,7 +100,8 @@ def edit_post(request, slug):
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('blog'))
 
-    post = Post.objects.get(slug=slug)
+    query = Post.objects
+    post = get_object_or_404(query, slug=slug)
 
     if request.method == 'POST':
         form = AddPostForm(request.POST, request.FILES, instance=post)
@@ -130,7 +132,8 @@ def delete_post(request, slug):
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('blog'))
 
-    post = Post.objects.get(slug=slug)
+    query = Post.objects
+    post = get_object_or_404(query, slug=slug)
 
     if request.method == "POST":
         post.delete()
@@ -155,7 +158,8 @@ def edit_comment(request, comment_id, slug):
     return error message.
     """
 
-    post = Post.objects.get(slug=slug)
+    query = Post.objects
+    post = get_object_or_404(query, slug=slug)
     comment = get_object_or_404(Comment, id=comment_id)
 
     if request.method == 'POST':
