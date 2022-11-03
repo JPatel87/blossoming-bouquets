@@ -6,7 +6,8 @@
         * [Project overview](#project-overview)
         * [Project goals](#project-goals)
     * [Scope](#scope)
-        * [Features implemented](#unique-features-implemented)
+        * [Consistent features implemented](#consistent-features-implemented)
+        * [Unique features implemented](#unique-features-implemented)
         * [Features left to implement](#features-left-to-implement)
     * [Structure](#structure)
         * [Database model](#database-model)
@@ -55,13 +56,20 @@ Attached is list of epics for this project which have been broken down into [use
 
 ## Scope
 
-### Features implemented
+### Consistent features implemented
 
-* Home page
+There are a few features that have been purposely designed to look the same, to allow users to gain familiarity with the site layout and enable them to find information quickly. 
 
 | Image | Description |
 | --- | --- |
-| ![Favicon](readme_documents/features/favicon-icon.png) | Favicon seen besides title in site tab |
+| Header - medium screen and above (greater than 992px)![Header](readme_documents/features/header-md.png)  | 1) Responsive header on medium and above screens (e.g laptops), consisting of the store logo, navigation menu, search bar and delivery banner. 2) Upon hover of any of the navigation items, the links/icons turn pink. 3) When the home, bouquets, blog and contact us page are active, the link is underlined. | 
+| Header - small screens (less than 992px)![Header](readme_documents/features/header-sm.png)  | Responsive header on small screens (e.g. tablets). | 
+| Header - extra small screens (less than 768px)![Header](readme_documents/features/header-xs.png)  | Responsive header on extra small screens (e.g mobile phones). | 
+| Header - My account dropdown - unauthorised user view ![Header](readme_documents/features/account-non-user.png) Header - My account dropdown - authorised user  view ![Header](readme_documents/features/account-user.png) | My account dropdown menus for unauthorised and authorised users. Logged in status only appears on medium and above screens. |
+| Header - Bouquet dropdown menu (less than 768px)![Header](readme_documents/features/bouquet-dropdown.png)  | Bouquet dropdown menu, same for authorised and unauthorised users. | 
+
+
+### Unique features implemented
 
 ### Features left to implement
 
