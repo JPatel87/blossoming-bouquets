@@ -106,13 +106,17 @@ There are a few features that have been purposely designed to look the same, to 
 | SC-1 - View an attractive site | Site appears minimalistic and elegant and all pages are consistently styled | None |
 | SC-2 - Use a site with clear navigation links  | Navigation links to key pages; home, bouquets, blog, contact us and account are present | When pages related to the navigation items are selected that navigation menu item should remain underlined e.g when the "Add bouquet page" is selected, the "Bouquets" navigation item should remain underlined. |
 | SC-3 - View a list of products available | Bouquet images and descriptions present | None |
-| SC-4 - Filter products according to category and price | Bouquets can be filterd by category, price and bouquet name. There is also capability to search for bouquets | Add more specific categories e.g birthdays.|
+| SC-4 - Filter products according to category and price | Bouquets can be filterd by category, price and bouquet name. There is also capability to search for bouquets | 1) Add more specific categories e.g birthdays. |
 | CO-1 - Make contact with the store owners. | Contact form created. | 1) Create an FAQs page to help users get answers to any questions quickly rather than waiting on a response from the store owner. |
 | CO-2 - Subscribe to a monthly newsletter. | Newsletter subscription created using MailChimp. Added to the footer of the page so it can be accessed from any page. | 1) Sending out emails to customers to inform them of new products and offers. |
 | CO-3 - View the store on Facebook. | Facebook page created. | 1) Have store page on other social media such as Instagram to make it more accessible to users. 2) Regular updates of Facebook page to keep content current and maintain active store appearance. |
-| BL-1 - Add appropriate posts to the blog | Two blogs created providing useful information related to flower care | When creating posts, as a shop owner, to increase user dwell time on the site we can link blogs together if the content is relateable and would be useful to the user. |
-| BL-3 - View past orders from my account. | This can be viewed when the user logs in and navigates to their profile page. | None |
-| UA-1 - Create an account with the store | Register link present under the "My Accounts" navigation item. There are also links on other pages where login is required to view information e.g make a comment on a blog. | None |
+| BL-1 - Add appropriate posts to the blog | Two blogs created providing useful information related to flower care | 1) When creating posts, as a shop owner, to increase user dwell time on the site we can link blogs together if the content is relateable and would be useful to the user. 2) Also add links to other external, reliable and useful websites to further boost SEO |
+| BL-3 - Comment on posts made by store owners. | This can be achieved if a user has an account with the site. | 1) Have capability of adding likes to a post. |
+| UA-1 - Create an account with the store | Register link present under the "My Accounts" navigation item. There are also links on other pages where login is required to view information e.g to make a comment on a blog. | None |
+| UA-2 - View past orders from my account | These can be viewed by logging in and clicking on "My Profile". | 1) Add capability for users to add testimonials on the bouquets they have purchased and then only publish store owner approved comments to boost site reliability and user interactivity  |
+| SM-1 - Add products to the site | Store owners (ie. superusers) have the capability of doing this by logging on to the site. | None |
+| SM-2 - Edit products existing on the site | Store owners (ie. superusers) have the capability of doing this by logging on to the site. | None |
+| SM-3 - Delete products existing on the site | Store owners (ie. superusers) have the capability of doing this by logging on to the site. | None |
 
 
 
