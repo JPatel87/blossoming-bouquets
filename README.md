@@ -77,7 +77,6 @@ There are a few features that have been purposely designed to look the same, to 
 | Access to restricted areas ![Prohibited areas](readme_documents/features/restricted-access.png) |1) All instances where a user tries to access a restricted access area by typing the url into the address bar, is relayed back to the user through error messages appearing in the top right, with a red top border. 2) These messages inform the user that they cannot view the page they attempted to and the reason why. 3) Examples include non-superusers trying to access add/edit/delete bouquets or blog post pages or one user trying to edit/delete another user's comment. | 
 | Delete confirmation![Delete confirmations](readme_documents/features/delete-confirmations.png) Delete message ![Delete message](readme_documents/features/delete-message.png)  | 1) All delete or logout links when clicked direct to a confirmation page, for good user experience, in case a user accidently selects delete or logout. 2) This applies to the following pages; delete bouquet, delete blog post, delete comment, logout page. 3) Once delete or logout is confirmed, a success message appears in the top right. | 
 
-
 ### Unique features implemented
 
 | Image | Description |
@@ -101,33 +100,7 @@ There are a few features that have been purposely designed to look the same, to 
 
 ### Features left to implement
 
-| User story | Complete | Future improvements |
-| --- | --- | --- |
-| SC-1 - View an attractive site | Site appears minimalistic and elegant and all pages are consistently styled | None |
-| SC-2 - Use a site with clear navigation links  | Navigation links to key pages; home, bouquets, blog, contact us and account are present | When pages related to the navigation items are selected that navigation menu item should remain underlined e.g when the "Add bouquet page" is selected, the "Bouquets" navigation item should remain underlined. |
-| SC-3 - View a list of products available | Bouquet images and descriptions present | None |
-| SC-4 - Filter products according to category and price | Bouquets can be filterd by category, price and bouquet name. There is also capability to search for bouquets | 1) Add more specific categories e.g birthdays. |
-| CO-1 - Make contact with the store owners. | Contact form created. | 1) Create an FAQs page to help users get answers to any questions quickly rather than waiting on a response from the store owner. |
-| CO-2 - Subscribe to a monthly newsletter. | Newsletter subscription created using MailChimp. Added to the footer of the page so it can be accessed from any page. | 1) Sending out emails to customers to inform them of new products and offers. |
-| CO-3 - View the store on Facebook. | Facebook page created. | 1) Have store page on other social media such as Instagram to make it more accessible to users. 2) Regular updates of Facebook page to keep content current and maintain active store appearance. |
-| BL-1 - Add appropriate posts to the blog | Two blogs created providing useful information related to flower care | 1) When creating posts, as a shop owner, to increase user dwell time on the site we can link blogs together if the content is relateable and would be useful to the user. 2) Also add links to other external, reliable and useful websites to further boost SEO |
-| BL-3 - Comment on posts made by store owners. | This can be achieved if a user has an account with the site. | 1) Have capability of adding likes to a post. |
-| UA-1 - Create an account with the store | Register link present under the "My Accounts" navigation item. There are also links on other pages where login is required to view information e.g to make a comment on a blog. | None |
-| UA-2 - View past orders from my account | These can be viewed by logging in and clicking on "My Profile". | 1) Add capability for users to add testimonials on the bouquets they have purchased and then only publish store owner approved comments to boost site reliability and user interactivity  |
-| SM-1 - Add products to the site | Store owners (ie. superusers) have the capability of doing this by logging on through the site. | None |
-| SM-2 - Edit products existing on the site | Store owners (ie. superusers) have the capability of doing this by logging on through the site. | None |
-| SM-3 - Delete products existing on the site | Store owners (ie. superusers) have the capability of doing this by logging on through the site. | None |
-| PU-1 - Put products into a basket | Any site user can put bouquets into their bag when they select a bouquet to view, they have the option to "Add to bag". | None |
-| PU-2 - View products in my basket including price and quantities | From the bag page, any user can see the item they have in their bag, the price and quantities. | None |
-| PU-3 - View grand total of my shopping basket including delivery costs. | From the bag page, the order subtotal, delivery charge and grand total can be seen. | None |
-| PU-4 - Edit the quantity of products in my basket. | From the bag page, users can update a bouquet quantity.  | None |
-| PU-5 - Delete products in my basket. | From the bag page, users can remove a bouquet from their bag. | None |
-| PU-6 - Checkout securely using my card details. | This can be done through the secure checkout page, the user is alerted in red to the amount their card will be charged, a success message will appear once their payment has been processed and an order confirmation will be sent to their email address. | None |
-| PU-7 - See what customers have purchased. | Order history can be viewed by the store owner (ie. superuser) through django admin | None |
-
-
-
-
+Refer to the future improvements of [user story testing](#user-story-testing)
 
 ## Structure 
 
@@ -252,6 +225,31 @@ An important consideration of web marketing is compliance with the General Data 
 ### User story testing 
 
 Tests were performed to determine whether the user story acceptance criteria were met by the site development. 
+
+| User story | Complete | Future improvements |
+| --- | --- | --- |
+| SC-1 - Shopper - View an attractive site | Site appears minimalistic and elegant and all pages are consistently styled | None |
+| SC-2 - Shopper - Use a site with clear navigation links  | Navigation links to key pages; home, bouquets, blog, contact us and account are present | When pages related to the navigation items are selected that navigation menu item should remain underlined e.g when the "Add bouquet page" is selected, the "Bouquets" navigation item should remain underlined. |
+| SC-3 - Shopper - View a list of products available | Bouquet images and descriptions present | None |
+| SC-4 - Shopper - Filter products according to category and price | Bouquets can be filterd by category, price and bouquet name. There is also capability to search for bouquets | 1) Add more specific categories e.g birthdays. |
+| CO-1 - Shopper - Make contact with the store owners. | Contact form created. | 1) Create an FAQs page to help users get answers to any questions quickly rather than waiting on a response from the store owner. |
+| CO-2 - Shopper - Subscribe to a monthly newsletter. | Newsletter subscription created using MailChimp. Added to the footer of the page so it can be accessed from any page. | 1) Sending out emails to customers to inform them of new products and offers. |
+| CO-3 - Shopper - View the store on Facebook. | Facebook page created. | 1) Have store page on other social media such as Instagram to make it more accessible to users. 2) Regular updates of Facebook page to keep content current and maintain active store appearance. |
+| BL-1 - Store owner - Add appropriate posts to the blog | Two blogs created providing useful information related to flower care | 1) When creating posts, as a shop owner, to increase user dwell time on the site we can link blogs together if the content is relateable and would be useful to the user. 2) Also add links to other external, reliable and useful websites to further boost SEO. |
+| BL-2 - Shopper - View blog posts. | This can be achieved any any user by clicking on the blog navigation link. | Have the capability of having authenticated users also post on a site, once the post has been approved by the site owner, to improve user interactivity. |
+| BL-3 - User account holder - Comment on posts made by store owners. | This can be achieved if a user has an account with the site. | 1) Have capability of adding likes to a post. |
+| UA-1 - Shopper - Create an account with the store | Register link present under the "My Accounts" navigation item. There are also links on other pages where login is required to view information e.g to make a comment on a blog. | None. |
+| UA-2 - User account holder - View past orders from my account | These can be viewed by logging in and clicking on "My Profile". | 1) Add capability for users to add testimonials on the bouquets they have purchased and then only publish store owner approved comments to boost site reliability and user interactivity  |
+| SM-1 - Store owner - Add products to the site | Store owners (ie. superusers) have the capability of doing this by logging on through the site. | None. |
+| SM-2 - Store owner - Edit products existing on the site | Store owners (ie. superusers) have the capability of doing this by logging on through the site. | None. |
+| SM-3 - Store owner - Delete products existing on the site | Store owners (ie. superusers) have the capability of doing this by logging on through the site. | None. |
+| PU-1 - Shopper - Put products into a basket | Any site user can put bouquets into their bag when they select a bouquet to view, they have the option to "Add to bag". | None. |
+| PU-2 - Shopper - View products in my basket including price and quantities | From the bag page, any user can see the item they have in their bag, the price and quantities. | None. |
+| PU-3 - Shopper - View grand total of my shopping basket including delivery costs. | From the bag page, the order subtotal, delivery charge and grand total can be seen. | None. |
+| PU-4 - Shopper - Edit the quantity of products in my basket. | From the bag page, users can update a bouquet quantity.  | None. |
+| PU-5 - Shopper - Delete products in my basket. | From the bag page, users can remove a bouquet from their bag. | None |
+| PU-6 - Shopper - Checkout securely using my card details. | This can be done through the secure checkout page, the user is alerted in red to the amount their card will be charged, a success message will appear once their payment has been processed and an order confirmation will be sent to their email address. | None. |
+| PU-7 - Store owner - See what customers have purchased. | Order history can be viewed by the store owner (ie. superuser) through django admin. | None. |
 
 ### Manual testing 
 
