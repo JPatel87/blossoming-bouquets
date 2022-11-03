@@ -114,9 +114,17 @@ There are a few features that have been purposely designed to look the same, to 
 | BL-3 - Comment on posts made by store owners. | This can be achieved if a user has an account with the site. | 1) Have capability of adding likes to a post. |
 | UA-1 - Create an account with the store | Register link present under the "My Accounts" navigation item. There are also links on other pages where login is required to view information e.g to make a comment on a blog. | None |
 | UA-2 - View past orders from my account | These can be viewed by logging in and clicking on "My Profile". | 1) Add capability for users to add testimonials on the bouquets they have purchased and then only publish store owner approved comments to boost site reliability and user interactivity  |
-| SM-1 - Add products to the site | Store owners (ie. superusers) have the capability of doing this by logging on to the site. | None |
-| SM-2 - Edit products existing on the site | Store owners (ie. superusers) have the capability of doing this by logging on to the site. | None |
-| SM-3 - Delete products existing on the site | Store owners (ie. superusers) have the capability of doing this by logging on to the site. | None |
+| SM-1 - Add products to the site | Store owners (ie. superusers) have the capability of doing this by logging on through the site. | None |
+| SM-2 - Edit products existing on the site | Store owners (ie. superusers) have the capability of doing this by logging on through the site. | None |
+| SM-3 - Delete products existing on the site | Store owners (ie. superusers) have the capability of doing this by logging on through the site. | None |
+| PU-1 - Put products into a basket | Any site user can put bouquets into their bag when they select a bouquet to view, they have the option to "Add to bag". | None |
+| PU-2 - View products in my basket including price and quantities | From the bag page, any user can see the item they have in their bag, the price and quantities. | None |
+| PU-3 - View grand total of my shopping basket including delivery costs. | From the bag page, the order subtotal, delivery charge and grand total can be seen. | None |
+| PU-4 - Edit the quantity of products in my basket. | From the bag page, users can update a bouquet quantity.  | None |
+| PU-5 - Delete products in my basket. | From the bag page, users can remove a bouquet from their bag. | None |
+| PU-6 - Checkout securely using my card details. | This can be done through the secure checkout page, the user is alerted in red to the amount their card will be charged, a success message will appear once their payment has been processed and an order confirmation will be sent to their email address. | None |
+| PU-7 - See what customers have purchased. | Order history can be viewed by the store owner (ie. superuser) through django admin | None |
+
 
 
 
