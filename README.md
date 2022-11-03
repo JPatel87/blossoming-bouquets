@@ -74,7 +74,9 @@ There are a few features that have been purposely designed to look the same, to 
 
 | Image | Description |
 | --- | --- |
-| Home page ![Home](readme_documents/features/home.png)  | Home page consists of only the hero image, slogan and a call to action button, to keep the site looking minimalistic. | 
+| Home page ![Home](readme_documents/features/home.png)  | Home page consists of only the hero image, slogan and a call to action button, to keep the site looking minimalistic. The page appears the same on all screen sizes.| 
+| All bouquets page - heading (large screen view) ![All bouquets](readme_documents/features/bouquets-all-heading.png) | All bouquets page heading includes category links for easy access. These links have a grey shadow when hovered over.| 
+| All bouquets page - content (large screen view) ![All bouquets](readme_documents/features/bouquets-all.png) | 1) All bouquets page is responsive on all screen sizes. On medium screens 3 bouquets per row are displayed, on small screens 2 bouquets per row and on extra small screens (less than 575px) 1 bouquet per row. 2) All bouquets have their image, name, price and category listed 3) Only superusers can see the "Edit/Delete" options below the bouquets. 4) There is a "Bouquets Home" link on the top left - this can be clicked to go back to the all bouquets page if on any other bouquets page. 5) There is filter bar on the top right, if users want to filter bouquets by price, name and category 6) There is a back to the top button on the bottom left, to improve user experience.| 
 
 
 ### Features left to implement
