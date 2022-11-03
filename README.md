@@ -217,7 +217,7 @@ The features that respond to different screen sizes include:
 
 Bugs and issues during the creation of this site have been documented in the file below.
 
-* [Bugs and issues](readme_documents/web-marketing/privacy-policy-creation.pdf)
+* [Bugs and issues](readme_documents/bugs-issues/bugs-issues.pdf)
 
 ### Validator testing
 
