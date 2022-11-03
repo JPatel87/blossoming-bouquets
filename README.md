@@ -99,10 +99,23 @@ There are a few features that have been purposely designed to look the same, to 
 | Blog post detail page > comments section (all screen sizes) ![Blog post comment](readme_documents/features/post-comment.png) | 1) Only authorised users can make a comment, if users are not authorised they do not see the "Post comment" form and are requested to login. 2) To make a comment the user must add the name of the commenter and their comment (username of user is not added by default in case users want to remain anonymous). 3) Once the comment is made the name, date and comment displays on that particular blog detail page. 4) Comments are displayed with the oldest appearing at the top. 5) The user can "Edit/Delete" their own comment. 6) Any time a comment is added/edited, the date of the update will be shown under the commment.
 | Contact us page (medium screens and above) ![Contact us page](readme_documents/features/contact-us.png) | 1) Contact us page is responsive on all screens; on small screens and below the edit form spans 12 columns, whereas on medium and above it spans 6 columns. 2) There is a required radio-button feature for users to select the subject of their query which would be useful for the site owner to help categorize and prioritise urgent queries. |
 
-
 ### Features left to implement
 
-Refer to the future improvements of [user story testing](#user-story-testing)
+| User story | Complete | Future improvements |
+| --- | --- | --- |
+| SC-1 - View an attractive site | Site appears minimalistic and elegant and all pages are consistently styled | None |
+| SC-2 - Use a site with clear navigation links  | Navigation links to key pages; home, bouquets, blog, contact us and account are present | When pages related to the navigation items are selected that navigation menu item should remain underlined e.g when the "Add bouquet page" is selected, the "Bouquets" navigation item should remain underlined. |
+| SC-3 - View a list of products available | Bouquet images and descriptions present | None |
+| SC-4 - Filter products according to category and price | Bouquets can be filterd by category, price and bouquet name. There is also capability to search for bouquets | Add more specific categories e.g birthdays.|
+| CO-1 - Make contact with the store owners. | Contact form created. | 1) Create an FAQs page to help users get answers to any questions quickly rather than waiting on a response from the store owner. |
+| CO-2 - Subscribe to a monthly newsletter. | Newsletter subscription created using MailChimp. Added to the footer of the page so it can be accessed from any page. | 1) Sending out emails to customers to inform them of new products and offers. |
+| CO-3 - View the store on Facebook. | Facebook page created. | 1) Have store page on other social media such as Instagram to make it more accessible to users. 2) Regular updates of Facebook page to keep content current and maintain active store appearance. |
+| BL-1 - Add appropriate posts to the blog | Two blogs created providing useful information related to flower care | When creating posts, as a shop owner, to increase user dwell time on the site we can link blogs together if the content is relateable and would be useful to the user. |
+| BL-3 - View past orders from my account. | This can be viewed when the user logs in and navigates to their profile page. | None |
+| UA-1 - Create an account with the store | Register link present under the "My Accounts" navigation item. There are also links on other pages where login is required to view information e.g make a comment on a blog. | None |
+
+
+
 
 ## Structure 
 
