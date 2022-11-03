@@ -1,5 +1,9 @@
 # Blossoming Bouquets
 
+![Blossoming bouquets responsiveness](readme_documents/responsive-testing/blossoming-bouquets-home.png) 
+
+[Link to the deployed site](https://blossoming-bouquets.herokuapp.com/)
+
 ## Table of contents
 * [UX](#ux)
     * [Strategy](#strategy)
@@ -37,9 +41,6 @@
     * [Acknowledgements](#acknowledgements)
 
 # UX
-
-
-[Link to the deployed site](https://blossoming-bouquets.herokuapp.com/)
 
 ## Strategy
 
@@ -270,9 +271,11 @@ Manual testing of interactive features was carried out, see tests and results of
 
 ### Responsive testing
 
-The site works well on small, medium and larger screens. See below links to the responsive views on different screens. 
+The site works well on small, medium and larger screens. Testing was carried out using [Google Chrome Developer tools](https://developer.chrome.com/docs/devtools/), a laptop screen and an Iphone 8. See link below to the responsive views of the home page, bouquet page, bouquet detail page, blog page, blog post detail page and the contact us page on different screen sizes. 
 
-The features that respond to different screen sizes include:
+The responsivity of different features on the site has been explored in the [Scope](#scope) section of this ReadMe.
+
+* [Responsive images of site pages](readme_documents/bugs-issues/responsive-images.pdf)
 
 ### Bugs and issues
 
@@ -370,6 +373,7 @@ The following sites were used to assist in this project:
 - [Facebook](https://en-gb.facebook.com/) - used to create site Facebook page.
 - [MailChimp](https://login.mailchimp.com/) - used to create site newsletter subscription form.
 - [Privacy Policy Generator](https://www.privacypolicygenerator.info/) - used to create the site privacy policy.
+- [Google Chrome Developer tools](https://developer.chrome.com/docs/devtools/) - used to run inspection of errors on site pages.
 
 ### Content
 
