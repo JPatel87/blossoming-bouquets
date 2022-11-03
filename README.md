@@ -63,13 +63,15 @@ There are a few features that have been purposely designed to look the same, to 
 | Image | Description |
 | --- | --- |
 | Header - medium screen and above (greater than 992px)![Header](readme_documents/features/header-md.png)  | 1) Responsive header on medium and above screens (e.g laptops), consisting of the store logo, navigation menu, search bar and delivery banner. 2) Upon hover of any of the navigation items, the links/icons turn pink. 3) When the home, bouquets, blog and contact us page are active, the link is underlined. | 
-| Header - small screens (less than 992px)![Header](readme_documents/features/header-sm.png)  | Responsive header on small screens (e.g. tablets). | 
-| Header - extra small screens (less than 768px)![Header](readme_documents/features/header-xs.png)  | Responsive header on extra small screens (e.g mobile phones). | 
-| Header - Account dropdown - unauthorised user![Header](readme_documents/features/account-non-user.png)      Header - Account dropdown - authorised user ![Header](readme_documents/features/account-user.png) | Account dropdown menus for unauthorised and authorised users. Logged in status only appears on medium and above screens. |
+| Header - small screens (less than 992px)![Header](readme_documents/features/header-sm.png)  | Responsive header on small screens (e.g. tablets). Extra small screen view (less than 768px e.g. mobile phones) is the same but without the logo image.| 
+| Header - Account dropdown - authorised user ![Header](readme_documents/features/account-user.png) | 1) Account dropdown for unauthorised users only consist of the "register" and "login" dropdown items 2) For authorised users, the options change to "My profile" and "Logout". 3) Logged in status only appears on medium and above screens. 4) For superusers, there is one additional dropdown item, "Add bouquet". |
 | Header - Bouquet dropdown menu (less than 768px)![Header](readme_documents/features/bouquet-dropdown.png)  | Bouquet dropdown menu, same for authorised and unauthorised users. | 
-| Footer - small screens and above ![Footer](readme_documents/features/footer-sm.png) Footer - extra small screens ![Footer](readme_documents/features/footer-xs.png)  | Footer on all screens. The Facebook link and privacy policy are centered aligned at the bottom on extra small screens. |
+| Footer - small screens and above ![Footer](readme_documents/features/footer-sm.png) | Footer, is responsive on all screens. The Facebook link and privacy policy are centered aligned at the bottom on extra small screens. |
 | Page headings![Page headings](readme_documents/features/page-heading.png) | All page headings are styled in the same way with font Sacramento, center aligned with a horizontal rule | 
 | Buttons![Buttons](readme_documents/features/buttons.png) | 1) All desirable action buttons are coloured green, otherwise buttons are coloured grey 2) Both types of buttons have a grey shadow when hovered over, to add a subtle effect. | 
+| Messages![Messages](readme_documents/features/messages.png) | 1) All significant actions taken by users are relayed back to the user through messages appearing in the top right. 2) Examples include; logging in, editing a bouquet, blog or commment, adding a bouquet to bag, submitting a contact us query | 
+| Delete confirmation![Delete confirmations](readme_documents/features/delete-confirmations.png) Delete message ![Delete message](readme_documents/features/delete-message.png)  | 1) All delete or logout links when clicked direct to a confirmation page, for good user experience, in case a user accidently selects delete or logout. 2) This applies to the following pages; delete bouquet, delete blog post, delete comment, logout page. 3) Once delete or logout is confirmed, a success message appears in the top right| 
+
 
 ### Unique features implemented
 

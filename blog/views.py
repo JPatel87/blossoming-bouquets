@@ -106,6 +106,7 @@ def edit_post(request, slug):
     post = get_object_or_404(query, slug=slug)
 
     form = AddPostForm(instance=post)
+    messages.info(request, f'You are editing {post.name}')
 
     if request.method == 'POST':
         form = AddPostForm(request.POST, request.FILES, instance=post)
@@ -170,6 +171,9 @@ def edit_comment(request, comment_id, slug):
                        'Sorry, only the author has access to do that.')
         return redirect(reverse('post_detail', kwargs={'slug': slug}))
 
+    form = CommentForm(instance=comment)
+    messages.info(request, f'You are editing comment by {comment.author}')
+
     if request.method == 'POST':
         form = CommentForm(request.POST, instance=comment)
 
@@ -180,9 +184,6 @@ def edit_comment(request, comment_id, slug):
         else:
             messages.error(request,
                            'Failed to edit comment, please address errors')
-
-    form = CommentForm(instance=comment)
-    messages.info(request, 'You are about to edit your comment')
 
     return render(
         request,
