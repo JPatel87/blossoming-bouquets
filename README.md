@@ -6,8 +6,7 @@
         * [Project overview](#project-overview)
         * [Project goals](#project-goals)
     * [Scope](#scope)
-        * [Consistent features implemented](#consistent-features-implemented)
-        * [Unique features implemented](#unique-features-implemented)
+        * [Features implemented](#unique-features-implemented)
         * [Features left to implement](#features-left-to-implement)
     * [Structure](#structure)
         * [Database model](#database-model)
@@ -56,11 +55,13 @@ Attached is list of epics for this project which have been broken down into [use
 
 ## Scope
 
-### Consistent features implemented
+### Features implemented
 
-There are a few features that have been purposely designed to look the same, to allow users to gain familiarity with the site layout and enable them to find information quickly. 
+* Home page
 
-### Unique features implemented
+| Image | Description |
+| --- | --- |
+| ![Favicon](readme_documents/features/favicon-icon.png) | Favicon seen besides title in site tab |
 
 ### Features left to implement
 
