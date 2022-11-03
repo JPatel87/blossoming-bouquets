@@ -215,6 +215,10 @@ The features that respond to different screen sizes include:
 
 ### Bugs and issues
 
+Bugs and issues during the creation of this site have been documented in the file below.
+
+* [Bugs and issues](readme_documents/web-marketing/privacy-policy-creation.pdf)
+
 ### Validator testing
 
 - [W3 HTML Validator](https://validator.w3.org/#validate_by_input) checks were carried out on all viewable site pages. Main errors and warnings have been reported below as well as resolutions. Once all page errors and warnings were addressed, validator checks were re-run and no further errors appeared on any page.
