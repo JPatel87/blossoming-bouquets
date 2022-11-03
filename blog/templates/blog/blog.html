@@ -43,7 +43,6 @@
                     <p class="lead text-center">
                         <a href="{% url 'post_detail' post.slug %}" class="text-center">Read more</a>
                     </p>
-                    <br>
                     {% if user.is_superuser %}
                     <div class="d-flex edit-delete-container">
                         <a href="{% url 'edit_post' post.slug %}" class="pr-2">Edit</a> | 

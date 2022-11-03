@@ -106,7 +106,7 @@ def edit_post(request, slug):
     post = get_object_or_404(query, slug=slug)
 
     form = AddPostForm(instance=post)
-    messages.info(request, f'You are editing {post.name}')
+    messages.info(request, f'You are editing {post.title}')
 
     if request.method == 'POST':
         form = AddPostForm(request.POST, request.FILES, instance=post)
