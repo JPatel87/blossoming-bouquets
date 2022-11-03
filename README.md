@@ -67,7 +67,8 @@ There are a few features that have been purposely designed to look the same, to 
 | Header - extra small screens (less than 768px)![Header](readme_documents/features/header-xs.png)  | Responsive header on extra small screens (e.g mobile phones). | 
 | Header - Account dropdown - unauthorised user![Header](readme_documents/features/account-non-user.png) Header - Account dropdown - authorised user ![Header](readme_documents/features/account-user.png) | Account dropdown menus for unauthorised and authorised users. Logged in status only appears on medium and above screens. |
 | Header - Bouquet dropdown menu (less than 768px)![Header](readme_documents/features/bouquet-dropdown.png)  | Bouquet dropdown menu, same for authorised and unauthorised users. | 
-| Footer - small screens and above ![Header](readme_documents/features/footer-sm.png) Footer on extra small screens ![Header](readme_documents/features/footer-xs.png)  | Footer on all screens. The Facebook link and privacy policy are centered aligned at the bottom on extra small screens. |
+| Footer - small screens and above ![Footer](readme_documents/features/footer-sm.png) Footer on extra small screens ![Footer](readme_documents/features/footer-xs.png)  | Footer on all screens. The Facebook link and privacy policy are centered aligned at the bottom on extra small screens. |
+| Buttons![Buttons](readme_documents/features/buttons.png) | 1) All desirable action buttons are coloured green, otherwise buttons are coloured grey 2) Both types of buttons have a grey shadow when hovered over to add a subtle effect. | 
 
 
 ### Unique features implemented
