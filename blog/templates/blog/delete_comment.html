@@ -26,7 +26,7 @@
                 <p class="font-weight-bold">Delete comment</p>
                 <form method="POST">
                     {% csrf_token %}
-                    <p>Are you sure you want to delete <strong>"{{ comment.body }}"?</p>
+                    <p>Are you sure you want to delete <strong>"{{ comment.body }}"?</strong></p>
                     <a href="{% url 'post_detail' slug %}" class="btn btn-grey grey-shadow rounded-lg btn-md p-1 p-sm-2 mr-2 mb-2 mb-sm-none">
                         <span class="icon">
                             <i class="fas fa-chevron-left"></i>
