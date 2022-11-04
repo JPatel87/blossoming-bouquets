@@ -54,7 +54,7 @@
                         <p>
                             <strong>{{ comment.name }}</strong> | {{ comment.date }}
                         </p>
-                        <p>{{ comment.body}}</br>
+                        <p>{{ comment.body}}
                         <!-- Authors can only edit their own comments -->
                         {% if request.user == comment.author %}    
                             <a href="{% url 'edit_comment' comment.id post.slug %}">Edit</a> | 
