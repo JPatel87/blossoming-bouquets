@@ -2,7 +2,7 @@
 from django.urls import path
 from . import views
 
-# Url link to profile pages
+# Url links to profile pages
 urlpatterns = [
     path('', views.profile, name='profile'),
     path('order_history/<order_number>',

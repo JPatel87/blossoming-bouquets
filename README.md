@@ -165,9 +165,9 @@ There are two fonts used in this site which were sourced from [Google fonts](htt
 
 The logo image has been created using a [Canva](https://www.canva.com/en_gb/) template. It was chosen to convey the purpose of the site; flower bouquets, in a minamalistic manner. The same image has been used to generate a favicon for the site, which was created using [Favicon.io](https://favicon.io/favicon-converter/).
 
-The hero image and the bouquet images used for the site have been sourced from [Pexels](https://www.pexels.com/). 
+The hero image, bouquet images and post images used for the site have been sourced from [Pexels](https://www.pexels.com/). 
 
-The hero image was selected as it effectively portrays to the user the intent of the site and fits in well with the site colour scheme. The bouquet images selected, have all have been taken on a dark grey background (other than wedding bouquet images) and in the same pose, which adds a level of consistency to the site. Blog post images were also sourced from Pexels, to suit the theme of the blog post.
+The hero image was selected as it effectively portrays to the user the intent of the site and fits in well with the site colour scheme. The bouquet images selected, have all have been taken on a dark grey background (other than wedding bouquet images) and in the same pose, which adds a level of consistency to the site.
 
 The default "Image coming soon" image was sourced from [Freepix](https://www.freepik.com).
 
@@ -234,8 +234,8 @@ Tests were performed to determine whether the user stories were met by the site 
 | SC-1 - Shopper - View an attractive site. | Site appears minimalistic and elegant and all pages are consistently styled. | Footer appears bulky so this could be amended by re-formatting it. |
 | SC-2 - Shopper - Use a site with clear navigation links.  | Navigation links to key pages; home, bouquets, blog, contact us and account are present. | When pages related to the navigation items are selected that navigation menu item should remain underlined e.g when the "Add bouquet page" is selected, the "Bouquets" navigation item should remain underlined. |
 | SC-3 - Shopper - View a list of products available | Bouquet images and descriptions present. | None. |
-| SC-4 - Shopper - Filter products according to category and price. | Bouquets can be filterd by category, price and bouquet name. There is also capability to search for bouquets | 1) Add more specific categories e.g birthdays. 2) Add capability to add multiple categories to a bouquet.|
-| CO-1 - Shopper - Make contact with the store owners. | Contact form created. | 1) Create an FAQs page to help users get answers to any questions quickly rather than waiting on a response from the store owner. |
+| SC-4 - Shopper - Filter products according to category and price. | Bouquets can be filterd by category, price and bouquet name. There is also capability to search for bouquets. | 1) Add more specific categories e.g birthdays. 2) Add capability to add multiple categories to a bouquet.|
+| CO-1 - Shopper - Make contact with the store owners. | Contact form created. | Create an FAQs page to help users get answers to any questions quickly rather than waiting on a response from the store owner. |
 | CO-2 - Shopper - Subscribe to a monthly newsletter. | Newsletter subscription created using MailChimp. Added to the footer of the page so it can be accessed from any page. | Sending out emails to customers to inform them of new products and offers. |
 | CO-3 - Shopper - View the store on Facebook. | Facebook page created. | 1) Have store page on other social media such as Instagram to make it more accessible to users. 2) Regular updates of Facebook page to keep content current and maintain active store appearance. |
 | BL-1 - Store owner - Add appropriate posts to the blog. | Two blogs created providing useful information related to flower care. | 1) When creating posts, as a shop owner, to increase user dwell time on the site we can link blogs together if the content is relateable and would be useful to the user. 2) Also add links to other external, reliable and useful websites to further boost SEO. |
@@ -359,7 +359,6 @@ The following sites were used to assist in this project:
 * [Balsamiq](https://balsamiq.com/wireframes/?gclid=CjwKCAjw9-KTBhBcEiwAr19igzgSMCAHTuTIsTpGrtk-KZPATPmc7R0M9oo0VUs2jhgbGpmXmCnKSxoCstwQAvD_BwE) - used to create the wireframes.
 * [Tiny png](https://tinypng.com/) - used to compress images.
 * [Color-hex](https://www.color-hex.com/user/add-palette.php) - used to create a colour palette.
-* [PEP8 online](http://pep8online.com/) - used to check python code.
 * [amiresponsive](https://ui.dev/amiresponsive) - used to generate responsive images of the site.
 * [W3C Mark up Validation Service](https://validator.w3.org/) - used to validate html templates.
 * [W3 CSS Validation Service](https://jigsaw.w3.org/css-validator/) - used to validate CSS stylesheets.

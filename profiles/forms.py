@@ -5,7 +5,7 @@ from .models import UserProfile
 
 class UserProfileForm(forms.ModelForm):
     """
-    User profile form for default contact details.
+    User profile form for default delivery details.
     """
 
     class Meta:
