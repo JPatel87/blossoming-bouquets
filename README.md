@@ -231,7 +231,7 @@ Tests were performed to determine whether the user stories were met by the site 
 | SC-1 - Shopper - View an attractive site | Site appears minimalistic and elegant and all pages are consistently styled | Footer appears bulky so this could be amended by reformatting the footer but keeping the same information present. |
 | SC-2 - Shopper - Use a site with clear navigation links  | Navigation links to key pages; home, bouquets, blog, contact us and account are present | When pages related to the navigation items are selected that navigation menu item should remain underlined e.g when the "Add bouquet page" is selected, the "Bouquets" navigation item should remain underlined. |
 | SC-3 - Shopper - View a list of products available | Bouquet images and descriptions present | None |
-| SC-4 - Shopper - Filter products according to category and price | Bouquets can be filterd by category, price and bouquet name. There is also capability to search for bouquets | 1) Add more specific categories e.g birthdays. |
+| SC-4 - Shopper - Filter products according to category and price | Bouquets can be filterd by category, price and bouquet name. There is also capability to search for bouquets | 1) Add more specific categories e.g birthdays. 2) Add capability to add multiple categories to a bouquet.|
 | CO-1 - Shopper - Make contact with the store owners. | Contact form created. | 1) Create an FAQs page to help users get answers to any questions quickly rather than waiting on a response from the store owner. |
 | CO-2 - Shopper - Subscribe to a monthly newsletter. | Newsletter subscription created using MailChimp. Added to the footer of the page so it can be accessed from any page. | 1) Sending out emails to customers to inform them of new products and offers. |
 | CO-3 - Shopper - View the store on Facebook. | Facebook page created. | 1) Have store page on other social media such as Instagram to make it more accessible to users. 2) Regular updates of Facebook page to keep content current and maintain active store appearance. |
@@ -253,21 +253,10 @@ Tests were performed to determine whether the user stories were met by the site 
 
 ### Manual testing 
 
-Manual testing of interactive features was carried out, see tests and results of testing below:
+Manual testing of interactive features was carried out, see attachment for details
 
-* Home page
+* [Manual site testing](readme_documents/manual-testing/manual-testing.pdf)
 
-| Section | Test | Result |
-| --- | --- | --- |
-| Navigation | Logo links to home page | Logo link was tested from all other site pages and the home page was achieved. |
-| Navigation | Search button yields correct results |  |
-| Navigation | Navigation links go to the correct pages | All links were tested and all lead to correct pages. |
-| Hero container | Call to action "Shop Now" button leads to the "All bouquets" page | "Shop Now" button tested and it links to the "All bouquets" page. |
-| Footer | Footer stays on bottom on different size screens | Tested all pages on all screen sizes and footer stays at the bottom.  |
-| Footer | Footer stays on bottom on different size screens | Tested all pages on all screen sizes and footer stays at the bottom.  |
-| Footer | Mailchimp subscription form working | 1)  Subscription successful message displayed upon valid email entry 2) Email updated on Mailchimp account contact list 3) If an email is not entered and the subscribe button is selected, message is displayed below the email input field to state "This field is required" 4) Tested an invalid email address and the following error message is displayed: "This email cannot be added to this list. Please enter a different email address". |
-| Footer | Facebook link opens correct page in new tab | 1) Correct Facebook page loads 2) Facebook page loads in a new tab. |
-| Footer | Correct Privacy policy loads in new tab | 1) Correct Policy loads 2) Policy loads in a new tab. |
 
 ### Responsive testing
 
